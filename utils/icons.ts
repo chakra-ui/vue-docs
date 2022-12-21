@@ -10,7 +10,8 @@ export {
   feSun,
   feMoon,
   feGithub,
-} from "feather-icons-paths"
+  feArrowRight,
+} from "feather-icons-paths";
 
 export const extendedIcons = {
   // https://icones.js.org/collection/simple-icons
@@ -59,4 +60,4 @@ export const extendedIcons = {
     path: `<path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>`,
     viewBox: "0 0 24 24",
   },
-}
+};

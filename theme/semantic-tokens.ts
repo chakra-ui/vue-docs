@@ -8,5 +8,9 @@ export const semanticTokens = {
       default: "white",
       _dark: "gray.800",
     },
+    subtitleText: {
+      default: "gray.500",
+      _dark: "whiteAlpha.600",
+    },
   },
-}
+};

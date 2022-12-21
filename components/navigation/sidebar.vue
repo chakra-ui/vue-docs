@@ -1,9 +1,10 @@
 <template>
   <c-stack as="ul" spacing="0" list-style-type="none" font-size="sm">
     <template v-if="navigation">
-      <chakra.li
-        v-for="item in navigation"
-        :key="`path:${item._path}`"
+      <c-box 
+        as="li"
+        v-for="(item, i) in navigation"
+        :key="`path:${i}`"
         list-style-type="none"
       >
         <template v-if="item">
@@ -17,9 +18,9 @@
             list-style-type="none"
           >
             <doc-link
-              v-for="nestedItem in item.children.filter(
-                (_) => _._path.split('/').length > 2
-              )"
+              v-for="nestedItem in (item.children.filter(
+                (_) => _._path !== item._path
+              ))"
               :key="`path:${nestedItem._path}`"
               :nav-item-path="nestedItem._path"
               pl="4"
@@ -28,20 +29,17 @@
             </doc-link>
           </c-stack>
         </template>
-      </chakra.li>
+      </c-box>
     </template>
   </c-stack>
 </template>
 
 <script lang="ts" setup async>
 import DocLink from "~/components/navigation/doc-link.vue"
-import { watchEffect } from "vue"
-import { CStack } from "@chakra-ui/vue-next"
+import { CStack, chakra } from "@chakra-ui/vue-next"
 
 /**
  * Documentation Fetching
  */
-const { data: navigation } = await useAsyncData("navigation", () =>
-  fetchContentNavigation()
-)
+const { data: navigation } = await useAsyncData("navigation", () => fetchContentNavigation())
 </script>
