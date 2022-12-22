@@ -1,7 +1,7 @@
 const baseUrl = "https://github.com/chakra-ui/chakra-ui-vue-next"
 
 const siteUrl = "https://vue.chakra-ui.com"
-const description =
+const siteDescription =
   "Simple, Modular and Accessible UI Components for your Vue Applications."
 const siteName =
   "Chakra UI Vue: Simple, Modular and Accessible UI Components for your Vue Applications."
@@ -21,7 +21,7 @@ const siteConfig = {
   seo: {
     title: "Chakra UI Vue",
     titleTemplate: "%s - Chakra UI Vue",
-    description,
+    siteDescription,
     siteUrl,
     twitter: {
       handle: "@chakraui_vue",
@@ -33,7 +33,7 @@ const siteConfig = {
       locale: "en_US",
       url: siteUrl,
       title: "Chakra UI",
-      description,
+      siteDescription,
       site_name: siteName,
       images: [
         {
@@ -54,3 +54,4 @@ const siteConfig = {
 }
 
 export default siteConfig
+export { baseUrl, siteDescription, siteName, siteUrl }
