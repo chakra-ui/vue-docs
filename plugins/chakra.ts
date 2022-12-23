@@ -1,12 +1,12 @@
-import ChakraUIVuePlugin, { chakra, extendChakra } from '@chakra-ui/vue-next'
-import { domElements } from '@chakra-ui/vue-system'
-import { hydrate } from '@emotion/css'
+import ChakraUIVuePlugin, { chakra, extendChakra } from "@chakra-ui/vue-next";
+import { domElements } from "@chakra-ui/vue-system";
+import { hydrate } from "@emotion/css";
 
-import customTheme from '../theme'
+import customTheme from "../theme";
 
-import * as iconSet from '../utils/icons'
+import * as iconSet from "../utils/icons";
 
-const { extendedIcons: extend, ...library } = iconSet
+const { extendedIcons: extend, ...library } = iconSet;
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(
@@ -14,22 +14,22 @@ export default defineNuxtPlugin((nuxtApp) => {
     extendChakra({
       cssReset: true,
       emotionCacheOptions: {
-        key: 'chakra'
+        key: "chakra",
       },
       extendTheme: customTheme,
       icons: {
         library,
-        extend
-      }
+        extend,
+      },
     })
-  )
+  );
 
   domElements.forEach((tag) => {
-    nuxtApp.vueApp.component(`chakra.${tag}`, chakra(tag))
-  })
+    nuxtApp.vueApp.component(`chakra.${tag}`, chakra(tag));
+  });
 
-  if (typeof window !== 'undefined') {
-    const emotionIds = JSON.parse((window as any).$emotionIds)
-    hydrate(emotionIds)
+  if (typeof window !== "undefined") {
+    const emotionIds = (window as any).$emotionIds;
+    hydrate(emotionIds);
   }
-})
+});
