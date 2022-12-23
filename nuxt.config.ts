@@ -1,58 +1,44 @@
 export default defineNuxtConfig({
-  // nitro: {
-  //   prerender: {
-  //     // routes: ["/docs/*", "/getting-started/*"],
-  //   },
-  //   serveStatic: true,
-  // },
-  // generate: {
-  //   // routes: ["/getting-started/*"],
-  // },
-  routeRules: {
-    '/**': { static: true },
-    '/getting-started/**': { static: true },
-    '/frameworks/**': { static: true }
-  },
   modules: [
-    '@nuxt/content',
+    "@nuxt/content",
     (_options, nuxt) => {
-      nuxt.hook('nitro:config', (config) => {
+      nuxt.hook("nitro:config", (config) => {
         // Prevent inlining emotion (+ the crucial css cache!) in dev mode
         if (nuxt.options.dev) {
           if (config.externals) {
-            config.externals.external ||= []
-            config.externals.external.push('@emotion/server')
+            config.externals.external ||= [];
+            config.externals.external.push("@emotion/server");
           }
         }
-      })
+      });
     },
-    '~/modules/chakra.module.ts'
+    "~/modules/chakra.module.ts",
   ],
   build: {
     // @ts-ignore
-    extend (config: { resolve: { alias: { vue$: string } } }, _ctx: any) {
-      config.resolve.alias.vue$ = 'vue/dist/vue.esm-browser.js'
-    }
+    extend(config: { resolve: { alias: { vue$: string } } }, _ctx: any) {
+      config.resolve.alias.vue$ = "vue/dist/vue.esm-browser.js";
+    },
   },
-  plugins: ['~/plugins/chakra.ts'],
-  css: ['~/styles/fonts.scss', '~/styles/prism.scss'],
+  plugins: ["~/plugins/chakra.ts"],
+  css: ["~/styles/fonts.scss", "~/styles/prism.scss"],
   content: {
     documentDriven: true,
     markdown: {
       toc: { depth: 5, searchDepth: 3 },
       // anchorLinks: true,
-      remarkPlugins: ['remark-prism'],
+      remarkPlugins: ["remark-prism"],
       rehypePlugins: [
-        'rehype-prism-plus',
+        "rehype-prism-plus",
         [
-          'rehype-autolink-headings',
+          "rehype-autolink-headings",
           {
-            behavior: 'append',
-            test: ['h2', 'h3', 'h4'],
-            properties: { className: ['anchor'] }
-          }
-        ]
-      ]
-    }
-  }
-})
+            behavior: "append",
+            test: ["h2", "h3", "h4"],
+            properties: { className: ["anchor"] },
+          },
+        ],
+      ],
+    },
+  },
+});

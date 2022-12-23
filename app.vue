@@ -7,6 +7,6 @@
 </template>
 
 <script>
-import '@fontsource/ibm-plex-mono'
-import '@fontsource/dm-sans'
+import "@fontsource/ibm-plex-mono";
+import "@fontsource/dm-sans";
 </script>
