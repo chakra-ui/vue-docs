@@ -837,6 +837,7 @@ __metadata:
     "@nuxt/vite-builder": ^3.0.0
     "@nuxtjs/color-mode": ^3.2.0
     "@nuxtjs/eslint-config-typescript": ^12.0.0
+    "@types/prismjs": ^1.26.0
     add: ^2.0.6
     eslint: ^8.30.0
     eslint-config-prettier: ^8.5.0
@@ -2054,7 +2055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prismjs@npm:^1.0.0":
+"@types/prismjs@npm:^1.0.0, @types/prismjs@npm:^1.26.0":
   version: 1.26.0
   resolution: "@types/prismjs@npm:1.26.0"
   checksum: cd5e7a6214c1f4213ec512a5fcf6d8fe37a56b813fc57ac95b5ff5ee074742bfdbd2f2730d9fd985205bf4586728e09baa97023f739e5aa1c9735a7c1ecbd11a

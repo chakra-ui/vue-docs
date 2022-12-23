@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import ChakraLogo from "../ChakraLogo.vue"
-import ChakraLogoIcon from "../ChakraLogo.vue"
-import SponsorButton from "../SponsorButton.vue"
-import { VersionSwitcher } from "../VersionSwitcher.vue"
 import {
   chakra,
   useColorMode,
@@ -12,30 +8,24 @@ import {
   CFlex,
   CIcon,
   CIconButton,
-  CLink,
-} from "@chakra-ui/vue-next"
-import { useWindowScroll } from "@vueuse/core"
-import { computed, onMounted, ref } from "vue"
-import siteConfig from "@/config/site-config"
+  CLink
+} from '@chakra-ui/vue-next'
+import { onMounted, ref } from 'vue'
+import ChakraLogoIcon from '../ChakraLogo.vue'
+import SponsorButton from '../SponsorButton.vue'
+import VersionSwitcher from '../VersionSwitcher.vue'
+import siteConfig from '@/config/site-config'
 
 const { toggleColorMode } = useColorMode()
-const text = useColorModeValue("dark", "light")
-const switchIcon = useColorModeValue("moon", "sun")
-
-const isOpen = ref(false)
+const text = useColorModeValue('dark', 'light')
+const switchIcon = useColorModeValue('moon', 'sun')
 
 const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined)
-
-const { y } = useWindowScroll()
 
 const height = ref(0)
 
 onMounted(() => {
   height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0
-})
-
-const headerShadow = computed(() => {
-  return y.value > height.value ? "sm" : undefined
 })
 </script>
 
@@ -81,7 +71,7 @@ const headerShadow = computed(() => {
           color="gray.400"
         >
           <!-- <SearchButton></SearchButton> -->
-          <VersionSwitcher></VersionSwitcher>
+          <VersionSwitcher />
           <CHStack spacing="5" :display="{ base: 'none', md: 'flex' }">
             <CLink
               is-external

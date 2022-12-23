@@ -1,2 +1,1 @@
-declare module "vue-live"
-declare module "prismjs"
+declare module "vue-live";

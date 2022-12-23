@@ -7,8 +7,8 @@ defineProps<{ id: string }>()
     id="skip-nav"
     text-style="display.lg"
     mb="5"
-    maxW="85ch"
-    tabIndex="-1"
+    max-w="85ch"
+    tab-index="-1"
   >
     <slot />
   </chakra.h1>

@@ -22,7 +22,7 @@
       font-size="0.8em"
       align-items="flex-start"
     >
-      <template>
+      <template v-if="links">
         <chakra.li
           v-for="item in links"
           :key="item.id"
@@ -62,8 +62,9 @@
                 textDecoration: 'none',
               }"
               @click="navigate"
-              >{{ item.text }}</chakra.a
             >
+              {{ item.text }}
+            </chakra.a>
           </nuxt-link>
           <template v-if="item.children">
             <chakra.li
@@ -117,12 +118,11 @@
 </template>
 
 <script lang="ts" setup>
-import { useContent } from "#imports"
-import { computed, watchEffect } from "vue"
-import { chakra, CStack } from "@chakra-ui/vue-next"
+import { computed } from 'vue'
+import { chakra, CStack } from '@chakra-ui/vue-next'
+import { useContent } from '#imports'
 
 const content = useContent()
 
 const links = computed(() => content.toc.links)
-const isCurrent = false
 </script>

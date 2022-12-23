@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { CHeading, CLink } from "@chakra-ui/vue-next"
+import { CHeading, CLink } from '@chakra-ui/vue-next'
 
 defineProps<{ id: string }>()
 </script>
 
 <template>
   <CHeading
+    :id="id"
     as="h5"
     data-group=""
     :css="{ scrollMarginBlock: '6.875rem' }"
-    :id="id"
   >
     <span className="content"><slot /></span>
     <CLink
       aria-label="anchor"
       color="green.500"
-      fontWeight="normal"
+      font-weight="normal"
       outline="none"
       :_focus="{ opacity: 1, boxShadow: 'outline' }"
       opacity="0"

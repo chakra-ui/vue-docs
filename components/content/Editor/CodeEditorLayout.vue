@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { computed } from "vue"
-import { CBox, useClipboard } from "@chakra-ui/vue-next"
-import { CopyButton, CodeContainer, EditableNotice } from "./CodeEditorParts"
+import { computed } from 'vue'
+import { CBox, useClipboard } from '@chakra-ui/vue-next'
+import { CopyButton, CodeContainer, EditableNotice } from './CodeEditorParts'
 
 const props = defineProps<{
   code: string
@@ -29,15 +29,17 @@ if (process.client) {
     :border-width="1"
     border-radius="12px"
   >
-    <slot name="preview"></slot>
+    <slot name="preview" />
   </CBox>
   <CBox pos="relative">
     <CodeContainer>
       <CBox font-size="14" overflow-x="auto" font-family="IBM Plex Mono">
-        <slot name="editor"></slot>
+        <slot name="editor" />
       </CBox>
-      <CopyButton top="4" @click="copy()">copy</CopyButton>
-      <EditableNotice></EditableNotice>
+      <CopyButton top="4" @click="copy()">
+        copy
+      </CopyButton>
+      <EditableNotice />
     </CodeContainer>
   </CBox>
 </template>

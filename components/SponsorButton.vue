@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CBox, CIcon } from "@chakra-ui/vue-next"
-import siteConfig from "@/config/site-config"
+import { CBox, CIcon } from '@chakra-ui/vue-next'
+import siteConfig from '@/config/site-config'
 </script>
 
 <template>

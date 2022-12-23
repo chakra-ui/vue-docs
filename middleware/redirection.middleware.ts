@@ -1,4 +1,7 @@
-export default defineNuxtRouteMiddleware((to, from) => {
-  if (to.path === "/") navigateTo("/dashboard");
-  else navigateTo(to.path);
-});
+export default defineNuxtRouteMiddleware((to, _from) => {
+  if (to.path === '/') {
+    navigateTo('/getting-started')
+  } else {
+    navigateTo(to.path)
+  }
+})
