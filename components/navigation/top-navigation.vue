@@ -8,25 +8,25 @@ import {
   CFlex,
   CIcon,
   CIconButton,
-  CLink,
-} from "@chakra-ui/vue-next";
-import { onMounted, ref } from "vue";
-import ChakraLogoIcon from "../ChakraLogo.vue";
-import SponsorButton from "../SponsorButton.vue";
-import VersionSwitcher from "../VersionSwitcher";
-import siteConfig from "@/config/site-config";
+  CLink
+} from '@chakra-ui/vue-next'
+import { onMounted, ref } from 'vue'
+import ChakraLogoIcon from '../ChakraLogo.vue'
+import SponsorButton from '../SponsorButton.vue'
+import VersionSwitcher from '../VersionSwitcher'
+import siteConfig from '@/config/site-config'
 
-const { toggleColorMode } = useColorMode();
-const text = useColorModeValue("dark", "light");
-const switchIcon = useColorModeValue("moon", "sun");
+const { toggleColorMode } = useColorMode()
+const text = useColorModeValue('dark', 'light')
+const switchIcon = useColorModeValue('moon', 'sun')
 
-const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined);
+const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined)
 
-const height = ref(0);
+const height = ref(0)
 
 onMounted(() => {
-  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0;
-});
+  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0
+})
 </script>
 
 <template>

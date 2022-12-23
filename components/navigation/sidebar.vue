@@ -30,13 +30,13 @@
 </template>
 
 <script lang="ts" setup async>
-import { CStack, CBox } from "@chakra-ui/vue-next";
-import DocLink from "~/components/navigation/doc-link.vue";
+import { CStack } from '@chakra-ui/vue-next'
+import DocLink from '~/components/navigation/doc-link.vue'
 
 /**
  * Documentation Fetching
  */
-const { data: navigation } = await useAsyncData("navigation", () =>
+const { data: navigation } = await useAsyncData('navigation', () =>
   fetchContentNavigation()
-);
+)
 </script>
