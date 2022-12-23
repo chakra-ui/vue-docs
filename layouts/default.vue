@@ -3,9 +3,7 @@ import { chakra, CHStack, CIcon } from "@chakra-ui/vue-next"
 import { useColorModeValue } from "@chakra-ui/c-color-mode"
 import TopNavigation from "~/components/navigation/top-navigation.vue"
 import Sidebar from "~/components/navigation/sidebar.vue"
-import { useContent } from "#imports"
 import { useRoute } from "#app"
-import { watchEffect } from "vue"
 import TableOfContents from "~/components/navigation/table-of-contents.vue"
 
 /**

@@ -1,15 +1,24 @@
 export default defineNuxtConfig({
-  nitro: {
-    prerender: {
-      routes: ["/docs/*", "/getting-started/*"],
-    },
+  // nitro: {
+  //   prerender: {
+  //     // routes: ["/docs/*", "/getting-started/*"],
+  //   },
+  //   serveStatic: true,
+  // },
+  // generate: {
+  //   // routes: ["/getting-started/*"],
+  // },
+  routeRules: {
+    "/**": { static: true },
+    "/getting-started/**": { static: true },
+    "/frameworks/**": { static: true },
   },
   modules: [
     "@nuxt/content",
     (options, nuxt) => {
       nuxt.hook("nitro:config", (config) => {
+        // Prevent inlining emotion (+ the crucial css cache!) in dev mode
         if (nuxt.options.dev) {
-          // Prevent inlining emotion (+ the crucial css cache!) in dev mode
           if (config.externals) {
             config.externals.external ||= [];
             config.externals.external.push("@emotion/server");
@@ -17,6 +26,7 @@ export default defineNuxtConfig({
         }
       });
     },
+    "~/modules/chakra.module.ts",
   ],
   build: {
     // @ts-ignore

@@ -1,6 +1,7 @@
-import { defineNuxtModule } from "@nuxt/kit"
-import { extractCritical } from "@emotion/server"
-import { hydrate } from "@emotion/css"
+import { defineNuxtModule } from "@nuxt/kit";
+import { extractCritical } from "@emotion/server";
+import { hydrate } from "@emotion/css";
+
 export default defineNuxtModule({
   meta: {
     // Usually  npm package name of your module
@@ -15,5 +16,14 @@ export default defineNuxtModule({
   },
   // Default configuration options for your module
 
-  async setup(moduleOptions, nuxt) {},
-})
+  async setup(moduleOptions, nuxt) {
+    console.log("chakra::module", nuxt);
+    // nuxt.on()nuxt
+    nuxt.hook("builder:generateApp", (app) => {
+      console.log("");
+      console.dir(app, {
+        depth: 4,
+      });
+    });
+  },
+});

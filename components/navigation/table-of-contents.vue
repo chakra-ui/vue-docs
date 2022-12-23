@@ -119,10 +119,10 @@
 <script lang="ts" setup>
 import { useContent } from "#imports"
 import { computed, watchEffect } from "vue"
-import { CStack } from "@chakra-ui/vue-next"
+import { chakra, CStack } from "@chakra-ui/vue-next"
 
 const content = useContent()
 
-const links = computed(() => content.toc.value.links)
+const links = computed(() => content.toc.links)
 const isCurrent = false
 </script>

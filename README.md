@@ -1,4 +1,4 @@
-# Content v2 Minimal Starter
+# Chakra UI Vue Next Documentation Site
 
 Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
