@@ -1,9 +1,4 @@
 export default defineNuxtConfig({
-  // routeRules: {
-  //   '/**': { static: true },
-  //   '/getting-started/**': { static: true },
-  //   '/frameworks/**': { static: true }
-  // },
   modules: [
     "@nuxt/content",
     (_options, nuxt) => {
