@@ -11,7 +11,7 @@
     width="19.5rem"
   >
     <chakra.p font-weight="bold">
-      {{ content.page?.title || "On this page" }}
+      {{ content.page?.title || 'On this page' }}
     </chakra.p>
     <c-stack
       as="ul"
@@ -28,7 +28,7 @@
           :key="item.id"
           :_selected="{
             textDecoration: 'underline',
-            textUnderlineOffset: '2px',
+            textUnderlineOffset: '2px'
           }"
           list-style-type="none"
           :sx="{
@@ -44,23 +44,27 @@
               left: 0,
               backgroundColor: 'currentColor',
               transformOrigin: 'bottom right',
-              transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)',
+              transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)'
             },
             '&:hover::after': {
               transform: 'scaleX(1)',
-              transformOrigin: 'bottom left',
-            },
+              transformOrigin: 'bottom left'
+            }
           }"
           :_hover="{
-            textDecoration: 'none',
+            textDecoration: 'none'
           }"
         >
-          <nuxt-link :to="`#${item.id}`" custom v-slot="{ href, navigate }">
+          <nuxt-link
+            :to="`#${item.id}`"
+            custom
+            v-slot="{ href, navigate }"
+          >
             <chakra.a
               :href="href"
               @click="navigate"
               :_hover="{
-                textDecoration: 'none',
+                textDecoration: 'none'
               }"
               >{{ item.text }}</chakra.a
             >
@@ -72,7 +76,7 @@
               role="link"
               :_selected="{
                 textDecoration: 'underline',
-                textUnderlineOffset: '2px',
+                textUnderlineOffset: '2px'
               }"
               list-style-type="none"
               :sx="{
@@ -88,21 +92,25 @@
                   left: 0,
                   backgroundColor: 'currentColor',
                   transformOrigin: 'bottom right',
-                  transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)',
+                  transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)'
                 },
                 '&:hover::after': {
                   transform: 'scaleX(1)',
-                  transformOrigin: 'bottom left',
-                },
+                  transformOrigin: 'bottom left'
+                }
               }"
               pl="4"
             >
-              <nuxt-link :to="`#${item.id}`" custom v-slot="{ href, navigate }">
+              <nuxt-link
+                :to="`#${item.id}`"
+                custom
+                v-slot="{ href, navigate }"
+              >
                 <chakra.a
                   :href="href"
                   @click="navigate"
                   :_hover="{
-                    textDecoration: 'none',
+                    textDecoration: 'none'
                   }"
                 >
                   <chakra.span>—</chakra.span> {{ nestedItem.text }}
@@ -117,9 +125,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useContent } from "#imports"
-import { computed, watchEffect } from "vue"
-import { chakra, CStack } from "@chakra-ui/vue-next"
+import { useContent } from '#imports'
+import { computed, watchEffect } from 'vue'
+import { chakra, CStack } from '@chakra-ui/vue-next'
 
 const content = useContent()
 

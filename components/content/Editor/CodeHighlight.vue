@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { computed } from "vue"
+import { computed } from 'vue'
 
-import { PrismEditor } from "vue-prism-editor"
-import "vue-prism-editor/dist/prismeditor.min.css"
+import { PrismEditor } from 'vue-prism-editor'
+import 'vue-prism-editor/dist/prismeditor.min.css'
 
-import Prism from "prismjs"
-import "prismjs/components/prism-clike"
-import "prismjs/components/prism-javascript"
-import "prismjs/components/prism-bash"
-import "prismjs/components/prism-jsx"
+import Prism from 'prismjs'
+import 'prismjs/components/prism-clike'
+import 'prismjs/components/prism-javascript'
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-jsx'
 
 const { highlight, languages } = Prism
 const props = defineProps<{
@@ -17,8 +17,8 @@ const props = defineProps<{
 }>()
 
 const lang = computed(() => {
-  if (props.language === "vue") {
-    return "html"
+  if (props.language === 'vue') {
+    return 'html'
   }
   return props.language
 })

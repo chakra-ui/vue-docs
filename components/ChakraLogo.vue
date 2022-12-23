@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { chakra, useColorModeValue } from "@chakra-ui/vue-next"
+import { chakra, useColorModeValue } from '@chakra-ui/vue-next'
 
-const fill = useColorModeValue("#2D3748", "#fff")
+const fill = useColorModeValue('#2D3748', '#fff')
 // todo: AppHeader causes re-rendering of this logo, why?
 // console.log({ fill })
 </script>

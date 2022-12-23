@@ -1,12 +1,12 @@
 <script lang="tsx">
-import { defineComponent } from "vue"
-import { chakra, useColorModeValue, CBox } from "@chakra-ui/vue-next"
-import pkgJSON from "../package.json"
+import { defineComponent } from 'vue'
+import { chakra, useColorModeValue, CBox } from '@chakra-ui/vue-next'
+import pkgJSON from '../package.json'
 export default {}
 
 const versions = [
-  { label: `v${pkgJSON.version}`, url: "https://next.vue.chakra-ui.com/" },
-  { label: "v0.8.x", url: "https://vue.chakra-ui.com" },
+  { label: `v${pkgJSON.version}`, url: 'https://next.vue.chakra-ui.com/' },
+  { label: 'v0.8.x', url: 'https://vue.chakra-ui.com' }
 ]
 
 const v1Url = versions[0].url
@@ -19,12 +19,12 @@ export const VersionSwitcher = defineComponent({
           margin-end="1rem"
           variant="unstyled"
           fontWeight="semibold"
-          color={useColorModeValue("gray.600", "whiteAlpha.600").value}
+          color={useColorModeValue('gray.600', 'whiteAlpha.600').value}
           bg="transparent"
           value={v1Url}
           fontSize="sm"
           flexShrink="0"
-          display={{ base: "none", md: "flex" }}
+          display={{ base: 'none', md: 'flex' }}
           aria-label="Select the Chakra UI Docs version. You're currently viewing the version 1.0 docs"
           onChange={(e: any) => {
             document.location = e.target.value
@@ -38,6 +38,6 @@ export const VersionSwitcher = defineComponent({
         </chakra.select>
       )
     }
-  },
+  }
 })
 </script>

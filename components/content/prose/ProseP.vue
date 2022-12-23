@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CText } from "@chakra-ui/vue-next"
+import { CText } from '@chakra-ui/vue-next'
 </script>
 
 <template>

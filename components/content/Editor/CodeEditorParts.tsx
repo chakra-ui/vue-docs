@@ -1,8 +1,8 @@
-import { defineComponent, renderSlot, h } from "vue"
-import { BoxProps, chakra, CButton } from "@chakra-ui/vue-next"
+import { defineComponent, renderSlot, h } from 'vue'
+import { BoxProps, chakra, CButton } from '@chakra-ui/vue-next'
 
 export const CodeContainer = defineComponent({
-  name: "CodeContainer",
+  name: 'CodeContainer',
   setup(props, { attrs, slots }) {
     return () => {
       return (
@@ -19,11 +19,11 @@ export const CodeContainer = defineComponent({
         </chakra.div>
       )
     }
-  },
+  }
 })
 
 export const CopyButton = defineComponent({
-  name: "CopyButton",
+  name: 'CopyButton',
   setup(props: any, { attrs, slots }) {
     return () => {
       return (
@@ -39,15 +39,15 @@ export const CopyButton = defineComponent({
           right="1.25em"
           {...attrs}
         >
-          {renderSlot(slots, "default")}
+          {renderSlot(slots, 'default')}
         </CButton>
       )
     }
-  },
+  }
 })
 
 export const EditableNotice = defineComponent({
-  name: "EditableNotice",
+  name: 'EditableNotice',
   setup(_, { attrs }) {
     return () => {
       return (
@@ -73,5 +73,5 @@ export const EditableNotice = defineComponent({
         </chakra.div>
       )
     }
-  },
+  }
 })

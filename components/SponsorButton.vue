@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CBox, CIcon } from "@chakra-ui/vue-next"
-import siteConfig from "@/config/site-config"
+import { CBox, CIcon } from '@chakra-ui/vue-next'
+import siteConfig from '@/config/site-config'
 </script>
 
 <template>
@@ -25,13 +25,13 @@ import siteConfig from "@/config/site-config"
     transition="all 0.3s"
     :_hover="{
       bg: 'gray.100',
-      borderColor: 'gray.300',
+      borderColor: 'gray.300'
     }"
     :_active="{
-      borderColor: 'gray.200',
+      borderColor: 'gray.200'
     }"
     :_focus="{
-      boxShadow: 'outline',
+      boxShadow: 'outline'
     }"
     v-bind="$attrs"
   >

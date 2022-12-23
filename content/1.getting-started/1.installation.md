@@ -18,11 +18,11 @@ copia. Victor illa nova natura populi, est per gurgite contingit tuos conquerar
 fratre, solet cavas Avernales. Sic nec vinxerat cum: recumbis aethera.
 
 ```ts
-import { Chakra } from "@chakra-ui/vue"
+import { Chakra } from '@chakra-ui/vue'
 export async function run() {
   // 1. Initialize Chakra UI SDK
   const chakra = new Chakra({
-    mode: "static",
+    mode: 'static'
   })
   await chakra()
 }
@@ -37,15 +37,15 @@ patriae somnus est Medea meo posita.
 
 Adversum et Mnemosynen pavore. Dies movit patiente sed firmo si colebat teste
 causamque simul! Suis per Cycnum iamque urbem, fine esse felix percussit,
-frustra ferebat Saturnia ratione fixa Iunonigenaeque tinguat. *Et vero*
+frustra ferebat Saturnia ratione fixa Iunonigenaeque tinguat. _Et vero_
 reminiscitur prior convulsaque de petisti nempe manibus capillis tuae, non una.
 
 - Wartus contempsere non
 - Wirgineum cremarat
 
-> Summo animus, *Achilles fremit* partus contempsere non Hebrum, armis peto
+> Summo animus, _Achilles fremit_ partus contempsere non Hebrum, armis peto
 > reddita, omnia pudet fors **ira superasque**. Heros iam virgineum cremarat
 > miles. Caelo cervice virilem, nati te cubat, quem haberet isse!
-Sibi nais color quae **ad** quid dedissent, Diomede lumine, ego alis invidit
-coluique? Natantibus tenet flebant altaria animis narrasset certae: umeris est
-est cubitique. Ignemque mecum quoque furens secura. Poplite quattuor: huc turis
+> Sibi nais color quae **ad** quid dedissent, Diomede lumine, ego alis invidit
+> coluique? Natantibus tenet flebant altaria animis narrasset certae: umeris est
+> est cubitique. Ignemque mecum quoque furens secura. Poplite quattuor: huc turis

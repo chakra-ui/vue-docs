@@ -1,17 +1,20 @@
 <script setup lang="ts">
-import { CBox } from "@chakra-ui/vue-next"
-import { useClipboard } from "@chakra-ui/vue-composables"
-import { CodeContainer, CopyButton } from "../content/Editor/CodeEditorParts"
-import CodeHighlight from "../content/Editor/CodeHighlight.vue"
+import { CBox } from '@chakra-ui/vue-next'
+import { useClipboard } from '@chakra-ui/vue-composables'
+import {
+  CodeContainer,
+  CopyButton
+} from '../content/Editor/CodeEditorParts'
+import CodeHighlight from '../content/Editor/CodeHighlight.vue'
 
 const props = defineProps<{
   code: string
   language: string
 }>()
 
-const codeLanguage = computed(() => props.language.split(":")[0])
+const codeLanguage = computed(() => props.language.split(':')[0])
 const codeLive = computed(() =>
-  props.language.split(":")[1] === "live" ? true : false
+  props.language.split(':')[1] === 'live' ? true : false
 )
 const source = computed(() => props.code as string)
 let copy = () => {}

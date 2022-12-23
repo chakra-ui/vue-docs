@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import ChakraLogo from "./ChakraLogo.vue"
-import ChakraLogoIcon from "./ChakraLogo.vue"
-import SponsorButton from "./SponsorButton.vue"
+import ChakraLogo from './ChakraLogo.vue'
+import ChakraLogoIcon from './ChakraLogo.vue'
+import SponsorButton from './SponsorButton.vue'
 // import { SearchButton } from "./AlgoliaSearch.vue"
 // import { MobileNavButton } from "./MobileNav.vue"
-import { VersionSwitcher } from "./VersionSwitcher.vue"
+import { VersionSwitcher } from './VersionSwitcher.vue'
 import {
   chakra,
   useColorMode,
@@ -14,16 +14,16 @@ import {
   CFlex,
   CIcon,
   CIconButton,
-  CLink,
-} from "@chakra-ui/vue-next"
-import { useWindowScroll } from "@vueuse/core"
-import { computed, onMounted, ref } from "vue"
-import siteConfig from "@/config/site-config"
+  CLink
+} from '@chakra-ui/vue-next'
+import { useWindowScroll } from '@vueuse/core'
+import { computed, onMounted, ref } from 'vue'
+import siteConfig from '@/config/site-config'
 
 const { toggleColorMode } = useColorMode()
-const text = useColorModeValue("dark", "light")
-const switchIcon = useColorModeValue("moon", "sun")
-const bg = useColorModeValue("white", "gray.800")
+const text = useColorModeValue('dark', 'light')
+const switchIcon = useColorModeValue('moon', 'sun')
+const bg = useColorModeValue('white', 'gray.800')
 
 const isOpen = ref(false)
 
@@ -38,7 +38,7 @@ onMounted(() => {
 })
 
 const headerShadow = computed(() => {
-  return y.value > height.value ? "sm" : undefined
+  return y.value > height.value ? 'sm' : undefined
 })
 </script>
 
@@ -60,7 +60,13 @@ const headerShadow = computed(() => {
   >
     <chakra.nav height="4.5rem" mx="auto" maxW="8xl">
       <!-- content -->
-      <CFlex w="100%" h="100%" px="6" align="center" justify="space-between">
+      <CFlex
+        w="100%"
+        h="100%"
+        px="6"
+        align="center"
+        justify="space-between"
+      >
         <CFlex align="center">
           <router-link to="/">
             <chakra.a

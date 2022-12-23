@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { computed } from "vue"
-import { CBox, useClipboard } from "@chakra-ui/vue-next"
-import { CopyButton, CodeContainer, EditableNotice } from "./CodeEditorParts"
+import { computed } from 'vue'
+import { CBox, useClipboard } from '@chakra-ui/vue-next'
+import {
+  CopyButton,
+  CodeContainer,
+  EditableNotice
+} from './CodeEditorParts'
 
 const props = defineProps<{
   code: string
