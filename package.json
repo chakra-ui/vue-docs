@@ -12,12 +12,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore dist --fix ./",
+    "format": "prettier .  --write"
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
     "add": "^2.0.6",
-    "nuxt": "^3.0.0"
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "nuxt": "^3.0.0",
+    "prettier": "^2.8.1"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
@@ -40,5 +46,6 @@
     "vue": "^3.2.37",
     "vue-live": "^2.1.0",
     "vue-prism-editor": "^2.0.0-alpha.2"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }

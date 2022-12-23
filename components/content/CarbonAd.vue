@@ -11,7 +11,7 @@ const bg = useColorModeValue("gray.50", "rgba(36, 70, 93, 0.32)")
     href="https://pro.chakra-ui.com/components?utm_source=chakra-ui.com&utm_medium=docs-ad"
     rel="noopener sponsored"
     target="_blank"
-    maxW="xl"
+    max-w="xl"
     my="8"
     rounded="md"
   >
@@ -19,11 +19,11 @@ const bg = useColorModeValue("gray.50", "rgba(36, 70, 93, 0.32)")
       <chakra.img />
     </CBox>
     <CFlex direction="column">
-      <CBox flex="1" fontSize="sm">
+      <CBox flex="1" font-size="sm">
         <b>Chakra UI Pro:</b> Start your application or marketing site with a
         growing collection of beautiful and responsive UI components.
       </CBox>
-      <CBox fontWeight="medium" fontSize="xs" opacity="{0.7}">
+      <CBox font-weight="medium" font-size="xs" opacity="{0.7}">
         Ads via Chakra UI
       </CBox>
     </CFlex>

@@ -1,5 +1,6 @@
 import ChakraUIVuePlugin, { chakra, extendChakra } from "@chakra-ui/vue-next";
 import { domElements } from "@chakra-ui/vue-system";
+import { hydrate } from "@emotion/css";
 
 import customTheme from "../theme";
 
@@ -26,4 +27,9 @@ export default defineNuxtPlugin((nuxtApp) => {
   domElements.forEach((tag) => {
     nuxtApp.vueApp.component(`chakra.${tag}`, chakra(tag));
   });
+
+  if (typeof window !== "undefined") {
+    const emotionIds = JSON.parse((window as any).$emotionIds);
+    hydrate(emotionIds);
+  }
 });

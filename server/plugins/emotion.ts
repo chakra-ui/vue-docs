@@ -1,5 +1,4 @@
 import { extractCritical } from "@emotion/server";
-import { hydrate } from "@emotion/css";
 
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook("render:html", (html) => {

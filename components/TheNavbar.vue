@@ -49,7 +49,7 @@ const headerShadow = computed(() => {
     transition="box-shadow 0.2s, background-color 0.2s"
     pos="sticky"
     top="0"
-    zIndex="3"
+    z-index="3"
     left="0"
     right="0"
     width="full"
@@ -58,7 +58,7 @@ const headerShadow = computed(() => {
     border-top="6px solid"
     border-color="emerald.500"
   >
-    <chakra.nav height="4.5rem" mx="auto" maxW="8xl">
+    <chakra.nav height="4.5rem" mx="auto" max-w="8xl">
       <!-- content -->
       <CFlex w="100%" h="100%" px="6" align="center" justify="space-between">
         <CFlex align="center">
@@ -79,7 +79,7 @@ const headerShadow = computed(() => {
         <CFlex
           justify="flex-end"
           w="100%"
-          maxW="1100px"
+          max-w="1100px"
           align="center"
           color="gray.400"
         >
@@ -87,7 +87,7 @@ const headerShadow = computed(() => {
           <VersionSwitcher></VersionSwitcher>
           <CHStack spacing="5" :display="{ base: 'none', md: 'flex' }">
             <CLink
-              isExternal
+              is-external
               aria-label="Go to Chakra UI GitHub page"
               :href="siteConfig.repo.url"
             >
@@ -101,7 +101,7 @@ const headerShadow = computed(() => {
               />
             </CLink>
             <CLink
-              isExternal
+              is-external
               aria-label="Go to Chakra UI Discord page"
               :href="siteConfig.discord"
             >
@@ -115,7 +115,7 @@ const headerShadow = computed(() => {
               />
             </CLink>
             <CLink
-              isExternal
+              is-external
               aria-label="Go to Chakra UI YouTube channel"
               :href="siteConfig.youtube"
             >
@@ -131,14 +131,14 @@ const headerShadow = computed(() => {
           </CHStack>
           <CIconButton
             size="md"
-            fontSize="lg"
+            font-size="lg"
             :aria-label="`Switch to ${text} mode`"
             :title="`Switch to ${text} mode`"
             variant="ghost"
             color="current"
             :ml="{ base: '0', md: '3' }"
-            @click="toggleColorMode"
             :icon="switchIcon"
+            @click="toggleColorMode"
           />
           <SponsorButton ml="5" />
           <!-- <mobile-nav-button @click="isOpen = true"></mobile-nav-button> -->

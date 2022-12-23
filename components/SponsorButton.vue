@@ -6,20 +6,20 @@ import siteConfig from "@/config/site-config"
 <template>
   <CBox
     :display="{ base: 'none', lg: 'flex' }"
-    alignItems="center"
+    align-items="center"
     as="a"
     aria-label="Sponsor Chakra UI on Open Collective"
     :href="siteConfig.openCollective.url"
     target="_blank"
     rel="noopener noreferrer"
     bg="transparent"
-    borderWidth="1px"
-    borderColor="currentColor"
-    borderStyle="solid"
+    border-width="1px"
+    border-color="currentColor"
+    border-style="solid"
     px="1em"
-    minH="36px"
-    borderRadius="md"
-    fontSize="sm"
+    min-h="36px"
+    border-radius="md"
+    font-size="sm"
     color="currentColor"
     outline="0"
     transition="all 0.3s"
@@ -43,7 +43,7 @@ import siteConfig from "@/config/site-config"
       color="red.500"
       mr="2"
     />
-    <CBox as="strong" lineHeight="inherit" fontWeight="semibold">
+    <CBox as="strong" line-height="inherit" font-weight="semibold">
       Sponsor
     </CBox>
   </CBox>

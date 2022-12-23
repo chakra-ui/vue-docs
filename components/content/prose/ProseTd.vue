@@ -5,10 +5,10 @@ import { chakra } from "@chakra-ui/vue-next"
 <template>
   <chakra.td
     p="2"
-    borderTopWidth="1px"
-    borderColor="inherit"
-    fontSize="sm"
-    whiteSpace="normal"
+    border-top-width="1px"
+    border-color="inherit"
+    font-size="sm"
+    white-space="normal"
   >
     <slot />
   </chakra.td>

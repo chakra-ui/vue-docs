@@ -2,7 +2,7 @@
   <chakra.div
     py="10"
     px="8"
-    overflowY="auto"
+    overflow-y="auto"
     position="fixed"
     top="3.8rem"
     bottom="0"
@@ -55,13 +55,13 @@
             textDecoration: 'none',
           }"
         >
-          <nuxt-link :to="`#${item.id}`" custom v-slot="{ href, navigate }">
+          <nuxt-link v-slot="{ href, navigate }" :to="`#${item.id}`" custom>
             <chakra.a
               :href="href"
-              @click="navigate"
               :_hover="{
                 textDecoration: 'none',
               }"
+              @click="navigate"
               >{{ item.text }}</chakra.a
             >
           </nuxt-link>
@@ -97,13 +97,13 @@
               }"
               pl="4"
             >
-              <nuxt-link :to="`#${item.id}`" custom v-slot="{ href, navigate }">
+              <nuxt-link v-slot="{ href, navigate }" :to="`#${item.id}`" custom>
                 <chakra.a
                   :href="href"
-                  @click="navigate"
                   :_hover="{
                     textDecoration: 'none',
                   }"
+                  @click="navigate"
                 >
                   <chakra.span>—</chakra.span> {{ nestedItem.text }}
                 </chakra.a>
