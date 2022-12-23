@@ -13,17 +13,20 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore dist --fix ./",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "format": "prettier .  --write"
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "add": "^2.0.6",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",
     "nuxt": "^3.0.0",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
