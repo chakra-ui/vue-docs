@@ -8,35 +8,37 @@ import {
   CFlex,
   CIcon,
   CIconButton,
-  CLink
-} from '@chakra-ui/vue-next'
-import { useWindowScroll } from '@vueuse/core'
-import { computed, onMounted, ref } from 'vue'
-import ChakraLogoIcon from './ChakraLogo.vue'
-import SponsorButton from './SponsorButton.vue'
+  CLink,
+} from "@chakra-ui/vue-next";
+import { useWindowScroll } from "@vueuse/core";
+import { computed, onMounted, ref } from "vue";
+import ChakraLogoIcon from "./ChakraLogo.vue";
+import SponsorButton from "./SponsorButton.vue";
 // import { SearchButton } from "./AlgoliaSearch.vue"
 // import { MobileNavButton } from "./MobileNav.vue"
-import VersionSwitcher from './VersionSwitcher'
-import siteConfig from '@/config/site-config'
+import VersionSwitcher from "./VersionSwitcher";
+import siteConfig from "@/config/site-config";
 
-const { toggleColorMode } = useColorMode()
-const text = useColorModeValue('dark', 'light')
-const switchIcon = useColorModeValue('moon', 'sun')
-const bg = useColorModeValue('white', 'gray.800')
+const NuxtLink = resolveComponent("nuxt-link");
 
-const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined)
+const { toggleColorMode } = useColorMode();
+const text = useColorModeValue("dark", "light");
+const switchIcon = useColorModeValue("moon", "sun");
+const bg = useColorModeValue("white", "gray.800");
 
-const { y } = useWindowScroll()
+const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined);
 
-const height = ref(0)
+const { y } = useWindowScroll();
+
+const height = ref(0);
 
 onMounted(() => {
-  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0
-})
+  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0;
+});
 
 const headerShadow = computed(() => {
-  return y.value > height.value ? 'sm' : undefined
-})
+  return y.value > height.value ? "sm" : undefined;
+});
 </script>
 
 <template>
@@ -59,17 +61,16 @@ const headerShadow = computed(() => {
       <!-- content -->
       <CFlex w="100%" h="100%" px="6" align="center" justify="space-between">
         <CFlex align="center">
-          <router-link to="/">
-            <chakra.a
-              display="block"
-              aria-label="Chakra UI Vue, Back to homepage"
-            >
-              <ChakraLogo :display="{ base: 'none', md: 'block' }" />
-              <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
-                <ChakraLogoIcon />
-              </CBox>
-            </chakra.a>
-          </router-link>
+          <CLink
+            :as="NuxtLink"
+            to="/"
+            aria-label="Chakra UI Vue, Back to homepage"
+          >
+            <ChakraLogo :display="{ base: 'none', md: 'block' }" />
+            <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
+              <ChakraLogoIcon />
+            </CBox>
+          </CLink>
         </CFlex>
 
         <!-- nav -->

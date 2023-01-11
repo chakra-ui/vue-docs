@@ -16,8 +16,9 @@ import { chakra, CBox, CFlex, CIcon, CSimpleGrid } from "@chakra-ui/vue-next";
       bg="white"
       py="10"
       :px="{ base: '3', sm: '10' }"
+      list-style-type="none"
     >
-      <CBox my="3" :mx="{ base: '0', sm: '3' }">
+      <chakra.li my="3" :mx="{ base: '0', sm: '3' }">
         <CFlex align-items="center" mb="5">
           <CFlex
             justify-content="center"
@@ -34,8 +35,8 @@ import { chakra, CBox, CFlex, CIcon, CSimpleGrid } from "@chakra-ui/vue-next";
         </CFlex>
         Chakra UI strictly follows WAI-ARIA standards. All components come with
         proper attributes and keyboard interactions out of the box.
-      </CBox>
-      <CBox my="3" :mx="{ base: '0', sm: '3' }">
+      </chakra.li>
+      <chakra.li my="3" :mx="{ base: '0', sm: '3' }">
         <CFlex align-items="center" mb="5">
           <CFlex
             justify-content="center"
@@ -52,8 +53,8 @@ import { chakra, CBox, CFlex, CIcon, CSimpleGrid } from "@chakra-ui/vue-next";
         </CFlex>
         Quickly and easily reference values from your theme throughout your
         entire application, on any component.
-      </CBox>
-      <CBox m="3" :mx="{ base: '0', sm: '3' }">
+      </chakra.li>
+      <chakra.li m="3" :mx="{ base: '0', sm: '3' }">
         <CFlex align-items="center" mb="5">
           <CFlex
             justify-content="center"
@@ -70,7 +71,7 @@ import { chakra, CBox, CFlex, CIcon, CSimpleGrid } from "@chakra-ui/vue-next";
         </CFlex>
         Components were built with composition in mind. You can leverage any
         component to create new things.
-      </CBox>
+      </chakra.li>
     </CSimpleGrid>
   </CFlex>
 </template>
