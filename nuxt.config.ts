@@ -1,4 +1,14 @@
+import { siteDescription, siteLang, siteName } from "./config/site-config";
+
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: siteName,
+      htmlAttrs: {
+        lang: siteLang,
+      },
+    },
+  },
   modules: [
     "@nuxt/content",
     (_options, nuxt) => {

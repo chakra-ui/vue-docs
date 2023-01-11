@@ -5,8 +5,20 @@ import Footer from "../components/home/Footer.vue";
 import StartHero from "../components/home/StartHero.vue";
 import PilersHero from "../components/home/PilersHero.vue";
 
+import { siteDescription, siteName } from "~/config/site-config";
+
 definePageMeta({
   layout: "home",
+});
+
+useHead({
+  title: siteName,
+  meta: [
+    {
+      name: `description`,
+      content: siteDescription,
+    },
+  ],
 });
 </script>
 
