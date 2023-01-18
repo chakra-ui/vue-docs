@@ -59,5 +59,17 @@ export const extendedIcons = {
   chevronRight: {
     path: '<path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>',
     viewBox: '0 0 24 24'
+  },
+  accessibilityAlt: {
+    path: '<path fill="currentColor" d="M23 14v-2H9v2h5v2.734l-3.868 6.77l1.736.992L15.58 18h.84l3.712 6.496l1.736-.992L18 16.734V14h5z"/><circle cx="16" cy="9" r="2" fill="currentColor"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4Z"/>',
+    viewBox: '0 0 32 32'
+  },
+  cube: {
+    path: '<path fill="currentColor" d="m28.504 8.136l-12-7a1 1 0 0 0-1.008 0l-12 7A1 1 0 0 0 3 9v14a1 1 0 0 0 .496.864l12 7a1 1 0 0 0 1.008 0l12-7A1 1 0 0 0 29 23V9a1 1 0 0 0-.496-.864ZM16 3.158L26.016 9L16 14.842L5.984 9ZM5 10.74l10 5.833V28.26L5 22.426Zm12 17.52V16.574l10-5.833v11.685Z"/>',
+    viewBox: '0 0 32 32'
+  },
+  colorPalette: {
+    path: '<circle cx="10" cy="12" r="2" fill="currentColor"/><circle cx="16" cy="9" r="2" fill="currentColor"/><circle cx="22" cy="12" r="2" fill="currentColor"/><circle cx="23" cy="18" r="2" fill="currentColor"/><circle cx="19" cy="23" r="2" fill="currentColor"/><path fill="currentColor" d="M16.54 2A14 14 0 0 0 2 16a4.82 4.82 0 0 0 6.09 4.65l1.12-.31a3 3 0 0 1 3.79 2.9V27a3 3 0 0 0 3 3a14 14 0 0 0 14-14.54A14.05 14.05 0 0 0 16.54 2Zm8.11 22.31A11.93 11.93 0 0 1 16 28a1 1 0 0 1-1-1v-3.76a5 5 0 0 0-5-5a5.07 5.07 0 0 0-1.33.18l-1.12.31A2.82 2.82 0 0 1 4 16A12 12 0 0 1 16.47 4A12.18 12.18 0 0 1 28 15.53a11.89 11.89 0 0 1-3.35 8.79Z"/>',
+    viewBox: '0 0 32 32'
   }
 }
