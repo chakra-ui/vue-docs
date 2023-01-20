@@ -12,7 +12,7 @@ import { NitroApp } from "nitropack";
  * and changed to the following:
  *
  * ```ts
- * import { defineNitroPlugin } from '#imports
+ * import { defineNitroPlugin } from '#imports'
  * ```
  */
 
