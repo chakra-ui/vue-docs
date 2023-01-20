@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { fileURLToPath } from "node:url";
 import { setup, $fetch } from "@nuxt/test-utils";
-describe("ssr", async () => {
+describe("nust emotion ssr", async () => {
   await setup({
     rootDir: fileURLToPath(new URL("../playground", import.meta.url)),
   });

@@ -1,13 +1,5 @@
 import { extractCritical } from "@emotion/server";
-import { NitroApp } from "nitropack";
-
-export interface NitroAppPlugin {
-  (nitro: NitroApp): void;
-}
-
-export function defineNitroPlugin(def: NitroAppPlugin): NitroAppPlugin {
-  return def;
-}
+import { defineNitroPlugin } from "#imports";
 
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook("render:html", (html) => {
