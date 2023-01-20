@@ -39,7 +39,7 @@ export default defineNuxtModule({
     const { resolve } = createResolver(import.meta.url);
     const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
     nuxt.options.build.transpile.push(runtimeDir);
-    addServerPlugin(resolve(runtimeDir, "server/plugins/emotion"));
+    addServerPlugin(resolve(runtimeDir, "emotion.server"));
     addPlugin(resolve(runtimeDir, "emotion.client"));
   },
 });
