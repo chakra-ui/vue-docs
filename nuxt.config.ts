@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/chakra.ts"],
   css: ["~/styles/fonts.scss", "~/styles/prism.scss"],
   content: {
-    documentDriven: true,
+    // documentDriven: true,
     markdown: {
       toc: { depth: 5, searchDepth: 3 },
       // anchorLinks: true,
