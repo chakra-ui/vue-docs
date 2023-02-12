@@ -3,42 +3,40 @@ import {
   chakra,
   useColorMode,
   useColorModeValue,
-  CBox,
   CHStack,
   CFlex,
   CIcon,
   CIconButton,
-  CLink,
-} from "@chakra-ui/vue-next";
-import { useWindowScroll } from "@vueuse/core";
-import { computed, onMounted, ref } from "vue";
-import ChakraLogoIcon from "./ChakraLogo.vue";
-import SponsorButton from "./SponsorButton.vue";
+  CLink
+} from '@chakra-ui/vue-next'
+import { useWindowScroll } from '@vueuse/core'
+import { computed, onMounted, ref } from 'vue'
+import SponsorButton from './SponsorButton.vue'
 // import { SearchButton } from "./AlgoliaSearch.vue"
 // import { MobileNavButton } from "./MobileNav.vue"
-import VersionSwitcher from "./VersionSwitcher";
-import siteConfig from "@/config/site-config";
+import VersionSwitcher from './VersionSwitcher'
+import siteConfig from '@/config/site-config'
 
-const NuxtLink = resolveComponent("nuxt-link");
+const NuxtLink = resolveComponent('nuxt-link')
 
-const { toggleColorMode } = useColorMode();
-const text = useColorModeValue("dark", "light");
-const switchIcon = useColorModeValue("moon", "sun");
-const bg = useColorModeValue("white", "gray.800");
+const { toggleColorMode } = useColorMode()
+const text = useColorModeValue('dark', 'light')
+const switchIcon = useColorModeValue('moon', 'sun')
+const bg = useColorModeValue('white', 'gray.800')
 
-const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined);
+const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined)
 
-const { y } = useWindowScroll();
+const { y } = useWindowScroll()
 
-const height = ref(0);
+const height = ref(0)
 
 onMounted(() => {
-  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0;
-});
+  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0
+})
 
 const headerShadow = computed(() => {
-  return y.value > height.value ? "sm" : undefined;
-});
+  return y.value > height.value ? 'sm' : undefined
+})
 </script>
 
 <template>
@@ -66,10 +64,10 @@ const headerShadow = computed(() => {
             to="/"
             aria-label="Chakra UI Vue, Back to homepage"
           >
-            <ChakraLogo :display="{ base: 'none', md: 'block' }" />
-            <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
+            <ChakraLogo />
+            <!-- <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
               <ChakraLogoIcon />
-            </CBox>
+            </CBox> -->
           </CLink>
         </CFlex>
 
