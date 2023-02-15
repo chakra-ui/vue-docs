@@ -3,7 +3,6 @@ import {
   chakra,
   useColorMode,
   useColorModeValue,
-  CBox,
   CHStack,
   CFlex,
   CIcon,
@@ -11,7 +10,6 @@ import {
   CLink
 } from '@chakra-ui/vue-next'
 import { onMounted, ref } from 'vue'
-import ChakraLogoIcon from '../ChakraLogo.vue'
 import SponsorButton from '../SponsorButton.vue'
 import VersionSwitcher from '../VersionSwitcher'
 import siteConfig from '@/config/site-config'
@@ -54,10 +52,10 @@ onMounted(() => {
               display="block"
               aria-label="Chakra UI Vue, Back to homepage"
             >
-              <ChakraLogo :display="{ base: 'none', md: 'block' }" />
-              <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
+              <ChakraLogo />
+              <!-- <CBox min-w="3rem" :display="{ base: 'block', md: 'none' }">
                 <ChakraLogoIcon />
-              </CBox>
+              </CBox> -->
             </chakra.a>
           </router-link>
         </CFlex>
