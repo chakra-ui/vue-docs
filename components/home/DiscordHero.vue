@@ -24,7 +24,7 @@ import { chakra, CBox, CButton, CFlex, CIcon } from "@chakra-ui/vue-next";
     >
       <CIcon name="discord" size="48px" mr="5" />
       <CBox>
-        <chakra.h2 font-size="md" font-weight="bold" lineHeight="1.2" mb="1">
+        <chakra.h2 font-size="md" font-weight="bold" line-height="1.2" mb="1">
           Connect with the Chakra community
         </chakra.h2>
         <chakra.p>
