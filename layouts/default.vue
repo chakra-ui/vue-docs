@@ -41,10 +41,10 @@ const colorModeClass = useColorModeValue(undefined, "chakra-ui-dark");
         <sidebar />
       </chakra.div>
       <chakra.main
-        :pl="{ lg: '19.5rem' }"
+        :pl="{ base: 4, lg: '19.5rem' }"
         pt="4"
         pb="24"
-        :pr="{ xl: 16 }"
+        :pr="{ base: 4, xl: 16 }"
         class="chakra-prose"
       >
         <chakra.div :mr="{ xl: '15.5rem' }">
