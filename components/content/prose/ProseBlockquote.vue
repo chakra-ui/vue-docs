@@ -1,7 +1,3 @@
-<script setup>
-import { CAlert } from '@chakra-ui/c-alert'
-</script>
-
 <template>
   <CAlert
     mt="4"

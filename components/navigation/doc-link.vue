@@ -1,6 +1,6 @@
 <template>
   <chakra.li>
-    <nuxt-link :to="props.navItemPath">
+    <nuxt-link prefetch :to="props.navItemPath">
       <chakra.a
         :aria-current="isCurrent ? 'page' : undefined"
         text-style="sidebarLink"
@@ -17,15 +17,15 @@
             left: 0,
             backgroundColor: 'currentColor',
             transformOrigin: 'bottom right',
-            transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)',
+            transition: 'transform .4s cubic-bezier(.86, 0, .07, 1)'
           },
           '&:hover::after': {
             transform: 'scaleX(1)',
-            transformOrigin: 'bottom left',
-          },
+            transformOrigin: 'bottom left'
+          }
         }"
         :_hover="{
-          textDecoration: 'none',
+          textDecoration: 'none'
         }"
       >
         <slot />
@@ -35,14 +35,15 @@
 </template>
 
 <script lang="ts" setup>
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { computed } from 'vue'
-import { chakra } from '@chakra-ui/vue-next'
+import type { NavItem } from '@nuxt/content/dist/runtime/types';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import { chakra } from '@chakra-ui/vue-next';
 
 const props = defineProps<{
-  navItemPath: NavItem['_path']
-}>()
+  navItemPath: NavItem['_path'];
+}>();
 
-const route = useRoute()
-const isCurrent = computed(() => route.path === props.navItemPath)
+const route = useRoute();
+const isCurrent = computed(() => route.path === props.navItemPath);
 </script>

@@ -24,7 +24,7 @@ const NuxtLink = resolveComponent("nuxt-link");
     :template-columns="{ base: '1fr', md: '1fr 1fr' }"
     pos="relative"
     bg="white"
-    :bgGradient="{ base: '', md: 'linear(to-br, white, white, emerald.100)' }"
+    :bg-gradient="{ base: '', md: 'linear(to-br, white, white, emerald.100)' }"
     :min-h="{
       base: 'calc(100vh - 78px)',
       sm: 'auto',
@@ -39,21 +39,21 @@ const NuxtLink = resolveComponent("nuxt-link");
         <chakra.div>
           <CHeading
             as="h1"
-            maxW="16ch"
-            :fontSize="{ base: '2.25rem', sm: '3rem', lg: '4rem' }"
-            fontFamily="heading"
-            letterSpacing="tighter"
-            fontWeight="extrabold"
-            lineHeight="1.2"
+            max-w="16ch"
+            :font-size="{ base: '2.25rem', sm: '3rem', lg: '4rem' }"
+            font-family="heading"
+            letter-spacing="tighter"
+            font-weight="extrabold"
+            line-height="1.2"
           >
             Build accessible Vue apps
             <chakra.span color="emerald.600" px="5px">with speed</chakra.span>
           </CHeading>
         </chakra.div>
         <CText
-          :maxW="{ base: '560px', lg: '650px' }"
+          :max-w="{ base: '560px', lg: '650px' }"
           opacity="0.7"
-          :fontSize="{ base: 'lg', lg: 'xl' }"
+          :font-size="{ base: 'lg', lg: 'xl' }"
         >
           Chakra UI Vue Next is a simple modular and accessible component
           library that gives you the building blocks to build Vue applications

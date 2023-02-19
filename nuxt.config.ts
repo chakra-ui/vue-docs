@@ -1,4 +1,8 @@
-import { siteLang, siteName } from './config/site-config'
+import { siteLang, siteName } from './config/site-config';
+import * as iconSet from './utils/icons';
+import extendedTheme from './theme';
+
+const { extendedIcons: extend, ...library } = iconSet;
 
 export default defineNuxtConfig({
   app: {
@@ -10,29 +14,23 @@ export default defineNuxtConfig({
     }
   },
   // @ts-ignore
+  chakra: {
+    extendTheme: extendedTheme,
+    icons: {
+      library,
+      extend
+    }
+  },
+  // @ts-ignore
   modules: [
     '@nuxt/content',
-    (_options: any, nuxt: any) => {
-      nuxt.hook('nitro:config', (config: { externals: { external: string[] } }) => {
-        // Prevent inlining emotion (+ the crucial css cache!) in dev mode
-        if (nuxt.options.dev) {
-          if (config.externals) {
-            config.externals.external ||= []
-            config.externals.external.push('@emotion/server')
-          }
-        }
-      })
-    },
-    '~/modules/chakra.module.ts',
-    '~/modules/content-chunks.module.ts'
+    '~/modules/content-chunks.module.ts',
+    '@chakra-ui/nuxt-next'
   ],
-  build: {
-    transpile: ['@chakra-ui']
-  },
-  plugins: ['~/plugins/chakra.ts'],
+  plugins: ['~/plugins/typography.ts'],
   css: ['~/styles/fonts.scss', '~/styles/prism.scss'],
   content: {
-    documentDriven: true,
+    // documentDriven: true,
     markdown: {
       toc: { depth: 5, searchDepth: 3 },
       // anchorLinks: true,
@@ -50,4 +48,4 @@ export default defineNuxtConfig({
       ]
     }
   }
-})
+});

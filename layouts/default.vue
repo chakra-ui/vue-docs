@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { chakra, CHStack, CIcon } from '@chakra-ui/vue-next'
-import { useColorModeValue } from '@chakra-ui/c-color-mode'
-import TopNavigation from '~/components/navigation/top-navigation.vue'
-import Sidebar from '~/components/navigation/sidebar.vue'
-import TableOfContents from '~/components/navigation/table-of-contents.vue'
+import { chakra, useColorModeValue } from '@chakra-ui/vue-next';
+import TopNavigation from '~/components/navigation/top-navigation.vue';
+import Sidebar from '~/components/navigation/sidebar.vue';
 
 /**
  * Styling
  */
-const color = useColorModeValue('gray.700', 'white')
-const bg = useColorModeValue('white', 'gray.800')
-const colorModeClass = useColorModeValue(undefined, 'chakra-ui-dark')
+const color = useColorModeValue('gray.700', 'white');
+const bg = useColorModeValue('white', 'gray.800');
+const colorModeClass = useColorModeValue(undefined, 'chakra-ui-dark');
 </script>
 
 <template>
@@ -55,7 +53,7 @@ const colorModeClass = useColorModeValue(undefined, 'chakra-ui-dark')
             <p>Edit this page on GitHub</p>
           </c-h-stack>
         </chakra.div>
-        <table-of-contents />
+        <!-- <table-of-contents /> -->
       </chakra.main>
     </chakra.div>
   </chakra.div>

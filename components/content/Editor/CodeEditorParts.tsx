@@ -1,5 +1,5 @@
 import { defineComponent, renderSlot, h } from "vue"
-import { BoxProps, chakra, CButton } from "@chakra-ui/vue-next"
+import { chakra, CButton } from "@chakra-ui/vue-next"
 
 export const CodeContainer = defineComponent({
   name: "CodeContainer",

@@ -55,7 +55,12 @@
             textDecoration: 'none',
           }"
         >
-          <nuxt-link v-slot="{ href, navigate }" :to="`#${item.id}`" custom>
+          <nuxt-link
+            v-slot="{ href, navigate }"
+            prefetch
+            :to="`#${item.id}`"
+            custom
+          >
             <chakra.a
               :href="href"
               :_hover="{
@@ -98,7 +103,12 @@
               }"
               pl="4"
             >
-              <nuxt-link v-slot="{ href, navigate }" :to="`#${item.id}`" custom>
+              <nuxt-link
+                v-slot="{ href, navigate }"
+                prefetch
+                :to="`#${item.id}`"
+                custom
+              >
                 <chakra.a
                   :href="href"
                   :_hover="{
@@ -118,11 +128,11 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-import { chakra, CStack } from '@chakra-ui/vue-next'
-import { useContent } from '#imports'
+import { computed } from "vue";
+import { chakra, CStack } from "@chakra-ui/vue-next";
+import { useContent } from "#imports";
 
-const content = useContent()
+const content = useContent();
 
-const links = computed(() => content.toc.links)
+const links = computed(() => content.toc.links);
 </script>

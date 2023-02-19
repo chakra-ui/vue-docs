@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { CHeading, CLink } from '@chakra-ui/vue-next'
-
-defineProps<{ id: string }>()
+defineProps<{ id: string }>();
 </script>
 
 <template>

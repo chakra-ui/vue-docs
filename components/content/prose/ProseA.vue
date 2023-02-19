@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink>
+  <NuxtLink prefetch>
     <slot />
   </NuxtLink>
 </template>
