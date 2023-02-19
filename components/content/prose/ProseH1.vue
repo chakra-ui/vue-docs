@@ -1,5 +1,6 @@
 <script setup lang="ts">
-defineProps<{ id: string }>()
+import { chakra } from '@chakra-ui/vue-next';
+defineProps<{ id: string }>();
 </script>
 
 <template>

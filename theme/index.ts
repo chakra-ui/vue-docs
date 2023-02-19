@@ -1,10 +1,8 @@
-import { extendTheme } from '@chakra-ui/vue-next'
-import { textStyles } from '~/theme/text-styles'
-import { globalStyles } from '~/theme/global-styles'
-import '@fontsource/ibm-plex-mono'
-import '@fontsource/dm-sans'
+import { extendTheme } from '@chakra-ui/vue-next';
+import { textStyles } from './text-styles';
+import { globalStyles } from './global-styles';
 
-import { semanticTokens } from '~/theme/semantic-tokens'
+import { semanticTokens } from './semantic-tokens';
 
 export default extendTheme({
   colors: {
@@ -28,7 +26,8 @@ export default extendTheme({
     }
   },
   fonts: {
-    heading: 'DM Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    heading:
+      'DM Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     body: 'DM Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     mono: '"IBM Plex Mono", monospace;'
   },
@@ -42,4 +41,4 @@ export default extendTheme({
   },
   textStyles,
   semanticTokens
-})
+});

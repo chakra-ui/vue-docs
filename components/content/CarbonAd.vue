@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { chakra, CBox, CFlex, useColorModeValue } from '@chakra-ui/vue-next'
-const bg = useColorModeValue('gray.50', 'rgba(36, 70, 93, 0.32)')
+import { chakra, useColorModeValue } from '@chakra-ui/vue-next';
+const bg = useColorModeValue('gray.50', 'rgba(36, 70, 93, 0.32)');
 </script>
 
 <template>

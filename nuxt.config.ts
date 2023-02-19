@@ -1,4 +1,8 @@
 import { siteLang, siteName } from './config/site-config';
+import * as iconSet from './utils/icons';
+import extendedTheme from './theme';
+
+const { extendedIcons: extend, ...library } = iconSet;
 
 export default defineNuxtConfig({
   app: {
@@ -10,10 +14,18 @@ export default defineNuxtConfig({
     }
   },
   // @ts-ignore
+  chakra: {
+    extendTheme: extendedTheme,
+    icons: {
+      library,
+      extend
+    }
+  },
+  // @ts-ignore
   modules: [
-    '@chakra-ui/nuxt-next',
     '@nuxt/content',
-    '~/modules/content-chunks.module.ts'
+    '~/modules/content-chunks.module.ts',
+    '@chakra-ui/nuxt-next'
   ],
   plugins: ['~/plugins/typography.ts'],
   css: ['~/styles/fonts.scss', '~/styles/prism.scss'],
