@@ -9,18 +9,13 @@ export default defineNuxtConfig({
       }
     }
   },
+  // @ts-ignore
   modules: [
     '@chakra-ui/nuxt-next',
     '@nuxt/content',
     '~/modules/content-chunks.module.ts'
   ],
-  build: {
-    // @ts-ignore
-    extend(config: { resolve: { alias: { vue$: string } } }, _ctx: any) {
-      config.resolve.alias.vue$ = 'vue/dist/vue.esm-browser.js';
-    }
-  },
-  plugins: ['~/plugins/chakra.ts'],
+  plugins: ['~/plugins/typography.ts'],
   css: ['~/styles/fonts.scss', '~/styles/prism.scss'],
   content: {
     // documentDriven: true,
