@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { CFlex } from "@chakra-ui/vue-next"
 import FrameworkCard from "./FrameworkCard.vue";
+
+import VueLogo from "./VueLogo.vue";
+import NuxtLogo from "./NuxtLogo.vue";
 </script>
 
 <template>
@@ -13,7 +16,7 @@ import FrameworkCard from "./FrameworkCard.vue";
 > 
   <FrameworkCard content="Vue 3" to="/getting-started/installation" aria-label="Chakra UI Vue getting started with Vue 3">
     <template #img>
-      <img src="~/assets/vue-logo.png" alt="Vue logo" loading="lazy" />
+      <VueLogo />
     </template>
     <template #title>
       Vue 3
@@ -25,7 +28,7 @@ import FrameworkCard from "./FrameworkCard.vue";
   </FrameworkCard>
   <FrameworkCard content="Nuxt 3" to="/frameworks/nuxt-3" aria-label="Chakra UI Vue getting started with Nuxt 3">
     <template #img>
-      <img src="~/assets/nuxt-logo.png" alt="Vue logo" loading="lazy" />
+      <NuxtLogo />
     </template>
     <template #title>
       Nuxt 3

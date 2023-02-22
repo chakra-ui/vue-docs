@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { CBox, CFlex, CText } from "@chakra-ui/vue-next"
+import { CFlex, CText } from "@chakra-ui/vue-next"
+
+import VueLogo from "./VueLogo.vue";
 
 defineProps<{
   content: string
@@ -25,9 +27,9 @@ const NuxtLink = resolveComponent('nuxt-link')
     transition="box-shadow 0.1s ease-out 0s"
     :_hover="{ shadow: 'md', textDecoration: 'none' }"
   >
-    <CFlex :w="['100%', '200px']" :h="['200px', '100%']" justify-content="center" align-items="center" overflow="hidden" bg="gray.100" p="5" flex-shrink="0">
+    <CFlex :w="['100%', '200px']" :h="['200px', '100%']" justify-content="center" align-items="center" overflow="hidden" bg="gray.100" :p="[0, 5]" flex-shrink="0">
       <slot name="img">
-        <img src="~/assets/vue-logo.png" alt="Vue logo" loading="lazy" />
+        <VueLogo />
       </slot>
     </CFlex>
     <CFlex p="5" flex-dir="column">
