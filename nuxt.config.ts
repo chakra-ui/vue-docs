@@ -1,3 +1,5 @@
+import { componentResolver } from '@chakra-ui/vue-auto-import';
+import Components from 'unplugin-vue-components/vite';
 import { siteLang, siteName } from './config/site-config';
 import * as iconSet from './utils/icons';
 import extendedTheme from './theme';
@@ -47,5 +49,12 @@ export default defineNuxtConfig({
         ]
       ]
     }
+  },
+  vite: {
+    plugins: [
+      Components({
+        resolvers: [componentResolver]
+      })
+    ]
   }
 });
