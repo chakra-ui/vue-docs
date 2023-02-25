@@ -35,7 +35,6 @@
   "dependencies": {
     "@babel/core": "^7.12.9",
     "@chakra-ui/nuxt-next": "2.1.0-beta.2",
-    "@chakra-ui/vue-next": "0.0.0-dev-20230218191716",
     "@emotion/css": "^11.10.6",
     "@emotion/server": "^11.10.0",
     "@fontsource/dm-sans": "^4.5.9",

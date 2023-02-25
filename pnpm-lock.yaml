@@ -3,7 +3,6 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.12.9
   '@chakra-ui/nuxt-next': 2.1.0-beta.2
-  '@chakra-ui/vue-next': 0.0.0-dev-20230218191716
   '@commitlint/cli': ^17.3.0
   '@commitlint/config-conventional': ^17.3.0
   '@emotion/css': ^11.10.6
@@ -45,7 +44,6 @@ specifiers:
 dependencies:
   '@babel/core': 7.20.12
   '@chakra-ui/nuxt-next': 2.1.0-beta.2_vue@3.2.47
-  '@chakra-ui/vue-next': 0.0.0-dev-20230218191716_g6hezj6bmmqb2rueoaosrcya6m
   '@emotion/css': 11.10.6
   '@emotion/server': 11.10.0_@emotion+css@11.10.6
   '@fontsource/dm-sans': 4.5.9
@@ -373,24 +371,6 @@ packages:
     resolution: {integrity: sha512-pKfOS/mztc4sUXHNc8ypJ1gPWSolWT770jrgVRfolVbYlki8y5Y+As996zMF6k5lewTu6j9DQequ7Cc9a69IVQ==}
     dev: false
 
-  /@chakra-ui/c-accordion/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-T5GOHsmnpzjIjHHRREmyqagcxi5ZabSgdqsszNUy40OEetpoqNoGFTUmpn4fSP+ijc3kBifrkxyoAQXhNtVGWw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-motion': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@zag-js/accordion': 0.2.11
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-    dev: false
-
   /@chakra-ui/c-accordion/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-2VVNUzBX9g0Cxpf7yHteBKYk4rF5dWQPKuNeuVoyuicpCLcLII8Q2I+0cX6Krn3gVCiwAuYfkSnOqBLonPK53Q==}
     peerDependencies:
@@ -410,17 +390,6 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@chakra-ui/c-alert/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-j/TXMTYzIYMShlXC7Ezbf2ghhHmVUnoLBHYydQZ3LqXKCjDT3G387JVMs9XfNgWu9llEcy7gjVqp9YlOxILLyA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-alert/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-oa7A39m+makQYH2flb9eCruRtVnKruQNMvdgcULQ4lnXU7fTThaGSmH7MmdA+6AjoJ7Aw7rmvG7ha0nuEgmWOA==}
     peerDependencies:
@@ -430,23 +399,6 @@ packages:
       '@chakra-ui/styled-system': 2.5.1
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-avatar/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-ewjhynknmHsjD0dZ89BA22EmKnb3Odu3iHiVnB2Q+VwHexA771mur0uJRxyLRwFxn13FG5yjJsb6yOr96PdfoQ==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-image': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/theme-tools': 2.0.17_ak67p4fuwhwgy7hpxa6ejvcgoy
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-layout': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      csstype: 3.1.1
       vue: 3.2.47
     dev: false
 
@@ -467,18 +419,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-breadcrumb/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-ux5v/ty7tO0wWuEmtqnWpAgo9FdU4+XPQEETSBsvTwuM6eCSU52v5gDNYZGaumSCiyNyjA6hzScCMnnJvYw4/Q==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-breadcrumb/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-8Ir+SRkmYxR+dvCy+98pG7ESs251+AOs4uTUZuWL7MdlzLMlTDpUoGJaxARMD/8n6vM/3wDV48Lxk81Z6viynA==}
     peerDependencies:
@@ -489,22 +429,6 @@ packages:
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
       vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-button/0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii:
-    resolution: {integrity: sha512-Cgoz5f3CpdlWj+QHUJ0GSE6T1AI9SkP0uJvg9rR44QbhFwWaqYSk22AIhMBs3S2JzBJYEEGoNYcJkwcGa2hcXg==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-spinner': 0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@chakra-ui/styled-system'
-      - '@emotion/css'
     dev: false
 
   /@chakra-ui/c-button/2.1.0-beta.1_g6hezj6bmmqb2rueoaosrcya6m:
@@ -521,25 +445,6 @@ packages:
       vue: 3.2.47
     transitivePeerDependencies:
       - '@emotion/css'
-    dev: false
-
-  /@chakra-ui/c-checkbox/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-ZH98GXa7T7E9FcpHaudpDvyOjHZxgHMUTCyWDq0W6DR+0jx6Ex7EZwPOjb/lPQ4wPNJtzgorwNAH5idMNF5xFA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-form-control': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-motion': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@vueuse/motion': 1.6.0_vue@3.2.47
-      '@zag-js/checkbox': 0.2.12
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
     dev: false
 
   /@chakra-ui/c-checkbox/2.1.0-beta.1_vue@3.2.47:
@@ -562,19 +467,6 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@chakra-ui/c-close-button/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-16qkrNU96lJQM1euB0nrHrkUO9wqt9RfUIceou62j3hBhOoqfDymGgQOQgOy6YHGKweJeDJjMbVsZyxkOdkHoQ==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-close-button/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-9kKXes7XosV3LCDnAmfR2jg1vQEMs8ErvwNKaIrPvPAH+UZwKj4DfXVhOehyDZ4zUTpBltgsHklDECsR8Wl3bQ==}
     peerDependencies:
@@ -585,17 +477,6 @@ packages:
       '@chakra-ui/utils': 2.0.15
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-code/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-ZCmLJA8pOxRNgb22nrlf1EDMbpkHWUPeH4/q8Nf129X0ZVPtDw8Dr3k71gXqnMO7lt3NoSiWOoDXitWhZtaQ6Q==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
       vue: 3.2.47
     dev: false
 
@@ -611,16 +492,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-color-mode/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-a/swaUY+GdiKED17qq/h8ybd2K/FbPPQvOMZWyq3iHD0QkyU4lrTHQoZUq+Rh7ZbaaNcSOnpoiE8e4clVt0b9Q==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-color-mode/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-4c7cqR1+hmZiVQr8Fad1xiQSHNgHvj/mD/DbQXCCLAkeygT0TvLEoqsHVvylBFQ3W4/pGAgdL7nICj7f77NXfw==}
     peerDependencies:
@@ -628,19 +499,6 @@ packages:
     dependencies:
       '@chakra-ui/utils': 2.0.15
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-focus-lock/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-Ss4Y4DIynrpGIJfeVjwDIPgarc3qpf6ocn2SweBS5UeTUkLy0t9H0iWcLquwElDu8rnRprM9tyqDnRe5bOW+CA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      focus-trap: 6.9.4
       vue: 3.2.47
     dev: false
 
@@ -654,20 +512,6 @@ packages:
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
       focus-trap: 6.9.4
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-form-control/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-Gx87BuL4PGoja9SALYoG5VsJ24pN8Q/2jrkvxdZpsSXW0F+iw7SAEgigdcAbkyr6aC6E3cLxTpUp53DwmzGbKA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      csstype: 3.1.1
       vue: 3.2.47
     dev: false
 
@@ -686,17 +530,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-icon/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-7zBjiccE6zjg+CSTQK3AWN+c+6qSz8mVJ8LD3kosDEJtMfuYGHvf6+989FB42VMXxSDLTTguH2QoDXn1FSgwVw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-icon/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-dJpUsr6Dyg2fEfIFTqnwxUrAtgGcKAxM+pFvoPH0/fT12Cdz0LjoL2e5NZaDvm6Wge5DcCdKOvdvk5QE8aEQ8A==}
     peerDependencies:
@@ -705,18 +538,6 @@ packages:
       '@chakra-ui/utils': 2.0.15
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-image/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-Ehvo0S/OSwz9qGqhPBVD5+H+wYCAcuCwnmoftsre0Z8f05i6iVwHAABrIqlwFYJeR3B6yzSEjIhM2oVAysEX2w==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      lodash: 4.17.21
       vue: 3.2.47
     dev: false
 
@@ -732,18 +553,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-input/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-awmwRvMSCTlSgXErJHy72v/jJOvEOK8nupc4xIOWwiGw6BgBtO9L+J05hlXjL0AX6indYbpJ5uTSfmSdYzwXUQ==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-form-control': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-input/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-Z9uUldfmgW6obNi0OvkBLaRVDb3l/c+p85nX+cvV0Y3wmpRtrqVGlqboHCjerYfETeObXEBWOKA1RN2lwBfBag==}
     peerDependencies:
@@ -754,17 +563,6 @@ packages:
       '@chakra-ui/utils': 2.0.15
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-media-query/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-cyzsD4Jcei/Eu93nctfddluG5PB98ySEsvgqrHs0hU+gctW2mto7ZwnU3348ccMKrLcnsLMBTPVkNLYkkXcc6A==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
       vue: 3.2.47
     dev: false
 
@@ -798,50 +596,6 @@ packages:
       - '@emotion/css'
     dev: false
 
-  /@chakra-ui/c-menu/0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii:
-    resolution: {integrity: sha512-f2O6kjIZ5AMJ6AQ7LOnSKmgxLVFZTrKmsXJ2eVJWqXMbTcrqx7z6SAJi9S/YZOdEhuBbUPLfz0Yl4sanLcfgVA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-button': 0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii
-      '@chakra-ui/c-portal': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-layout': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@zag-js/menu': 0.3.8
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@chakra-ui/styled-system'
-      - '@emotion/css'
-    dev: false
-
-  /@chakra-ui/c-modal/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-WTTpn7D8hbCzq+O9YjbFtHTUWDXMCzU70z1DRO49HbFCslN7c/YWntOpx8i9ocCGG5+r7oTthKzV85pb4hmR9g==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-close-button': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-focus-lock': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-motion': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-portal': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-scroll-lock': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-accessibilty': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@vueuse/motion': 1.6.0_vue@3.2.47
-      aria-hidden: 1.2.2
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@vue/composition-api'
-      - react
-    dev: false
-
   /@chakra-ui/c-modal/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-xMlvtyeSign2Ava+yy6pP6Y7GHOSbiYnq+s/jG8T9ouZ2z9AVShnkOYJCWARz2lq1YhR6rWkkXtz3MS5ac3KTA==}
     peerDependencies:
@@ -867,23 +621,6 @@ packages:
       - react
     dev: false
 
-  /@chakra-ui/c-motion/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-SWOyu4WLqiYASEMhZtaANaXjpaUFikzk+hlVd4cmNE3yicy87LF9vkYPKvrcdnHB2otz3feZZjqzOwsRhW2xoA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@vueuse/motion': 1.6.0_vue@3.2.47
-      '@vueuse/shared': 9.12.0_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-    dev: false
-
   /@chakra-ui/c-motion/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-tZwBOo5VSP0rdhyZkufV3mhqbfV3X67jDIJT0fFHsyCWsWy8pgfwx3ioV1AA4rgaiC7suN1z9U0Pkq6+5h5foA==}
     peerDependencies:
@@ -899,22 +636,6 @@ packages:
       vue: 3.2.47
     transitivePeerDependencies:
       - '@vue/composition-api'
-    dev: false
-
-  /@chakra-ui/c-pin-input/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-aHOdhN/zEO7xijm8k4vjRJKeQKVxEAk3LjCBr7YPgxnKNsSuXtu+i5zF3hzIuTcLqawMmHW8I6qpJqBjsh22Eg==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-input': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@zag-js/pin-input': 0.2.12
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      csstype: 3.1.1
-      vue: 3.2.47
     dev: false
 
   /@chakra-ui/c-pin-input/2.1.0-beta.1_vue@3.2.47:
@@ -933,16 +654,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-popper/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-ZQb3XFhAzP6GHmS5ovyfoQ0BzWFxbo8c3yOzgllBhDFGV3RNObWgq8CKfR2PM4HvYAKi2G37O4A5FhIpr+OVrg==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@popperjs/core': 2.11.6
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-popper/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-K529T41ZYt4McN0ZHyg/8Ppgwm0oGdxkYmxkbavaTDz1iZulQMONOE3FzMJrRyLtGzEtL5xDOdnyySeVa4x/Tg==}
     peerDependencies:
@@ -950,17 +661,6 @@ packages:
     dependencies:
       '@chakra-ui/utils': 2.0.15
       '@popperjs/core': 2.11.6
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-portal/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-WCaXdCAz1h+rHvg5aGm5SFCFbqMjaI8cYT+Ej1Ov7uEQBNddeEsFRZnQ2k3avLhiY5iWC/imK3bZkBwsOggTyg==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
       vue: 3.2.47
     dev: false
 
@@ -975,33 +675,12 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-reset/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-kj1ZyVfsOFNNpRydFWoBbWXwY973l0qizugjk8CiRSxEfsiTtVtIs7G20WMciKpza8i/1/K9J4F6uu+hkNLVog==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-reset/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-QP2ODrhiykPXr1PJBWaDsemsShmn5ZzjZuiorx3mHplAbmtPTLPF7nPiIASTKlTv9rmTXCW7AhNg90zjMRhRcw==}
     peerDependencies:
       vue: 3.2.47
     dependencies:
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-scroll-lock/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-JkHuMyXEr0wiURETBcaC+NvjF5sHETnZsuJv/Xx8jcTcXsHE16MnmLamUgcE+SykhIf43VfAGu9CzxbgrB7Bxw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      body-scroll-lock: 3.1.5
       vue: 3.2.47
     dev: false
 
@@ -1017,16 +696,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-skip-nav/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-VLyn7MCaWGPKOMH6MFI0cX2+TD6rtxDsxYMggCo+i5ELo1iBCRQUUCXOUVjFRbdI0fZ+RvnfWJERinBTNzpLGw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-skip-nav/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-qW8LW9pz9I3gY7tVxWVt329Gn1DD4sAmYCIcDh2Tt7ypprOP48InYXLk8bOn857MwI4pr96gXgozDWgDsTBiHQ==}
     peerDependencies:
@@ -1036,22 +705,6 @@ packages:
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
       vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-spinner/0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii:
-    resolution: {integrity: sha512-KYRbc/iwA5UI6n1Odt59UIckq1KEcaTUVQiuOde5hU3V3rwotduQP/sYoTwl79IuaALqILSb3lOfLxAJce31Yg==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-visually-hidden': 0.0.0-dev-20230218191716_g6hezj6bmmqb2rueoaosrcya6m
-      '@chakra-ui/theme': 2.2.5_ak67p4fuwhwgy7hpxa6ejvcgoy
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@chakra-ui/styled-system'
-      - '@emotion/css'
     dev: false
 
   /@chakra-ui/c-spinner/2.1.0-beta.1_g6hezj6bmmqb2rueoaosrcya6m:
@@ -1070,18 +723,6 @@ packages:
       - '@emotion/css'
     dev: false
 
-  /@chakra-ui/c-tag/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-j1SWM/87t6Sno5RsKl4eYe2Maw8p0S8UlXSK/i1Cfi2IGv6B76STvBJ5MPMXm6m6sBEOUPumZbAy0bvcxak90A==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/c-tag/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-ZuKHHlUlOfPS2ezKwd+4oAb3uJpRP6wh7heT6bYVOh2Qmfun+tQYrWXEfqxPpztu5AlWvYFHqOZmxraEP5rC3Q==}
     peerDependencies:
@@ -1095,18 +736,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/c-theme-provider/0.0.0-dev-20230218191716_fkfm53tnm2ahu4ji7pnqi6juem:
-    resolution: {integrity: sha512-tpLidCNKRybBzv8DENYteqYtYNXaA2LyMCRdCSA861eKi1f465ZKo6HC/OZJqTtQKVj1WEi7JlH9LAg9Xai83w==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/theme': 2.2.5_ak67p4fuwhwgy7hpxa6ejvcgoy
-      '@chakra-ui/theme-tools': 2.0.17_ak67p4fuwhwgy7hpxa6ejvcgoy
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@chakra-ui/styled-system'
-    dev: false
-
   /@chakra-ui/c-theme-provider/2.1.0-beta.1_fkfm53tnm2ahu4ji7pnqi6juem:
     resolution: {integrity: sha512-AlZv74B1K1IHUOC4AOs1/rX2GgsXyZPRDU3VHgGiRSctACEskme4o60Ih/VY6kjHeMamDOKRlLit9ieJywMJsw==}
     peerDependencies:
@@ -1117,22 +746,6 @@ packages:
       vue: 3.2.47
     transitivePeerDependencies:
       - '@chakra-ui/styled-system'
-    dev: false
-
-  /@chakra-ui/c-toast/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-0LtMJDonLjabJJhn3J3+nKSVzZf7decZPb55P8sJkqAmwWWg99Ls/zzXxphIEDQYsH9gj7rpL+yhgN4ALgLYww==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-alert': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-close-button': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@zag-js/core': 0.2.9
-      '@zag-js/toast': 0.2.12
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      motion: 10.15.5
-      vue: 3.2.47
     dev: false
 
   /@chakra-ui/c-toast/2.1.0-beta.1_vue@3.2.47:
@@ -1149,17 +762,6 @@ packages:
       '@zag-js/vue': 0.2.9_vue@3.2.47
       motion: 10.15.5
       vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/c-visually-hidden/0.0.0-dev-20230218191716_g6hezj6bmmqb2rueoaosrcya6m:
-    resolution: {integrity: sha512-g/g1qSHEdGgCX54xv7icIHT3wr62xUEHsF5FrorMsCDIeg0rH2jhm5WeIxDzW2qSK/xvYeaveRkm3gztQa1uxQ==}
-    peerDependencies:
-      '@emotion/css': ^11.10.5
-    dependencies:
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@emotion/css': 11.10.6
-    transitivePeerDependencies:
-      - vue
     dev: false
 
   /@chakra-ui/c-visually-hidden/2.1.0-beta.1_g6hezj6bmmqb2rueoaosrcya6m:
@@ -1282,17 +884,6 @@ packages:
       lodash.mergewith: 4.6.2
     dev: false
 
-  /@chakra-ui/vue-accessibilty/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-4pP7rZjhahcukRzhn5ZPeWjdFLBj9dHw34872b7zfwpnvmz2/v0ILILyCkItQM5UalOgmns/6/6H3mGRDP2Gag==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/vue-accessibilty/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-Zqj7XwEA28U1XkHQcjfmIAgX41fiFYzF3jLqE3uoaFWX7p4TDbj7s0Bn366tTj624+KhWv842ddPR+YGa3ZWGw==}
     peerDependencies:
@@ -1301,18 +892,6 @@ packages:
       '@chakra-ui/styled-system': 2.5.1
       '@chakra-ui/vue-system': 2.1.0-beta.1_vue@3.2.47
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/vue-composables/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-d4Ox5/dJys6WCghZTDtpJEeICzCKfWULPN/3MuBnatJ3T94lupC7tl7EMZ+q4e/vin4WwGD02QtiP+yanPe0HA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
       vue: 3.2.47
     dev: false
 
@@ -1328,20 +907,6 @@ packages:
       vue: 3.2.47
     dev: false
 
-  /@chakra-ui/vue-layout/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-nog9egcWCKVfdEFavCHGLSvM3V1/+vjORWqDUCkXuRZAtiYDgZ8+VIbRj3gb+5r32ZjpL9GbfAz+4FORr42OuQ==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      csstype: 3.1.1
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/vue-layout/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-Jlfp/V65Sj671DCn8qv5HgWCowIg1TGITdKH6ycBCz3S0s6WOFDyoRkYjriO1hIkhcQW+myW+FaUiwbguze2LA==}
     peerDependencies:
@@ -1354,65 +919,6 @@ packages:
       '@chakra-ui/vue-utils': 2.1.0-beta.1_vue@3.2.47
       csstype: 3.1.1
       vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/vue-next/0.0.0-dev-20230218191716_g6hezj6bmmqb2rueoaosrcya6m:
-    resolution: {integrity: sha512-msghqkkxVVdDdqEAwR+WOKZcS5pBZhittsVtKItz20wjJk2NmYqX9+/kgB4Oq5d/1a+QGGD/2tiy9wy2Ws/YJA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-accordion': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-alert': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-avatar': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-breadcrumb': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-button': 0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii
-      '@chakra-ui/c-checkbox': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-close-button': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-code': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-color-mode': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-focus-lock': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-form-control': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-icon': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-image': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-input': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-media-query': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-menu': 0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii
-      '@chakra-ui/c-modal': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-motion': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-pin-input': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-popper': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-portal': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-reset': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-scroll-lock': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-skip-nav': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-spinner': 0.0.0-dev-20230218191716_366uwxahapux4e7pdax2er6jii
-      '@chakra-ui/c-tag': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-theme-provider': 0.0.0-dev-20230218191716_fkfm53tnm2ahu4ji7pnqi6juem
-      '@chakra-ui/c-toast': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/c-visually-hidden': 0.0.0-dev-20230218191716_g6hezj6bmmqb2rueoaosrcya6m
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/theme': 2.2.5_ak67p4fuwhwgy7hpxa6ejvcgoy
-      '@chakra-ui/theme-tools': 2.0.17_ak67p4fuwhwgy7hpxa6ejvcgoy
-      '@chakra-ui/theme-utils': 2.0.11
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-accessibilty': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-composables': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-layout': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-styled': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-system': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@emotion/cache': 11.10.5
-      '@emotion/serialize': 1.1.1
-      '@emotion/sheet': 1.2.1
-      '@emotion/utils': 1.2.0
-      '@zag-js/toast': 0.2.12
-      '@zag-js/vue': 0.2.9_vue@3.2.47
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@emotion/css'
-      - '@types/react'
-      - '@vue/composition-api'
-      - react
     dev: false
 
   /@chakra-ui/vue-next/2.1.0-beta.1_g6hezj6bmmqb2rueoaosrcya6m:
@@ -1474,23 +980,6 @@ packages:
       - react
     dev: false
 
-  /@chakra-ui/vue-styled/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-PSzJCJsUW574r4WnwGOAbLouKRLpTTLopyyLxTrvOdmFrU65+n/1sGqdblzCZtm+5T+ckKFIVRhGAED2u8GzYw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@emotion/cache': 11.10.5
-      '@emotion/css': 11.10.6
-      '@emotion/serialize': 1.1.1
-      '@emotion/utils': 1.2.0
-      '@emotion/weak-memoize': 0.2.5
-      clsx: 1.2.1
-      lodash.camelcase: 4.3.0
-      lodash.memoize: 4.1.2
-      vue: 3.2.47
-    dev: false
-
   /@chakra-ui/vue-styled/2.1.0-beta.1_vue@3.2.47:
     resolution: {integrity: sha512-K9CcL/S2d0oVz6dNYqnCqTjflWf6AvMwSPPl4x2+sj5magYw2ZNEbW3VCwM6W7cbwMCe9fGkJXXSwpdibTpvSQ==}
     peerDependencies:
@@ -1504,23 +993,6 @@ packages:
       '@emotion/weak-memoize': 0.2.5
       clsx: 1.2.1
       lodash.camelcase: 4.3.0
-      lodash.memoize: 4.1.2
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/vue-system/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-XKhv+LGW3k9JIRJGi5dB3PkNGw/gMcNDjZpnOe97ALGQKiUFJVo8TgllfuV6iEEJ6AUrTINAmAKmwpaLVbTVIQ==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/c-color-mode': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/vue-utils': 0.0.0-dev-20230218191716_vue@3.2.47
-      '@emotion/css': 11.10.6
-      '@emotion/serialize': 1.1.1
-      lodash.camelcase: 4.3.0
-      lodash.kebabcase: 4.1.1
       lodash.memoize: 4.1.2
       vue: 3.2.47
     dev: false
@@ -1539,23 +1011,6 @@ packages:
       lodash.camelcase: 4.3.0
       lodash.kebabcase: 4.1.1
       lodash.memoize: 4.1.2
-      vue: 3.2.47
-    dev: false
-
-  /@chakra-ui/vue-utils/0.0.0-dev-20230218191716_vue@3.2.47:
-    resolution: {integrity: sha512-XC0gYC9Lv3h6dD8E5Bqmk8vjTAAuEb6cH2yFcx4zvfM1Xtf5cu0bl9JcydBCSRynLMb+ENCrLVv4KNVV8KiuIw==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@chakra-ui/styled-system': 2.5.1
-      '@chakra-ui/utils': 2.0.15
-      '@types/lodash.camelcase': 4.3.7
-      '@types/lodash.memoize': 4.1.7
-      css-box-model: 1.2.1
-      lodash.camelcase: 4.3.0
-      lodash.memoize: 4.1.2
-      lodash.mergewith: 4.6.2
-      object-assign: 4.1.1
       vue: 3.2.47
     dev: false
 
@@ -3591,15 +3046,6 @@ packages:
     dependencies:
       vue: 3.2.47
       vue-demi: 0.13.11_vue@3.2.47
-    dev: false
-
-  /@vueuse/shared/9.12.0_vue@3.2.47:
-    resolution: {integrity: sha512-TWuJLACQ0BVithVTRbex4Wf1a1VaRuSpVeyEd4vMUWl54PzlE0ciFUshKCXnlLuD0lxIaLK4Ypj3NXYzZh4+SQ==}
-    dependencies:
-      vue-demi: 0.13.11_vue@3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
     dev: false
 
   /@vueuse/shared/9.13.0_vue@3.2.47:
