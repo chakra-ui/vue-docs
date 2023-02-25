@@ -9,3 +9,4 @@ node_modules
 .yarn
 .DS_Store
 dist
+.DS_Store
