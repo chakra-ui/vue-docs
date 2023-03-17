@@ -15,6 +15,9 @@ export default defineNuxtConfig({
       }
     }
   },
+  experimental: {
+    componentIslands: true
+  },
   // @ts-ignore
   chakra: {
     extendTheme: extendedTheme,

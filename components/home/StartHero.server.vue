@@ -1,21 +1,9 @@
 <script setup lang="ts">
-// import { PrismEditor } from 'vue-prism-editor'
-import {
-  chakra,
-  CButton,
-  CCode,
-  CFlex,
-  CHeading,
-  CIcon,
-  CLink,
-  CStack,
-  CSimpleGrid,
-  CText,
-} from "@chakra-ui/vue-next";
+import { chakra } from '@chakra-ui/vue-next';
 
 const installCode = `yarn add @chakra-ui/vue-next`;
 
-const NuxtLink = resolveComponent("nuxt-link");
+const NuxtLink = resolveComponent('nuxt-link');
 </script>
 
 <template>
@@ -28,7 +16,7 @@ const NuxtLink = resolveComponent("nuxt-link");
     :min-h="{
       base: 'calc(100vh - 78px)',
       sm: 'auto',
-      md: 'calc(100vh - 78px)',
+      md: 'calc(100vh - 78px)'
     }"
     :px="[4, 10, 12]"
     :py="{ base: 10, sm: 20 }"
