@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { chakra } from "@chakra-ui/vue-next";
-import DiscordHero from "../components/home/DiscordHero.vue";
-import Footer from "../components/home/Footer.vue";
-import StartHero from "../components/home/StartHero.vue";
-import PilersHero from "../components/home/PilersHero.vue";
+import { chakra } from '@chakra-ui/vue-next';
+import DiscordHero from '../components/home/DiscordHero.server.vue';
+import Footer from '../components/home/Footer.server.vue';
+import StartHero from '../components/home/StartHero.server.vue';
+import PilersHero from '../components/home/PilersHero.server.vue';
 
-import { siteDescription, siteName } from "~/config/site-config";
+import { siteDescription, siteName } from '~/config/site-config';
 
 definePageMeta({
-  layout: "home",
+  layout: 'home'
 });
 
 useHead({
@@ -16,9 +16,9 @@ useHead({
   meta: [
     {
       name: `description`,
-      content: siteDescription,
-    },
-  ],
+      content: siteDescription
+    }
+  ]
 });
 </script>
 
