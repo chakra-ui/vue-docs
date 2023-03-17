@@ -1,11 +1,16 @@
 <script lang="ts" setup>
-import { chakra } from '@chakra-ui/vue-next';
-import DiscordHero from '../components/home/DiscordHero.server.vue';
-import Footer from '../components/home/Footer.server.vue';
-import StartHero from '../components/home/StartHero.server.vue';
-import PilersHero from '../components/home/PilersHero.server.vue';
-
 import { siteDescription, siteName } from '~/config/site-config';
+import { chakra } from '@chakra-ui/vue-next';
+import StartHero from '../components/home/StartHero.server.vue';
+const DiscordHero = defineAsyncComponent(
+  () => import('../components/home/DiscordHero.server.vue')
+);
+const Footer = defineAsyncComponent(
+  () => import('../components/home/Footer.server.vue')
+);
+const PilersHero = defineAsyncComponent(
+  () => import('../components/home/PilersHero.server.vue')
+);
 
 definePageMeta({
   layout: 'home'
