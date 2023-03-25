@@ -7,7 +7,14 @@ import extendedTheme from './theme';
 const { extendedIcons: extend, ...library } = iconSet;
 
 export default defineNuxtConfig({
-  target: 'static',
+  nitro: {
+    prerender: {
+      routes: [
+        '/',
+        '/getting-started',
+      ]
+    }
+  },
   app: {
     head: {
       title: siteName,
