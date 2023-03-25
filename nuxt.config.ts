@@ -7,6 +7,7 @@ import extendedTheme from './theme';
 const { extendedIcons: extend, ...library } = iconSet;
 
 export default defineNuxtConfig({
+  target: 'static',
   app: {
     head: {
       title: siteName,
