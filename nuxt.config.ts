@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         '/',
         '/getting-started',
       ]
-    }
+    },
+    serveStatic: true,
   },
   app: {
     head: {
