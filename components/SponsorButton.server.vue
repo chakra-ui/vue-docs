@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CBox, CIcon } from '@chakra-ui/vue-next'
-import siteConfig from '@/config/site-config'
+import { CBox, CIcon } from '@chakra-ui/vue-next';
+import siteConfig from '@/config/site-config';
 </script>
 
 <template>
@@ -12,27 +12,8 @@ import siteConfig from '@/config/site-config'
     :href="siteConfig.openCollective.url"
     target="_blank"
     rel="noopener noreferrer"
-    bg="transparent"
-    border-width="1px"
-    border-color="currentColor"
-    border-style="solid"
     px="1em"
-    min-h="36px"
-    border-radius="md"
-    font-size="sm"
-    color="currentColor"
-    outline="0"
-    transition="all 0.3s"
-    :_hover="{
-      bg: 'gray.100',
-      borderColor: 'gray.300',
-    }"
-    :_active="{
-      borderColor: 'gray.200',
-    }"
-    :_focus="{
-      boxShadow: 'outline',
-    }"
+    variant="ghost"
     v-bind="$attrs"
   >
     <CIcon

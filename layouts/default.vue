@@ -7,18 +7,10 @@ import Sidebar from '~/components/navigation/sidebar.vue';
  * Styling
  */
 const color = useColorModeValue('gray.700', 'white');
-const bg = useColorModeValue('white', 'gray.800');
-const colorModeClass = useColorModeValue(undefined, 'chakra-ui-dark');
 </script>
 
 <template>
-  <chakra.div
-    :min-h="['auto', 'auto', '100vh']"
-    w="100%"
-    :color="color"
-    :bg="bg"
-    :class="colorModeClass"
-  >
+  <chakra.div :min-h="['auto', 'auto', '100vh']" w="100%" :color="color">
     <TopNavigation />
     <chakra.div max-w="8xl" mx="auto" d="flex">
       <!-- Sidebar Navigation -->

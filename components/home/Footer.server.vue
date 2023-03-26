@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CFlex, CIcon, CLink } from "@chakra-ui/vue-next";
+import { CFlex, CIcon, CLink } from '@chakra-ui/vue-next';
 </script>
 
 <template>
@@ -8,7 +8,6 @@ import { CFlex, CIcon, CLink } from "@chakra-ui/vue-next";
     justify-content="center"
     align-items="center"
     :py="[4, 10, 10]"
-    bg="white"
   >
     <CLink
       aria-label="View GitHub"

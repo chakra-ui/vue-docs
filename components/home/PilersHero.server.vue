@@ -13,7 +13,6 @@ import { chakra } from '@chakra-ui/vue-next';
       :template-columns="['auto', 'auto', 'repeat(3, 1fr)']"
       gap="1.5rem"
       shadow="lg"
-      bg="white"
       py="10"
       :px="{ base: '3', sm: '10' }"
       list-style-type="none"
