@@ -89,22 +89,52 @@ In some products, you might need to show a badge on the avatar. We call this a `
 The badge is by default on the bottom right corner, but you can change its position by using the prop `position` (`top-start` | `top-end` | `bottom-start` | `bottom-end`)
 
 ::showcase
+  ::stack{spacing="2" align="center" direction="row"}
 
-:avatar-badge{name="Evan You" badge-props='{bg: "red.500"}'}
+  ::avatar{name="Sybren Willemot"}
+  :avatar-badge{bg="green.500" box-size="1em"}
+  ::
 
+  ::avatar{name="Jonathan Bakebwa"}
+  :avatar-badge{bg="red.500" box-size="1em" placement="top-start"}
+  ::
+
+  ::avatar{name="Zakaria Sahmane"}
+  :avatar-badge{bg="yellow.500" box-size="1em" placement="top-end"}
+  ::
+
+  ::avatar{name="Tyler Pfledderer"}
+  :avatar-badge{bg="purple.500" box-size="1em" placement="bottom-start"}
+  ::
+
+  ::
 ::
 
 
 ```html
-<c-avatar name="Evan You">
-  <c-avatar-badge bg="red.500" />
+<c-avatar name="Jonathan Bakebwa">
+  <c-avatar-badge bg="red.500" placement="top-start" />
 </c-avatar>
 ```
 
 You can also add icons inside the badge if needed :
 
+::showcase
+::avatar{name="Jonathan Bakebwa" alt="Jonathan Bakebwa picture" src="https://avatars.githubusercontent.com/u/21237954?v=4"}
+
+::avatar-badge{bg="red.500" box-size="1em"}
+  :icon{color="white" name="minus" w="0.3em"}
+::
+
+
+
+
 ```html
-<c-avatar name="Evan You">
+<c-avatar 
+  name="Jonathan Bakebwa" 
+  alt="Jonathan Bakebwa" 
+  src="https://avatars.githubusercontent.com/u/21237954?v=4"
+>
   <c-avatar-badge bg="red.500">
     <c-icon color="white" name="minus" w="0.3em" />
   </c-avatar-badge>
@@ -119,29 +149,31 @@ In some cases, you might need to stack avatars as a group. Use the `CAvatarGroup
 - To size all the avatars equally, pass the `size` prop.
 - To adjust the spacing between the avatars, pass the `spacing` prop.
 
+
+::showcase
+  ::avatar-group
+::
+
+
 ```html
-<c-avatar-group max="3" size="lg">
-  <c-avatar
-    name="Sarah Drasner"
-    src="https://avatars.githubusercontent.com/u/2281088?v=4"
-    alt="Sarah Drasner"
-  />
-  <c-avatar
-    name="Evan You"
-    alt="Evan You"
-    src="https://www.github.com/yyx990803.png"
-  />
-  <c-avatar
-    name="Anthony Fu"
-    src="https://avatars.githubusercontent.com/u/11247099?v=4"
-    alt="Anthony Fu"
-  />
-  <c-avatar
-    name="Maya Shavin"
-    src="https://avatars.githubusercontent.com/u/6650139?v=4"
-    alt="Maya Shavin"
-  />
-</c-avatar-group>
+  <c-avatar-group max="3" size="lg">
+    <c-avatar 
+      name="Segun Adebayo" 
+      src="https://avatars.githubusercontent.com/u/6916170?v=4" 
+      alt="Segun Adebayo" />
+    <c-avatar 
+      name="Evan You" 
+      alt="Evan You" 
+      src="https://avatars.githubusercontent.com/u/499550?v=4" />
+    <c-avatar 
+      name="Anthony Fu" 
+      src="https://avatars.githubusercontent.com/u/11247099?v=4" 
+      alt="Anthony Fu" />
+    <c-avatar 
+      name="Maya Shavin" 
+      src="https://avatars.githubusercontent.com/u/6650139?v=4" 
+      alt="Maya Shavin" />
+  </c-avatar-group>
 ```
 
 ### Initials
