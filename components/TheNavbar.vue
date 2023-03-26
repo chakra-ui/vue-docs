@@ -2,41 +2,35 @@
 import {
   chakra,
   useColorMode,
-  useColorModeValue,
   CHStack,
   CFlex,
   CIcon,
   CIconButton,
-  CLink
-} from '@chakra-ui/vue-next'
-import { useWindowScroll } from '@vueuse/core'
-import { computed, onMounted, ref } from 'vue'
-import SponsorButton from './SponsorButton.vue'
-// import { SearchButton } from "./AlgoliaSearch.vue"
-// import { MobileNavButton } from "./MobileNav.vue"
-import VersionSwitcher from './VersionSwitcher'
-import siteConfig from '@/config/site-config'
+  CLink,
+  useColorModeValue
+} from '@chakra-ui/vue-next';
+import { useWindowScroll } from '@vueuse/core';
+import { computed, onMounted, ref } from 'vue';
+import SponsorButton from './SponsorButton.server.vue';
+import VersionSwitcher from './VersionSwitcher';
+import siteConfig from '@/config/site-config';
 
-const NuxtLink = resolveComponent('nuxt-link')
+const NuxtLink = resolveComponent('nuxt-link') as any;
 
-const { toggleColorMode } = useColorMode()
-const text = useColorModeValue('dark', 'light')
-const switchIcon = useColorModeValue('moon', 'sun')
-const bg = useColorModeValue('white', 'gray.800')
+const { colorMode, toggleColorMode } = useColorMode();
+const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined);
 
-const headerRef = ref<{ $el: HTMLDivElement } | undefined>(undefined)
+const { y } = useWindowScroll();
 
-const { y } = useWindowScroll()
-
-const height = ref(0)
+const height = ref(0);
 
 onMounted(() => {
-  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0
-})
+  height.value = headerRef.value?.$el.getBoundingClientRect().height ?? 0;
+});
 
 const headerShadow = computed(() => {
-  return y.value > height.value ? 'sm' : undefined
-})
+  return y.value > height.value ? 'sm' : undefined;
+});
 </script>
 
 <template>
@@ -50,10 +44,9 @@ const headerShadow = computed(() => {
     left="0"
     right="0"
     width="full"
-    :bg="bg"
     backdrop-filter="saturate(120%) blur(5px)"
-    border-top="6px solid"
-    border-color="emerald.500"
+    border-bottom="1px solid"
+    :border-color="useColorModeValue('blackAlpha.600', 'whiteAlpha.300').value"
   >
     <chakra.nav height="4.5rem" mx="auto" max-w="8xl">
       <!-- content -->
@@ -72,13 +65,7 @@ const headerShadow = computed(() => {
         </CFlex>
 
         <!-- nav -->
-        <CFlex
-          justify="flex-end"
-          w="100%"
-          max-w="1100px"
-          align="center"
-          color="gray.400"
-        >
+        <CFlex justify="flex-end" w="100%" max-w="1100px" align="center">
           <!-- <SearchButton></SearchButton> -->
           <VersionSwitcher />
           <CHStack spacing="5" :display="{ base: 'none', md: 'flex' }">
@@ -128,14 +115,16 @@ const headerShadow = computed(() => {
           <CIconButton
             size="md"
             font-size="lg"
-            :aria-label="`Switch to ${text} mode`"
-            :title="`Switch to ${text} mode`"
+            aria-label="Switch color mode"
             variant="ghost"
+            type="button"
             color="current"
             :ml="{ base: '0', md: '3' }"
-            :icon="switchIcon"
             @click="toggleColorMode"
-          />
+          >
+            <IconsMoonIcon v-if="colorMode === 'light'" />
+            <IconsSunIcon v-else />
+          </CIconButton>
           <SponsorButton ml="5" />
           <!-- <mobile-nav-button @click="isOpen = true"></mobile-nav-button> -->
         </CFlex>

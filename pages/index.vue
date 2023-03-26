@@ -1,15 +1,19 @@
 <script lang="ts" setup>
-import { siteDescription, siteName } from '~/config/site-config';
 import { chakra } from '@chakra-ui/vue-next';
 import StartHero from '../components/home/StartHero.server.vue';
+import { siteDescription, siteName } from '~/config/site-config';
 const DiscordHero = defineAsyncComponent(
   () => import('../components/home/DiscordHero.server.vue')
 );
 const Footer = defineAsyncComponent(
   () => import('../components/home/Footer.server.vue')
 );
-const PilersHero = defineAsyncComponent(
-  () => import('../components/home/PilersHero.server.vue')
+const HomeFeatures = defineAsyncComponent(
+  () => import('../components/home/features.server.vue')
+);
+
+const ComponentApi = defineAsyncComponent(
+  () => import('../components/home/component-api.server.vue')
 );
 
 definePageMeta({
@@ -28,9 +32,10 @@ useHead({
 </script>
 
 <template>
-  <chakra.main :min-h="['auto', 'auto', '100vh']" w="100%" bg="white">
+  <chakra.main :min-h="['auto', 'auto', '100vh']" w="100%">
     <StartHero />
-    <PilersHero />
+    <HomeFeatures />
+    <ComponentApi />
     <DiscordHero />
     <Footer />
   </chakra.main>

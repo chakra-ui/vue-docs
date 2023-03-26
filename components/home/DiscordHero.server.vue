@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { chakra, CBox, CButton, CFlex, CIcon } from "@chakra-ui/vue-next";
+import { chakra, CBox, CButton, CFlex, CIcon } from '@chakra-ui/vue-next';
 </script>
 
 <template>

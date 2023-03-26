@@ -1,8 +1,9 @@
 import { extendTheme } from '@chakra-ui/vue-next';
 import { textStyles } from './text-styles';
 import { globalStyles } from './global-styles';
-
+import { layerStyles } from './layer-styles';
 import { semanticTokens } from './semantic-tokens';
+import * as components from './components';
 
 export default extendTheme({
   colors: {
@@ -40,5 +41,7 @@ export default extendTheme({
     global: globalStyles
   },
   textStyles,
-  semanticTokens
+  layerStyles,
+  semanticTokens,
+  components
 });
