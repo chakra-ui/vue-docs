@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
-    "@chakra-ui/nuxt-next": "2.1.0-beta.8",
+    "@chakra-ui/nuxt-next": "2.1.0-beta.11",
     "@chakra-ui/vue-auto-import": "3.0.0-beta.7",
-    "@chakra-ui/vue-next": "2.1.0-beta.7",
+    "@chakra-ui/vue-next": "2.1.0-beta.10",
     "@fontsource/dm-sans": "^4.5.9",
     "@fontsource/ibm-plex-mono": "^4.5.13",
     "@nuxt/vite-builder": "^3.0.0",
