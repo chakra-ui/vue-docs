@@ -19,7 +19,7 @@ import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue'
 ## Usage
 
 ::showcase
-  ::checkbox{default-checked="true"}
+  ::checkbox{default-checked=true}
     Simple checkbox
   ::
 ::
@@ -31,13 +31,12 @@ import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue'
 ### Disabled Checkbox
 
 ::showcase
-  ::checkbox{is-disabled="true"}
-    Disabled checkbox
-  ::
+  :disabled-checkbox
 ::
 
 ```html
-<c-checkbox is-disabled> Disabled checkbox </c-checkbox>
+<c-checkbox is-disabled> Disabled checkbox </c-checkbox> 
+<c-checkbox is-disabled default-checked> Disabled checked </c-checkbox>
 ```
 
 ### Checkbox with custom color
@@ -86,7 +85,7 @@ Pass the `size` prop to change the size of the `c-checkbox`. Values can be eithe
 ### Invalid Checkbox
 
 ::showcase
-  ::checkbox{is-invalid="true"}
+  ::checkbox{is-invalid=true}
     Invalid checkbox
   ::
 ::

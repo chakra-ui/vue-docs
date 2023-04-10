@@ -1,5 +1,7 @@
 <script setup>
 import { CCheckboxGroup, CCheckbox } from '@chakra-ui/vue-next';
+
+const items = ref(["naruto", "sasuke"])
 </script>
 
 <template>
