@@ -6,7 +6,7 @@
 
 <style scoped>
 a {
-  color: var(--chakra-colors-green-400);
+  color: var(--chakra-colors-green-600);
 }
 a:hover {
   text-decoration: underline;
