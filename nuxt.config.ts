@@ -24,7 +24,8 @@ export default defineNuxtConfig({
       title: siteName,
       htmlAttrs: {
         lang: siteLang
-      }
+      },
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.ico' }]
     }
   },
   experimental: {
