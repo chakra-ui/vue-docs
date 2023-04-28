@@ -11,9 +11,17 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/',
-        '/getting-started/**/*',
-        '/styled-system/**/*',
-        '/components/**/*',
+        '/getting-started',
+        '/getting-started/installation',
+        '/getting-started/nuxt',
+        '/getting-started/design-principles',
+        '/styled-system',
+        '/styled-system/responsive-styles',
+        '/components/accordion',
+        '/components/alert',
+        '/components/avatar',
+        '/components/checkbox',
+        '/components/tag',
         '/sitemap.xml'
       ]
     },
