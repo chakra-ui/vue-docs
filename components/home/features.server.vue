@@ -34,13 +34,13 @@
           font-size="1.8em"
           :as="feature.icon"
         />
-        <chakra.h3
+        <chakra.h2
           :color="useColorModeValue('emerald.600', 'white').value"
           font-weight="bold"
           font-size="1.1rem"
         >
           {{ feature.title }}
-        </chakra.h3>
+        </chakra.h2>
         <chakra.p>
           {{ feature.description }}
         </chakra.p>

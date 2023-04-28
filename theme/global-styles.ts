@@ -1,7 +1,8 @@
 export const globalStyles = {
   'html, body': {
     color: 'bodyText',
-    bg: 'bodyBg'
+    bg: 'bodyBg',
+    fontFamily: 'body !important'
   },
   table: {
     width: '100%',

@@ -1,11 +1,10 @@
-const baseUrl = 'https://github.com/chakra-ui/chakra-ui-vue-next'
+const baseUrl = 'https://github.com/chakra-ui/chakra-ui-vue-next';
 
-const siteUrl = 'https://vue.chakra-ui.com'
+const siteUrl = 'https://vue.chakra-ui.com';
 const siteDescription =
-  'Simple, Modular and Accessible UI Components for your Vue Applications.'
-const siteName =
-  'Chakra UI Vue: Simple, Modular and Accessible UI Components for your Vue Applications.'
-const siteLang = 'en'
+  'Simple, Modular and Accessible UI Components for your Vue Applications.';
+const siteName = 'Chakra UI Vue | Build accessible Vue apps with speed';
+const siteLang = 'en';
 
 const siteConfig = {
   repo: {
@@ -52,7 +51,7 @@ const siteConfig = {
       ]
     }
   }
-}
+};
 
-export default siteConfig
-export { baseUrl, siteDescription, siteLang, siteName, siteUrl }
+export default siteConfig;
+export { baseUrl, siteDescription, siteLang, siteName, siteUrl };

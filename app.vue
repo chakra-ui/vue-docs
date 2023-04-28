@@ -16,8 +16,6 @@
     </NuxtLayout>
   </div>
 </template>
-
-<script>
-import '@fontsource/ibm-plex-mono';
-import '@fontsource/dm-sans';
-</script>
+<style>
+@import url('@/styles/typography/all.css');
+</style>

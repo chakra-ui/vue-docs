@@ -1,0 +1,19 @@
+/* @import url(./300.css); */
+@import url(./400.css);
+@import url(./500.css);
+@import url(./700.css);
+
+
+:root {
+  --chakra-fonts-heading: "DM Sans", sans-serif !important;
+  --chakra-fonts-body: "DM Sans", sans-serif !important;
+  --chakra-fonts-mono: "IBM Plex Mono", monospace !important;
+}
+
+html {
+  font-family: var(--chakra-fonts-body) !important;
+}
+
+pre, code {
+  font-family: var(--chakra-fonts-mono) !important;
+}

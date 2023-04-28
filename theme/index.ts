@@ -28,9 +28,9 @@ export default extendTheme({
   },
   fonts: {
     heading:
-      'DM Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-    body: 'DM Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-    mono: '"IBM Plex Mono", monospace;'
+      'DM Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    body: 'DM Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    mono: 'IBM Plex Mono'
   },
   shadows: {
     outline: '0 0 0 4px rgba(47, 133, 90, 0.62)',

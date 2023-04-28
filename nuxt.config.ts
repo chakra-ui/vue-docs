@@ -11,10 +11,13 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/',
-        '/getting-started',
+        '/getting-started/**/*',
+        '/styled-system/**/*',
+        '/components/**/*',
+        '/sitemap.xml'
       ]
     },
-    serveStatic: true,
+    serveStatic: true
   },
   app: {
     head: {
@@ -39,10 +42,21 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '~/modules/content-chunks.module.ts',
-    '@chakra-ui/nuxt-next'
+    '@chakra-ui/nuxt-next',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/html-validator',
+    '@nuxtjs/robots'
   ],
-  plugins: ['~/plugins/typography.ts'],
-  css: ['~/styles/fonts.scss', '~/styles/prism.scss'],
+  fontMetrics: {
+    fonts: [
+      'DM Sans',
+      {
+        family: 'DM Sans',
+        src: '@/styles/typography/files/dm-sans-all-400-normal.woff2'
+      }
+    ]
+  },
+  css: ['@/styles/typography/all.css', '~/styles/prism.scss'],
   content: {
     // documentDriven: true,
     markdown: {
