@@ -17,7 +17,7 @@ Chakra UI Vue exports 5 accordion-related components.
 - **CAccordionPanel**: The container for the details to be revealed.
 - **CAccordionIcon**: A chevron-down icon that rotates based on the expanded/collapsed state
 
-```ts
+```js
 import {
   CAccordion,
   CAccordionItem,
