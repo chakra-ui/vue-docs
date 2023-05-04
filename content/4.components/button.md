@@ -43,10 +43,10 @@ Use the size prop to change the size of the button. You can set the value to `xs
 ::
 
 ```html
-<c-button size="xs" color-scheme="teal"> Button </c-button>
-<c-button size="sm" color-scheme="teal"> Button </c-button>
-<c-button size="md" color-scheme="teal"> Button </c-button>
-<c-button size="lg" color-scheme="teal"> Button </c-button>
+<c-button size="xs" mr="3" color-scheme="teal"> Button </c-button>
+<c-button size="sm" mr="3" color-scheme="teal"> Button </c-button>
+<c-button size="md" mr="3" color-scheme="teal"> Button </c-button>
+<c-button size="lg" mr="3" color-scheme="teal"> Button </c-button>
 ```
 
 ### Button Variants
@@ -59,11 +59,11 @@ You can change the button style to either `solid` `ghost` `outline` or `link` by
 ::
 
 ```html
-<c-button variant="luxury"> Button </c-button>
-<c-button variant="solid" color-scheme="teal"> Button </c-button>
-<c-button variant="outline" color-scheme="teal"> Button </c-button>
-<c-button variant="ghost" color-scheme="teal"> Button </c-button>
-<c-button variant="link" color-scheme="teal"> Button </c-button>
+<c-button mr="3" variant="luxury"> Button </c-button>
+<c-button mr="3" variant="solid" color-scheme="teal"> Button </c-button>
+<c-button mr="3" variant="outline" color-scheme="teal"> Button </c-button>
+<c-button mr="3" variant="ghost" color-scheme="teal"> Button </c-button>
+<c-button mr="3" variant="link" color-scheme="teal"> Button </c-button>
 ```
 
 ### Button with Icon
