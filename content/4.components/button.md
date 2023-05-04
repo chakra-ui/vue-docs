@@ -25,8 +25,8 @@ import { CButtton, CButtonGroup } from '@chakra-ui/vue-next';
 ## Usage
 
 ::showcase
-::wrap{align="start" width="full"}
 ::base-button{size="lg"}
+::
 ::
 
 ```html
@@ -38,8 +38,8 @@ import { CButtton, CButtonGroup } from '@chakra-ui/vue-next';
 Use the size prop to change the size of the button. You can set the value to `xs,` `sm,` `md,` or `lg`.
 
 ::showcase
-::wrap{align="center" width="full" justify="start" spacing="2"}
-::sizes-button
+::sizes-button{spacing="2"}
+::
 ::
 
 ```html
@@ -54,8 +54,8 @@ Use the size prop to change the size of the button. You can set the value to `xs
 You can change the button style to either `solid` `ghost` `outline` or `link` by applying the `variant` prop.
 
 ::showcase
-::wrap{justify="start" width="full" spacing="2"}
-::variant-button
+::variant-button{spacing="2"}
+::
 ::
 
 ```html
@@ -71,8 +71,8 @@ You can change the button style to either `solid` `ghost` `outline` or `link` by
 You can change the button style to either `solid` `ghost` `outline` or `link` by applying the `variant` prop.
 
 ::showcase
-::wrap{align="start" width="full" spacing="2"}
 ::icon-button
+::
 ::
 
 ```html
@@ -89,8 +89,8 @@ You can change the button style to either `solid` `ghost` `outline` or `link` by
 You can set the loading props on a button when it is loading,to indicate it is carrying out an action by using the `:is-loading` props to set an onClick action.
 
 ::showcase
-::wrap{align="start" width="full"}
 ::loading-button
+::
 ::
 
 ```html
@@ -127,8 +127,8 @@ You can use the `CButtonGroup` component to group buttons. When you use the Butt
 - Flush the buttons together by removing the border radius of their children as needed.
 
 ::showcase
-::wrap{align="start" width="full"}
 ::button-group
+::
 ::
 
 ```html
@@ -148,8 +148,8 @@ You can use the `CButtonGroup` component to group buttons. When you use the Butt
 All props you pass `variant`, `colorScheme`, `size` etc are converted to style props. This therefore means you can override any style of the Button via props.
 
 ::showcase
-::wrap{align="start" width="full"}
 ::button-composition
+::
 ::
 
 ```html
@@ -171,8 +171,8 @@ All props you pass `variant`, `colorScheme`, `size` etc are converted to style p
 You can pass-in other props to make fully customizable buttons, you can do this easily by defining each props based on your button composition.
 
 ::showcase
-::wrap{align="start" width="full"}
 ::custom-button
+::
 ::
 
 ```html
