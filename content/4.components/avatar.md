@@ -93,7 +93,7 @@ In some products, you might need to show a badge on the avatar. We call this a `
 The badge is by default on the bottom right corner, but you can change its position by using the prop `position` (`top-start` | `top-end` | `bottom-start` | `bottom-end`)
 
 ::showcase
-::stack{spacing="2" align="center" direction="row"}
+:::stack{spacing="2" align="center" direction="row"}
 
 ::avatar{name="Sybren Willemot"}
 :avatar-badge{bg="green.500" box-size="1em"}
@@ -111,8 +111,9 @@ The badge is by default on the bottom right corner, but you can change its posit
 :avatar-badge{bg="purple.500" box-size="1em" placement="bottom-start"}
 ::
 
+:::
 ::
-::
+
 
 ```html
 <c-avatar name="Jonathan Bakebwa">
@@ -151,6 +152,7 @@ In some cases, you might need to stack avatars as a group. Use the `CAvatarGroup
 
 ::showcase
 ::avatar-group
+::
 ::
 
 ```html
