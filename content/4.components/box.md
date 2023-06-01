@@ -8,8 +8,6 @@ version: 2.0+
 Box is the most abstract component on top of which all other `@chakra-ui/vue` components are built. By default, it renders a `div` element
 
 ## Import
-
-Chakra UI Vue exports 5 accordion-related components.
 ```js
 import { CBox } from "@chakra-ui/vue-next"
 ```
@@ -27,9 +25,9 @@ The Box component is useful because it helps with three common use cases:
 
 
 ```html
-  <c-box bg="tomato" w="100%" p="4" color="white">
-    This is the Box
-  </c-box>
+<c-box bg="tomato" w="100%" p="4" color="white">
+  This is the Box
+</c-box>
 ```
 
 ## Composition with `CBox`
