@@ -1,12 +1,12 @@
 <template>
     <c-v-stack w="2xl" align-items="center">
-        <c-container maxW='md' bg='blue.600' color='white'>
+        <c-container max-w='md' bg='blue.600' color='white'>
             "md" Container
         </c-container>
-        <c-container maxW='550px' bg='purple.600' color='white'>
+        <c-container max-w='550px' bg='purple.600' color='white'>
             "550px" Container
         </c-container>
-        <c-container maxW='container.sm' bg='green.400' color='#262626'>
+        <c-container max-w='container.sm' bg='green.400' color='#262626'>
             "container.sm" Container
         </c-container>
     </c-v-stack>
