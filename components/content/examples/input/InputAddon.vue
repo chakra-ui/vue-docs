@@ -2,7 +2,7 @@
     <c-stack spacing="4" w="xl" align-items="center">
         <c-input-group>
             <c-input-left-addon>+234</c-input-left-addon>
-            <c-input type="tel" roundedLeft="0" placeholder="phone number" />
+            <c-input type="tel" rounded-left="0" placeholder="phone number" />
         </c-input-group>
         <!-- If you add the size prop to `InputGroup`, it'll pass it to all its children.  -->
 

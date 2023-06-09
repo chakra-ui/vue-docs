@@ -17,7 +17,7 @@ import { CInput } from '@chakra-ui/vue-next';
 
 ## Usage
 
-Here's a basic usage example of the `Input` component:
+Here's a basic usage example of the `CInput` component:
 
 ::showcase
 ::basic-input
@@ -59,7 +59,7 @@ If you want to use the native DOM `size` attribute you can use the `htmlSize` pr
 ::
 
 ```html
-<c-input htmlSize="4" width="auto" />
+<c-input html-size="4" width="auto" />
 ```
 
 
@@ -91,6 +91,21 @@ Like bootstrap, you can add addons to the left and right of the `Input` componen
 ::
 ::
 
+
+```html
+<c-stack spacing="4" w="xl" align-items="center">
+    <c-input-group>
+        <c-input-left-addon>+234</c-input-left-addon>
+        <c-input type="tel" rounded-left="0" placeholder="phone number" />
+    </c-input-group>
+
+    <c-input-group>
+        <c-input-left-addon>https://</c-input-left-addon>
+        <c-input rounded="0" placeholder="mysite" />
+        <c-input-right-addon>.com</c-input-right-addon>
+    </c-input-group>
+</c-stack>
+```
 
 ## Add elements inside Input
 

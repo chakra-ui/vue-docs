@@ -1,5 +1,5 @@
 <template>
-    <c-input htmlSize="4" width="auto" />
+    <c-input html-size="4" width="auto" />
 </template>
 
 <script setup>
