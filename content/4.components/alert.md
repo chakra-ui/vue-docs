@@ -38,10 +38,10 @@ You can use the `CAlertTitle` and `CAlertDescription` component to display an al
 ::
 
 ```html
-<c-alert status="success">
-  <c-alert-title>Updated Successfully</c-alert-title>
-  <c-alert-description>Click to view your profile</c-alert-description>
-</c-alert>
+<CAlert status="success">
+  <CAlertTitle>Updated Successfully</CAlertTitle>
+  <CAlertDescription>Click to view your profile</CAlertDescription>
+</CAlert>
 ```
 
 ### With Icon
@@ -54,27 +54,27 @@ Icons are defined based on the `status` props passed in the `CAlert` component. 
 ::
 
 ```html
-<c-alert variant="left-accent" status="info" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Please,updat your KYC. </c-alert-description>
-</c-alert>
+<CAlert variant="left-accent" status="info" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Please,update your KYC. </CAlertDescription>
+</CAlert>
 
-<c-alert variant="left-accent" status="warning" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Incorrect Password </c-alert-description>
-</c-alert>
+<CAlert variant="left-accent" status="warning" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Incorrect Password </CAlertDescription>
+</CAlert>
 
-<c-alert variant="left-accent" status="success" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description>
-    Congratulations!. You scored above 75%
-  </c-alert-description>
-</c-alert>
+<CAlert variant="left-accent" status="success" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription>
+    Congratulations! You scored above 75%
+  </CAlertDescription>
+</CAlert>
 
-<c-alert variant="left-accent" status="error" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Access revoked!</c-alert-description>
-</c-alert>
+<CAlert variant="left-accent" status="error" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Access revoked!</CAlertDescription>
+</CAlert>
 ```
 
 ### With Status
@@ -87,19 +87,19 @@ This alert offers the `status` prop to define severity or success based by color
 ::
 
 ```html
-<c-alert status="info" mb="3"
-  ><c-alert-icon mr="2" /> Please update your KYC.</c-alert
->
-<c-alert status="success" mb="3"
-  ><c-alert-icon mr="2" />
-  Your Info has been saved successfully.
-</c-alert>
-<c-alert status="warning" mb="3"
-  ><c-alert-icon mr="2" /> Unable to process request
-</c-alert>
-<c-alert status="error" mb="3"
-  ><c-alert-icon mr="2" /> Password is Incorrect!.
-</c-alert>
+<CAlert status="info" mb="3">
+  <CAlertIcon mr="2" /> Please update your KYC.
+</CAlert>
+<CAlert status="success" mb="3">
+  <CAlertIcon mr="2" />
+  Your info has been saved successfully.
+</CAlert>
+<CAlert status="warning" mb="3"
+  ><CAlertIcon mr="2" /> Unable to process request
+</CAlert>
+<CAlert status="error" mb="3"
+  ><CAlertIcon mr="2" /> Password is Incorrect!.
+</CAlert>
 ```
 
 ### With Accent
@@ -112,25 +112,25 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
 ::
 
 ```html
-<c-alert variant="solid" status="success">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Submitted Successfully! </c-alert-description>
-</c-alert>
+<CAlert variant="solid" status="success">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Submitted Successfully! </CAlertDescription>
+</CAlert>
 
-<c-alert variant="subtle" status="success" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Submitted Successfully! </c-alert-description>
-</c-alert>
+<CAlert variant="subtle" status="success" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Submitted Successfully! </CAlertDescription>
+</CAlert>
 
-<c-alert variant="left-accent" status="success" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Submitted Successfully! </c-alert-description>
-</c-alert>
+<CAlert variant="left-accent" status="success" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Submitted Successfully! </CAlertDescription>
+</CAlert>
 
-<c-alert variant="top-accent" status="success" mb="3">
-  <c-alert-icon mr="2" />
-  <c-alert-description> Submitted Successfully! </c-alert-description>
-</c-alert>
+<CAlert variant="top-accent" status="success" mb="3">
+  <CAlertIcon mr="2" />
+  <CAlertDescription> Submitted Successfully! </CAlertDescription>
+</CAlert>
 ```
 
 ## Composition
@@ -143,7 +143,7 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
 ::
 
 ```html
-<c-alert
+<CAlert
   variant="subtle"
   status="success"
   flex-direction="column"
@@ -153,16 +153,16 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
   justify-content="center"
   w="full"
 >
-  <c-alert-icon box-size="40px" />
-  <c-alert-title mt="4" mb="1" font-size="lg"
-    >Application Submitted!</c-alert-title
-  >
-  <c-alert-description max-width="sm" mt="auto" font-weight="normal"
+  <CAlertIcon box-size="40px" />
+  <CAlertTitle mt="4" mb="1" font-size="lg">
+    Application Submitted!
+  </CAlertTitle>
+  <CAlertDescription max-width="sm" mt="auto" font-weight="normal"
     >Our team will review your application. If you are found a fit for this
     role, someone will be in touch with you. Please do well to stay in touch
-    with our Jobs page</c-alert-description
-  >
-</c-alert>
+    with our Jobs page
+  </CAlertDescription>
+</CAlert>
 ```
 
 `CAlert` can as well be used with other Chakra-Vue components, let's for example use the `CButton` alongside the `CAlert`.
@@ -174,7 +174,7 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
 
 ```javascript
 <template>
-  <c-button
+  <CButton
     v-if="!showAlert"
     @click="showAlert = true"
     border="1px solid rgba(47, 43, 67, 0.1)"
@@ -185,9 +185,9 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
     bg="transparent"
   >
     Show alert
-  </c-button>
-  <c-alert
-    v-if="showAlert"
+  </CButton>
+  <CAlert
+    vIf="showAlert"
     status="warning"
     variant="subtle"
     flex-direction="column"
@@ -195,21 +195,21 @@ You can use the`variant` props on the `CAlert` to create variant styles. The `va
     justify-content="center"
     text-align="center"
   >
-    <c-alert-icon />
-    <c-alert-title mt="4" mb="1" font-size="lg"
-      >Before Submitting</c-alert-title
-    >
-    <c-alert-description max-width="sm" mt="auto" font-weight="normal">
+    <CAlertIcon />
+    <CAlertTitle mt="4" mb="1" font-size="lg">
+      Before Submitting
+    </CAlertTitle>
+    <CAlertDescription max-width="sm" mt="auto" font-weight="normal">
       Kindly note that this decision cannot be reversed, once you submit, your
       results are uploaded to the database.
-    </c-alert-description>
-    <c-button-group variant="outline" mt="4">
-      <c-button color-scheme="blue" @click="showAlert = false"
-        >Proceed</c-button
-      >
-      <c-button @click="showAlert = false">Cancel</c-button>
-    </c-button-group>
-  </c-alert>
+    </CAlertDescription>
+    <CButtonGroup variant="outline" mt="4">
+      <CButton color-scheme="blue" @click="showAlert = false">
+        Proceed
+      </CButton>
+      <CButton @click="showAlert = false">Cancel</CButton>
+    </CButtonGroup>
+  </CAlert>
 </template>
 
 <script setup>
