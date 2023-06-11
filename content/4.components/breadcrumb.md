@@ -36,17 +36,17 @@ import {
 When you use the `is-current-page` prop on a `CBreadcrumbItem`, it tells the `CBreadcrumbLink` that it represents the current page.
 
 ```html
-<c-breadcrumb>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+<CBreadcrumb>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 ### With Separators
@@ -61,17 +61,17 @@ Breadcrumb separators can be used in four ways, either as default separator, wit
 ::
 
 ```html
-<c-breadcrumb>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+<CBreadcrumb>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 #### Using functional separator
@@ -82,17 +82,17 @@ Breadcrumb separators can be used in four ways, either as default separator, wit
 ::
 
 ```html
-<c-breadcrumb :separator="Sun">
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+<CBreadcrumb :separator="Sun">
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 #### Using String as separator
@@ -103,17 +103,17 @@ Breadcrumb separators can be used in four ways, either as default separator, wit
 ::
 
 ```html
-<c-breadcrumb separator=">">
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+<CBreadcrumb separator=">">
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 #### Using slot
@@ -124,20 +124,20 @@ Breadcrumb separators can be used in four ways, either as default separator, wit
 ::
 
 ```html
-<c-breadcrumb>
+<CBreadcrumb>
   <template v-slot:separator>
-    <c-icon name="chevron-right" />
+    <CIcon name="chevron-right" />
   </template>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 ## Composition
@@ -150,17 +150,17 @@ You can easily style and customize the breadcrumb by passing styles props to the
 ::
 
 ```html
-<c-breadcrumb font-size="sm" font-weight="semibold" color="red.500">
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+<CBreadcrumb font-size="sm" font-weight="semibold" color="red.500">
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 ```
 
 ## With Vue Routing
@@ -169,26 +169,26 @@ You can use the `CBreadcrumbLink` with the vue-router by passing the `as` prop t
 
 ```js
 <template>
-<c-breadcrumb>
+<CBreadcrumb>
   <template v-slot:separator>
-    <c-icon name="chevron-right" />
+    <CIcon name="chevron-right" />
   </template>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link as="router-link" to="/components/breadcrumb">
+  <CBreadcrumbItem>
+    <CBreadcrumbLink as="router-link" to="/components/breadcrumb">
       Home
-    </c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item>
-    <c-breadcrumb-link as="router-link" to="/components/breadcrumb">
+    </CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem>
+    <CBreadcrumbLink as="router-link" to="/components/breadcrumb">
       Docs
-    </c-breadcrumb-link>
-  </c-breadcrumb-item>
-  <c-breadcrumb-item is-current-page>
-    <c-breadcrumb-link as="router-link" to="/">
+    </CBreadcrumbLink>
+  </CBreadcrumbItem>
+  <CBreadcrumbItem is-current-page>
+    <CBreadcrumbLink as="router-link" to="/">
       About
-    </c-breadcrumb-link>
-  </c-breadcrumb-item>
-</c-breadcrumb>
+    </CBreadcrumbLink>
+  </CBreadcrumbItem>
+</CBreadcrumb>
 <template>
 ```
 
