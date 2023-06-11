@@ -28,7 +28,7 @@ Simply display the close button by using the `CCloseButton` component
 ::
 
 ```html
-<c-close-button @click="handleClose" />
+<CCloseButton @click="handleClose" />
 ```
 
 ### Button Size
@@ -41,11 +41,11 @@ You can adjust the button sizes by passing the `size` prop as either `sm`,`md`, 
 ::
 
 ```html
-<c-stack>
-  <c-close-button size="sm" @click="handleClose" />
-  <c-close-button size="md" @click="handleClose" />
-  <c-close-button size="lg" @click="handleClose" />
-</c-stack>
+<CStack>
+  <CCloseButton size="sm" @click="handleClose" />
+  <CCloseButton size="md" @click="handleClose" />
+  <CCloseButton size="lg" @click="handleClose" />
+</CStack>
 ```
 
 ## Composition
