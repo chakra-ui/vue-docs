@@ -29,7 +29,7 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag>Sample Tag</c-tag>
+<CTag>Sample Tag</CTag>
 ```
 
 ### With custom attributes :
@@ -41,7 +41,7 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag size="md" variant="solid" color-scheme="teal">Sample Tag</c-tag>
+<CTag size="md" variant="solid" color-scheme="teal">Sample Tag</CTag>
 ```
 
 ## With different sizes : 
@@ -61,9 +61,9 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag size="sm" variant="solid" color-scheme="teal">Sample Tag</c-tag>
-<c-tag size="md" variant="solid" color-scheme="teal">Sample Tag</c-tag>
-<c-tag size="lg" variant="solid" color-scheme="teal">Sample Tag</c-tag>
+<CTag size="sm" variant="solid" color-scheme="teal">Sample Tag</CTag>
+<CTag size="md" variant="solid" color-scheme="teal">Sample Tag</CTag>
+<CTag size="lg" variant="solid" color-scheme="teal">Sample Tag</CTag>
 ```
 
 ### With left icon
@@ -92,18 +92,18 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag size="sm" color-scheme="purple">
-  <c-tag-left-icon name="add" />
-  <c-tag-label>Sample Tag</c-tag-label>
-</c-tag>
-<c-tag size="md" color-scheme="purple">
-  <c-tag-left-icon name="add" />
-  <c-tag-label>Sample Tag</c-tag-label>
-</c-tag>
-<c-tag size="lg" color-scheme="purple">
-  <c-tag-left-icon name="add" />
-  <c-tag-label>Sample Tag</c-tag-label>
-</c-tag>
+<CTag size="sm" color-scheme="purple">
+  <CTagLeftIcon name="add" />
+  <CTagLabel>Sample Tag</CTagLabel>
+</CTag>
+<CTag size="md" color-scheme="purple">
+  <CTagLeftIcon name="add" />
+  <CTagLabel>Sample Tag</CTagLabel>
+</CTag>
+<CTag size="lg" color-scheme="purple">
+  <CTagLeftIcon name="add" />
+  <CTagLabel>Sample Tag</CTagLabel>
+</CTag>
 ```
 
 ### With right icon
@@ -132,10 +132,10 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag size="lg" variant="solid" color-scheme="green">
-  <c-tag-label>Sample Tag</c-tag-label>
-  <c-tag-right-icon name="check"/>
-</c-tag>
+<CTag size="lg" variant="solid" color-scheme="green">
+  <CTagLabel>Sample Tag</CTagLabel>
+  <CTagRightIcon name="check"/>
+</CTag>
 ```
 
 ### With close button
@@ -164,20 +164,20 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag size="sm" color-scheme="blue">
-  <c-tag-label>Sample Tag</c-tag-label>
-  <c-tag-close-button />
-</c-tag>
+<CTag size="sm" color-scheme="blue">
+  <CTag-label>Sample Tag</CTag-label>
+  <CTag-close-button />
+</CTag>
 
-<c-tag size="md" color-scheme="blue">
-  <c-tag-label>Sample Tag</c-tag-label>
-  <c-tag-close-button />
-</c-tag>
+<CTag size="md" color-scheme="blue">
+  <CTag-label>Sample Tag</CTag-label>
+  <CTag-close-button />
+</CTag>
 
-<c-tag size="lg" color-scheme="blue">
-  <c-tag-label>Sample Tag</c-tag-label>
-  <c-tag-close-button />
-</c-tag>
+<CTag size="lg" color-scheme="blue">
+  <CTag-label>Sample Tag</CTag-label>
+  <CTag-close-button />
+</CTag>
 ```
 
 ### With custom element
@@ -192,14 +192,14 @@ This package exports the following components :
 ::
 
 ```html
-<c-tag border-radius="full">
-  <c-avatar 
+<CTag border-radius="full">
+  <CAvatar 
     name="Zakaria Sahmane" 
     ml="-1"
     mr="2" 
     alt="Zakaria Sahmane" 
     src="https://avatars.githubusercontent.com/u/10008963?v=4" 
     size="xs" />
-  <c-tag-label>Sample Tag</c-tag-label>
-</c-tag>
+  <CTagLabel>Sample Tag</CTagLabel>
+</CTag>
 ```
