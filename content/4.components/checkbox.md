@@ -25,7 +25,7 @@ import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue'
 ::
 
 ```html
-<c-checkbox default-checked> Simple checkbox </c-checkbox>
+<CCheckbox default-checked> Simple checkbox </CCheckbox>
 ```
 
 ### Disabled Checkbox
@@ -35,13 +35,13 @@ import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue'
 ::
 
 ```html
-<c-checkbox is-disabled> Disabled checkbox </c-checkbox> 
-<c-checkbox is-disabled default-checked> Disabled checked </c-checkbox>
+<CCheckbox is-disabled> Disabled checkbox </CCheckbox> 
+<CCheckbox is-disabled default-checked> Disabled checked </CCheckbox>
 ```
 
 ### Checkbox with custom color
 
-You can override the color scheme of the `c-checkbox` to any color key specified
+You can override the color scheme of the `CCheckbox` to any color key specified
 in `theme.colors`.
 
 ::showcase
@@ -49,19 +49,19 @@ in `theme.colors`.
 ::
 
 ```html
-<c-stack spacing="5" direction="row">
-  <c-checkbox color-scheme='red' default-checked>
+<CStack spacing="5" direction="row">
+  <CCheckbox color-scheme='red' default-checked>
     Red
-  </c-checkbox>
-  <c-checkbox color-scheme='green' default-checked>
+  </CCheckbox>
+  <CCheckbox color-scheme='green' default-checked>
     Green
-  </c-checkbox>
-</c-stack>
+  </CCheckbox>
+</CStack>
 ```
 
 ### Checkbox sizes
 
-Pass the `size` prop to change the size of the `c-checkbox`. Values can be either
+Pass the `size` prop to change the size of the `CCheckbox`. Values can be either
 `sm`, `md` or `lg`.
 
 ::showcase
@@ -69,17 +69,17 @@ Pass the `size` prop to change the size of the `c-checkbox`. Values can be eithe
 ::
 
 ```html
-<c-wrap spacing="5" direction="row" align="center">
-  <c-checkbox size='sm' color-scheme='red'>
-    c-checkbox
-  </c-checkbox>
-  <c-checkbox size='md' color-scheme='green' default-checked>
-    c-checkbox
-  </c-checkbox>
-  <c-checkbox size='lg' color-scheme='orange' default-checked>
-    c-checkbox
-  </c-checkbox>
-</c-wrap>
+<CWrap spacing="5" direction="row" align="center">
+  <CCheckbox size='sm' color-scheme='red'>
+    CCheckbox
+  </CCheckbox>
+  <CCheckbox size='md' color-scheme='green' default-checked>
+    CCheckbox
+  </CCheckbox>
+  <CCheckbox size='lg' color-scheme='orange' default-checked>
+    CCheckbox
+  </CCheckbox>
+</CWrap>
 ```
 
 ### Invalid Checkbox
@@ -91,12 +91,12 @@ Pass the `size` prop to change the size of the `c-checkbox`. Values can be eithe
 ::
 
 ```html
-<c-checkbox is-invalid> Invalid checkbox </c-checkbox>
+<CCheckbox is-invalid> Invalid checkbox </CCheckbox>
 ```
 
 ### Changing the spacing
 
-We added the `spacing` prop to customize the spacing between the `c-checkbox` and
+We added the `spacing` prop to customize the spacing between the `CCheckbox` and
 label text.
 
 ::showcase
@@ -106,7 +106,7 @@ label text.
 ::
 
 ```html
-<c-checkbox spacing='1rem'> Option </c-checkbox>
+<CCheckbox spacing='1rem'> Option </CCheckbox>
 ```
 
 ### Changing the icon color and size
@@ -121,9 +121,9 @@ You can customize the color and size of the check icon by passing the
 ::
 
 ```html
-<c-checkbox icon-color='purple.500' icon-size='1rem' color-scheme="white">
+<CCheckbox icon-color='purple.500' icon-size='1rem' color-scheme="white">
   Option
-</c-checkbox>
+</CCheckbox>
 ```
 
 ### Indeterminate
@@ -134,8 +134,8 @@ You can customize the color and size of the check icon by passing the
 
 ```html
 <template>
-  <c-stack>
-    <c-checkbox
+  <CStack>
+    <CCheckbox
       v-model="allChecked"
       :is-indeterminate="isIndeterminate"
       @change="
@@ -145,9 +145,9 @@ You can customize the color and size of the check icon by passing the
       "
     >
       Parent checkbox
-    </c-checkbox>
-    <c-stack pl="6" mt="1" spacing="1">
-      <c-checkbox
+    </CCheckbox>
+    <CStack pl="6" mt="1" spacing="1">
+      <CCheckbox
         :model-value="checkedItems[0]"
         @change="
           (value) => {
@@ -156,8 +156,8 @@ You can customize the color and size of the check icon by passing the
         "
       >
         Child Checkbox 1
-      </c-checkbox>
-      <c-checkbox
+      </CCheckbox>
+      <CCheckbox
         :model-value="checkedItems[1]"
         @change="
           (value) => {
@@ -166,15 +166,15 @@ You can customize the color and size of the check icon by passing the
         "
       >
         Child Checkbox 2
-      </c-checkbox>
-    </c-stack>
-  </c-stack>
+      </CCheckbox>
+    </CStack>
+  </CStack>
 </template>
 
 <script lang="ts" setup>
 import { computed, ref } from "vue"
 
-import { CCheckbox } from "@chakra-ui/vue-next"
+import { CCheckbox, CStack } from "@chakra-ui/vue-next"
 
 const checkedItems = ref([false, false])
 function setCheckedItems(value: boolean[]) {
@@ -200,11 +200,11 @@ shared styling props.
 ::
 
 ```html
-  <c-checkbox-group v-model="items" color-scheme="blue" size="lg">
-    <c-stack>
-      <c-checkbox value="naruto"> Naruto </c-checkbox>
-      <c-checkbox value="sasuke"> Sasuke </c-checkbox>
-      <c-checkbox value="kakashi"> Kakashi </c-checkbox>
-    </c-stack>
-  </c-checkbox-group>
+  <CCheckboxGroup v-model="items" color-scheme="blue" size="lg">
+    <CStack>
+      <CCheckbox value="naruto"> Naruto </CCheckbox>
+      <CCheckbox value="sasuke"> Sasuke </CCheckbox>
+      <CCheckbox value="kakashi"> Kakashi </CCheckbox>
+    </CStack>
+  </CCheckboxGroup>
 ```
