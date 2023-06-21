@@ -1,8 +1,6 @@
 ---
 title: Checkbox
-description:
-  Checkbox component is used in forms when a user needs to select multiple
-  values from several options.
+description: Checkbox Component
 version: 2.0+
 ---
 
@@ -13,7 +11,7 @@ Checkbox component is used in forms when a user needs to select multiple values 
 ## Import
 
 ```js
-import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue'
+import { CCheckbox, CCheckboxGroup } from '@chakra-ui/vue-next';
 ```
 
 ## Usage
