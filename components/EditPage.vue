@@ -8,10 +8,22 @@
     </c-h-stack>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { CHStack, CIcon, CLink } from '@chakra-ui/vue-next';
+import { documentationUrl } from '~/config/site-config';
+import { useRoute, useRouter } from 'vue-router';
 
-const props = defineProps({
-    editUrl: String
-})
+const route = computed(() => useRoute());
+const path = computed(() => route.value.path);
+
+console.log(path.value);
+
+const { data, refresh } = await useAsyncData(`content-${path}`, () => {
+    return queryContent().where({ _path: path.value }).findOne()
+}, { watch: [route] })
+
+const routeSlug = data.value?._id.toString().replace(/:/g, "/").replace(/\s/g, "");
+
+const editUrl = ref<string>(`${documentationUrl}/${routeSlug}`);
+
 </script>

@@ -2,7 +2,6 @@
 import { chakra, useColorModeValue } from '@chakra-ui/vue-next';
 import TopNavigation from '~/components/navigation/top-navigation.vue';
 import Sidebar from '~/components/navigation/sidebar.vue';
-import { documentationUrl } from '~/config/site-config';
 import { useRoute } from 'vue-router';
 
 
@@ -14,16 +13,9 @@ const color = useColorModeValue('gray.700', 'white');
 /**
  * Edit pages/content on github dynamic route for edit URL at page footer
  */
-const route = useRoute();
-const { path } = useRoute();
+const route = computed(() => useRoute());
+const path = computed(() => route.value.path);
 
-const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent().where({ _path: path }).findOne()
-}, { watch: [route] })
-
-const routeSlug = data.value?._id.toString().replace(/:/g, "/").replace(/\s/g, "");
-
-const editUrl = ref<string>(`${documentationUrl}/${routeSlug}`);
 </script>
 
 <template>
@@ -40,7 +32,7 @@ const editUrl = ref<string>(`${documentationUrl}/${routeSlug}`);
         <chakra.div :mr="{ xl: '15.5rem' }">
           <slot />
 
-          <EditPage :editUrl="editUrl" />
+          <EditPage />
         </chakra.div>
         <!-- <table-of-contents /> -->
       </chakra.main>
