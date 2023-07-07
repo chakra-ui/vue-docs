@@ -20,7 +20,7 @@ import { CCode } from "@chakra-ui/vue-next"
 ::
 
 ```html
-<c-code>Hello world </c-code>
+<CCode>Hello world </CCode>
 ```
 
 ## Colors
@@ -32,11 +32,11 @@ You can change the color scheme of the component by passing the `colorScheme` pr
 ::
 
 ```html
-<c-stack is-inline>
-    <c-code>console.log(welcome)</c-code>
-    <c-code color-scheme="red">var chakra = 'awesome!'></c-code>
-    <c-code color-scheme="yellow">npm install chakra</c-code>
-</c-stack>
+<CStack is-inline>
+    <CCode>console.log(welcome)</CCode>
+    <CCode color-scheme="red">var chakra = 'awesome!'></CCode>
+    <CCode color-scheme="yellow">npm install chakra</CCode>
+</CStack>
 ```
 
 ## Variant
@@ -48,11 +48,11 @@ You can change the variant of the component by passing the `variant` prop.
 ::
 
 ```html
-<c-stack is-inline>
-    <c-code color-scheme="whatsapp" variant="outline">Outline </c-code>
-    <c-code color-scheme="whatsapp" variant="subtle">Solid </c-code>
-    <c-code color-scheme="whatsapp" variant="solid">Solid</c-code>
-</c-stack>
+<CStack is-inline>
+    <CCode color-scheme="whatsapp" variant="outline">Outline </CCode>
+    <CCode color-scheme="whatsapp" variant="subtle">Solid </CCode>
+    <CCode color-scheme="whatsapp" variant="solid">Solid</CCode>
+</CStack>
 ```
 
 ## Props
