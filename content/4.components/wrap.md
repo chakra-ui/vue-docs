@@ -29,33 +29,33 @@ The example below shows how the last `Box` component wraps to the next line beca
 ::
 
 ```html
-<c-wrap spacing='10px'>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='red.200'>
+<CWrap spacing='10px'>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='red.200'>
         Box 1
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='green.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='green.200'>
         Box 2
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='tomato'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='tomato'>
         Box 3
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='blue.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='blue.200'>
         Box 4
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='purple.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='purple.200'>
         Box 5
-        </c-center>
-    </c-wrap-item>
-</c-wrap>
+        </CCenter>
+    </CWrapItem>
+</CWrap>
 ```
 
 ## Change the spacing
@@ -70,33 +70,33 @@ To ensure that the spacing between each child is consistent, even if the childre
 ::
 
 ```html
-<c-wrap spacing='30px'>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='red.200'>
+<CWrap spacing='30px'>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='red.200'>
         Box 1
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='green.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='green.200'>
         Box 2
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='tomato'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='tomato'>
         Box 3
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='blue.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='blue.200'>
         Box 4
-        </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-        <c-center w='180px' h='80px' bg='purple.200'>
+        </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+        <CCenter w='180px' h='80px' bg='purple.200'>
         Box 5
-        </c-center>
-    </c-wrap-item>
-</c-wrap>
+        </CCenter>
+    </CWrapItem>
+</CWrap>
 ```
 
 ## Change the alignment
@@ -109,33 +109,33 @@ The `align` prop can be used to change the alignment of a child along the cross 
 ::
 
 ```html
-<c-wrap spacing='30px' align='center'>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='red.200'>
+<CWrap spacing='30px' align='center'>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='red.200'>
         Box 1
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='40px' bg='green.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapitem>
+      <CCenter w='180px' h='40px' bg='green.200'>
         Box 2
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='tomato'>
+      </CCenter>
+    </CWrapitem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='tomato'>
         Box 3
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='60px' bg='blue.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='60px' bg='blue.200'>
         Box 4
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='purple.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='purple.200'>
         Box 5
-      </c-center>
-    </c-wrap-item>
-</c-wrap>
+      </CCenter>
+    </CWrapItem>
+</CWrap>
 ```
 The `justify` prop specifies the alignment of a child along the main axis.
 
@@ -145,32 +145,32 @@ The `justify` prop specifies the alignment of a child along the main axis.
 ::
 
 ```html
-<c-wrap spacing='30px' justify='center'>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='red.200'>
+<CWrap spacing='30px' justify='center'>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='red.200'>
         Box 1
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='green.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='green.200'>
         Box 2
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='tomato'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='tomato'>
         Box 3
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='blue.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='blue.200'>
         Box 4
-      </c-center>
-    </c-wrap-item>
-    <c-wrap-item>
-      <c-center w='180px' h='80px' bg='purple.200'>
+      </CCenter>
+    </CWrapItem>
+    <CWrapItem>
+      <CCenter w='180px' h='80px' bg='purple.200'>
         Box 5
-      </c-center>
-    </c-wrap-item>
-</c-wrap>
+      </CCenter>
+    </CWrapItem>
+</CWrap>
 ```
 
