@@ -25,12 +25,12 @@ To contain any piece of content, wrap it in the `CContainer` component.
 ::
 
 ```html
-<c-container>
+<CContainer>
     There are many benefits to a joint design and development system. Not only
     does it bring benefits to the design team, but it also brings benefits to
     engineering teams. It makes sure that our experiences have a consistent look
     and feel, not just in our design specs, but in production
-</c-container>
+</CContainer>
 ```
 
 ### Container Size
@@ -46,17 +46,17 @@ By default, the `CContainer` component sets the `max-width` of the content to 60
 ::
 
 ```html
-<c-v-stack w="2xl" align-items="center">
-    <c-container max-w='md' bg='blue.600' color='white'>
+<CVStack w="2xl" align-items="center">
+    <CContainer max-w='md' bg='blue.600' color='white'>
         "md" Container
-    </c-container>
-    <c-container max-w='550px' bg='purple.600' color='white'>
+    </CContainer>
+    <CContainer max-w='550px' bg='purple.600' color='white'>
         "550px" Container
-    </c-container>
-    <c-container max-w='container.sm' bg='green.400' color='#262626'>
+    </CContainer>
+    <CContainer max-w='container.sm' bg='green.400' color='#262626'>
         "container.sm" Container
-    </c-container>
-</c-v-stack>
+    </CContainer>
+</CVStack>
 ```
 
 ### Centering the children
@@ -67,12 +67,12 @@ In some cases, the width of the content can be smaller than the container's widt
 ::
 
 ```html
-<c-container max-w='2xl' bg='blue.600' center-content>
-    <c-box padding='4' bg='blue.400' color='black' max-w='md'>
+<CContainer max-w='2xl' bg='blue.600' center-content>
+    <CBox padding='4' bg='blue.400' color='black' max-w='md'>
         There are many benefits to a joint design and development system. Not only
         does it bring benefits to the design team, but it also brings benefits to
         engineering teams. It makes sure that our experiences have a consistent look
         and feel, not just in our design specs, but in production.
-    </c-box>
-</c-container>
+    </CBox>
+</CContainer>
 ```
