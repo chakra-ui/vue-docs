@@ -27,13 +27,13 @@ Specifying the number of columns for the grid layout.
 ::
 
 ```html
-<c-simple-grid :columns="2" :spacing="10">
-  <c-box background="green" height="80px"></c-box>
-  <c-box background="red" height="80px"></c-box>
-  <c-box background="blue.900" height="80px"></c-box>
-  <c-box background="darkorange" height="80px"></c-box>
-  <c-box background="yellow" height="80px"></c-box>
-</c-simple-grid>
+<CSimpleGrid :columns="2" :spacing="10">
+  <CBox background="green" height="80px"></CBox>
+  <CBox background="red" height="80px"></CBox>
+  <CBox background="blue.900" height="80px"></CBox>
+  <CBox background="darkorange" height="80px"></CBox>
+  <CBox background="yellow" height="80px"></CBox>
+</CSimpleGrid>
 ```
 
 You can also make it responsive by passing array or object values into the `columns` prop.
@@ -44,13 +44,13 @@ You can also make it responsive by passing array or object values into the `colu
 ::
 
 ```html
-<c-simple-grid :columns="[2, null, 3]" spacing="40px">
-  <c-box background="green" height="80px"></c-box>
-  <c-box background="red" height="80px"></c-box>
-  <c-box background="blue.900" height="80px"></c-box>
-  <c-box background="darkorange" height="80px"></c-box>
-  <c-box background="yellow" height="80px"></c-box>
-</c-simple-grid>
+<CSimpleGrid :columns="[2, null, 3]" spacing="40px">
+  <CBox background="green" height="80px"></CBox>
+  <CBox background="red" height="80px"></CBox>
+  <CBox background="blue.900" height="80px"></CBox>
+  <CBox background="darkorange" height="80px"></CBox>
+  <CBox background="yellow" height="80px"></CBox>
+</CSimpleGrid>
 ```
 
 ### Auto-responsive grid#
@@ -69,13 +69,13 @@ Simply pass the `spacing` prop to change the row and column spacing between the 
 ::
 
 ```html
-<c-simple-grid :columns="2" spacing-x="40px" spacing-y="20px">
-  <c-box background="green" height="80px"></c-box>
-  <c-box background="red" height="80px"></c-box>
-  <c-box background="blue.900" height="80px"></c-box>
-  <c-box background="darkorange" height="80px"></c-box>
-  <c-box background="yellow" height="80px"></c-box>
-</c-simple-grid>
+<CSimpleGrid :columns="2" spacing-x="40px" spacing-y="20px">
+  <CBox background="green" height="80px"></CBox>
+  <CBox background="red" height="80px"></CBox>
+  <CBox background="blue.900" height="80px"></CBox>
+  <CBox background="darkorange" height="80px"></CBox>
+  <CBox background="yellow" height="80px"></CBox>
+</CSimpleGrid>
 ```
 
 ## Props
