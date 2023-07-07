@@ -22,7 +22,7 @@ import { CBadge } from '@chakra-ui/vue-next';
 ::
 
 ```html
-<c-badge>Default</c-badge>
+<CBadge>Default</CBadge>
 ```
 
 ### Badge Color
@@ -36,12 +36,12 @@ Pass the `color-scheme` prop to customize the color of the `CBadge`. `variant-co
 ::
 
 ```html
-<c-stack direction='row'>
-    <c-badge>Default</c-badge>
-    <c-badge color-scheme='green'>Success</c-badge>
-    <c-badge color-scheme='red'>Removed</c-badge>
-    <c-badge color-scheme='purple'>New</c-badge>
-</c-stack>
+<CStack direction='row'>
+    <CBadge>Default</CBadge>
+    <CBadge color-scheme='green'>Success</CBadge>
+    <CBadge color-scheme='red'>Removed</CBadge>
+    <CBadge color-scheme='purple'>New</CBadge>
+</CStack>
 ```
 
 ### Badge Variants
@@ -54,11 +54,11 @@ Pass the `variant` prop and set it to either `subtle`, `solid`, or `outline` to 
 ::
 
 ```html
-<c-stack direction='row'>
-    <c-badge mx="2" variant="subtle" color-scheme="green">Subtle</c-badge>
-    <c-badge mx="2" variant="solid" color-scheme="green">Solid</c-badge>
-    <c-badge mx="2" variant="outline" color-scheme="green">Outline</c-badge>
-</c-stack>
+<CStack direction='row'>
+    <CBadge mx="2" variant="subtle" color-scheme="green">Subtle</CBadge>
+    <CBadge mx="2" variant="solid" color-scheme="green">Solid</CBadge>
+    <CBadge mx="2" variant="outline" color-scheme="green">Outline</CBadge>
+</CStack>
 ```
 
 ## Compositon
@@ -70,18 +70,18 @@ Pass the `variant` prop and set it to either `subtle`, `solid`, or `outline` to 
 ::
 
 ```html
-<c-flex>
-    <c-avatar src="https://bit.ly/chakra-jonathan-bakebwa" />
-    <c-box ml="3">
-        <c-text font-weight="bold">
+<CFlex>
+    <CAvatar src="https://bit.ly/chakra-jonathan-bakebwa" />
+    <CBox ml="3">
+        <CText font-weight="bold">
             Jonathan Bakebwa
-            <c-badge ml="1" color-scheme="green">
+            <CBadge ml="1" color-scheme="green">
                 New
-            </c-badge>
-        </c-text>
-        <c-text font-size="sm">UI Engineer</c-text>
-    </c-box>
-</c-flex>
+            </CBadge>
+        </CText>
+        <CText font-size="sm">UI Engineer</CText>
+    </CBox>
+</CFlex>
 ```
 
 You can also change the size of the badge by passing `font-size` prop.
@@ -92,12 +92,12 @@ You can also change the size of the badge by passing `font-size` prop.
 ::
 
 ```html
-<c-text font-weight="bold">
+<CText font-weight="bold">
   Jonathan Bakebwa
-  <c-badge ml="1" font-size="1em" variant-color="green">
+  <CBadge ml="1" font-size="1em" variant-color="green">
     New
-  </c-badge>
-</c-text>
+  </CBadge>
+</CText>
 ```
 
 ## Props
