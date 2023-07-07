@@ -35,17 +35,17 @@ While you can pass the verbose props, using the shorthand can save you some time
 ::
 
 ```html
-<c-flex color='white'>
-    <c-center w='100px' bg='green.500'>
-      <c-text>Box 1</c-text>
-    </c-center>
-    <c-square bg='blue.500' size='150px'>
-      <c-text>Box 2</c-text>
-    </c-square>
-    <c-box flex='1' bg='tomato'>
-      <c-text>Box 3</c-text>
-    </c-box>
-</c-flex>
+<CFlex color='white'>
+    <CCenter w='100px' bg='green.500'>
+      <CText>Box 1</CText>
+    </CCenter>
+    <CSquare bg='blue.500' size='150px'>
+      <CText>Box 2</CText>
+    </CSquare>
+    <CBox flex='1' bg='tomato'>
+      <CText>Box 3</CText>
+    </CBox>
+</CFlex>
 ```
 
 ### Using the Spacer
@@ -58,15 +58,15 @@ As an alternative to `CStack`, you can combine `CFlex` and `CSpacer` to create s
 ::
 
 ```html
-<c-flex>
-    <c-box p='4' bg='red.400'>
+<CFlex>
+    <CBox p='4' bg='red.400'>
         Box 1
-    </c-box>
-    <c-spacer />
-    <c-box p='4' bg='green.400'>
+    </CBox>
+    <CSpacer />
+    <CBox p='4' bg='green.400'>
         Box 2
-    </c-box>
-</c-flex>
+    </CBox>
+</CFlex>
 ```
 
 ### Flex and Spacer vs Grid vs Stack
@@ -83,34 +83,34 @@ The `CFlex` and `CSpacer` components, `CGrid` and `CHStack` treat children of di
 ::
 
 ```html
-<c-box>
-    <c-text>Flex and Spacer: Full width, equal Spacing</c-text>
-    <c-flex>
-      <c-box w='70px' h='10' bg='red.500' />
-      <c-spacer />
-      <c-box w='170px' h='10' bg='red.500' />
-      <c-spacer />
-      <c-box w='180px' h='10' bg='red.500' />
-    </c-flex>
+<CBox>
+    <CText>Flex and Spacer: Full width, equal Spacing</CText>
+    <CFlex>
+      <CBox w='70px' h='10' bg='red.500' />
+      <CSpacer />
+      <CBox w='170px' h='10' bg='red.500' />
+      <CSpacer />
+      <CBox w='180px' h='10' bg='red.500' />
+    </CFlex>
 
-    <c-text>
+    <CText>
       Grid: The children start at the beginning, the 1/3 mark and 2/3 mark
-    </c-text>
-    <c-grid template-columns='repeat(3, 1fr)' gap={6}>
-      <c-box w='70px' h='10' bg='blue.500' />
-      <c-box w='170px' h='10' bg='blue.500' />
-      <c-box w='180px' h='10' bg='blue.500' />
-    </c-grid>
+    </CText>
+    <CGrid template-columns='repeat(3, 1fr)' gap={6}>
+      <CBox w='70px' h='10' bg='blue.500' />
+      <CBox w='170px' h='10' bg='blue.500' />
+      <CBox w='180px' h='10' bg='blue.500' />
+    </CGrid>
 
-    <c-text>
+    <CText>
       HStack: The children have equal spacing but don't span the whole container
-    </c-text>
-    <c-h-stack spacing='24px'>
-      <c-box w='70px' h='10' bg='teal.500' />
-      <c-box w='170px' h='10' bg='teal.500' />
-      <c-box w='180px' h='10' bg='teal.500' />
-    </c-h-stack>
-  </c-box>
+    </CText>
+    <CHStack spacing='24px'>
+      <CBox w='70px' h='10' bg='teal.500' />
+      <CBox w='170px' h='10' bg='teal.500' />
+      <CBox w='180px' h='10' bg='teal.500' />
+    </CHStack>
+  </CBox>
   ```
 
   A good use case for `CSpacer` is to create a navbar with a signup/login button aligned to the right.
@@ -125,14 +125,14 @@ Since `CSpacer` renders a `div`, any `gap` value provided to the parent is appli
 ::
 
 ```html
-<c-flex min-width='max-content' align-items='center' gap='2'>
-    <c-box p='2'>
-      <c-heading size='md'>Chakra App</c-heading>
-    </c-box>
-    <c-spacer />
-    <c-button-group p='2'>
-      <c-button rounded="10px" color-scheme='teal'>Sign Up</c-button>
-      <c-button rounded="10px" color-scheme='teal'>Log in</c-button>
-    </c-button-group>
-</c-flex>
+<CFlex min-width='max-content' align-items='center' gap='2'>
+    <CBox p='2'>
+      <CHeading size='md'>Chakra App</CHeading>
+    </CBox>
+    <CSpacer />
+    <CButtonGroup p='2'>
+      <CButton rounded="10px" color-scheme='teal'>Sign Up</CButton>
+      <CButton rounded="10px" color-scheme='teal'>Log in</CButton>
+    </CButtonGroup>
+</CFlex>
 ```
