@@ -1,5 +1,5 @@
 <template>
-  <c-checkbox> <slot /> </c-checkbox>
+  <CCheckbox> <slot /> </CCheckbox>
 </template>
 
 <script lang="ts" setup>

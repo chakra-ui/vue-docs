@@ -1,14 +1,14 @@
 <script setup>
-import { CStack, CCheckbox } from '@chakra-ui/vue-next';
+import { CCheckbox, CStack } from '@chakra-ui/vue-next';
 </script>
 
 <template>
-  <c-stack spacing="5" direction="row">
-    <c-checkbox color-scheme='red' default-checked>
+  <CStack spacing="5" direction="row">
+    <CCheckbox color-scheme='red' default-checked>
       Red
-    </c-checkbox>
-    <c-checkbox color-scheme='green' default-checked>
+    </CCheckbox>
+    <CCheckbox color-scheme='green' default-checked>
       Green
-    </c-checkbox>
-  </c-stack>
+    </CCheckbox>
+  </CStack>
 </template>
