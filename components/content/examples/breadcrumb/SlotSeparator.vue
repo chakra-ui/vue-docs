@@ -1,3 +1,12 @@
+<script setup>
+import {
+  CBreadcrumb,
+  CBreadcrumbItem,
+  CBreadcrumbLink,
+  CIcon
+} from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CBreadcrumb>
     <template v-slot:#separator>
@@ -14,11 +23,3 @@
     </CBreadcrumbItem>
   </CBreadcrumb>
 </template>
-<script setup>
-import {
-  CBreadcrumb,
-  CBreadcrumbItem,
-  CBreadcrumbLink,
-  CIcon
-} from '@chakra-ui/vue-next';
-</script>

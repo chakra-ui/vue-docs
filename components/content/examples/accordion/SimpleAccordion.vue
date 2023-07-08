@@ -1,3 +1,14 @@
+<script setup>
+import {
+  CAccordion,
+  CAccordionIcon,
+  CAccordionItem,
+  CAccordionButton,
+  CAccordionPanel,
+  CVStack
+} from "@chakra-ui/vue-next"
+</script>
+
 <template>
   <CAccordion>
     <CAccordionItem>
@@ -29,14 +40,3 @@
     </CAccordionItem>
   </CAccordion>
 </template>
-
-<script setup>
-import {
-  CAccordion,
-  CAccordionIcon,
-  CAccordionItem,
-  CAccordionButton,
-  CAccordionPanel,
-  CVStack
-} from "@chakra-ui/vue-next"
-</script>

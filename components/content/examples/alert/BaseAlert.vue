@@ -1,3 +1,8 @@
+
+<script setup>
+import { CAlert, CAlertDescription, CAlertTitle } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CAlert
     flex-direction="column"
@@ -11,7 +16,3 @@
     </CAlertDescription>
   </CAlert>
 </template>
-
-<script setup>
-import { CAlert, CAlertDescription, CAlertTitle } from '@chakra-ui/vue-next';
-</script>

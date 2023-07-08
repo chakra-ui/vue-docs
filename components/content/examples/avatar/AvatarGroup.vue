@@ -1,3 +1,7 @@
+<script setup>
+import { CAvatar, CAvatarGroup } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CAvatarGroup :max="3" size="lg">
     <CAvatar
@@ -22,7 +26,3 @@
     />
   </CAvatarGroup>
 </template>
-
-<script setup>
-import { CAvatar, CAvatarGroup } from '@chakra-ui/vue-next';
-</script>

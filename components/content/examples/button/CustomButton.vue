@@ -1,3 +1,7 @@
+<script setup>
+import { CButton } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CButton
     border="1px solid rgba(47, 43, 67, 0.1)"
@@ -11,7 +15,3 @@
     Button
   </CButton>
 </template>
-
-<script setup>
-import { CButton } from '@chakra-ui/vue-next';
-</script>

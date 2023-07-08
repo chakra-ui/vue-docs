@@ -1,3 +1,11 @@
+<script setup>
+import {
+  CBreadcrumb,
+  CBreadcrumbItem,
+  CBreadcrumbLink
+} from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CBreadcrumb>
     <CBreadcrumbItem>
@@ -11,10 +19,3 @@
     </CBreadcrumbItem>
   </CBreadcrumb>
 </template>
-<script setup>
-import {
-  CBreadcrumb,
-  CBreadcrumbItem,
-  CBreadcrumbLink
-} from '@chakra-ui/vue-next';
-</script>

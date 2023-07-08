@@ -1,3 +1,7 @@
+<script setup>
+import { CAlert, CAlertIcon } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CAlert variant="left-accent" status="info" mb="3">
     <CAlertIcon mr="2" />
@@ -21,6 +25,3 @@
     <CAlertDescription> Access revoked!</CAlertDescription>
   </CAlert>
 </template>
-<script setup>
-import { CAlert, CAlertIcon } from '@chakra-ui/vue-next';
-</script>

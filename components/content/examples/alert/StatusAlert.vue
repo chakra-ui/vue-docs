@@ -1,3 +1,9 @@
+
+<script setup>
+import { CAlert, CAlertIcon } from '@chakra-ui/vue-next';
+</script>
+
+
 <template>
   <CAlert status="info" mb="3">
     <CAlertIcon mr="2" /> 
@@ -16,7 +22,3 @@
     Password is Incorrect!.
   </CAlert>
 </template>
-
-<script setup>
-import { CAlert, CAlertIcon } from '@chakra-ui/vue-next';
-</script>

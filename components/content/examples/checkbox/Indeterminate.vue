@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue"
-
 import { CCheckbox, CStack } from "@chakra-ui/vue-next"
 
 const checkedItems = ref([false, false])

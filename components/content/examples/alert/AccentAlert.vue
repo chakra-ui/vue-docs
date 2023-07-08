@@ -1,3 +1,7 @@
+<script setup>
+import { CAlert, CAlertDescription, CAlertIcon } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CAlert variant="solid" status="success">
     <CAlertIcon mr="2" />
@@ -19,6 +23,3 @@
     <CAlertDescription> Submitted Successfully! </CAlertDescription>
   </CAlert>
 </template>
-<script setup>
-import { CAlert, CAlertDescription, CAlertIcon } from '@chakra-ui/vue-next';
-</script>

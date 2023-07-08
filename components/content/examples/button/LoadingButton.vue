@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import { CButton } from '@chakra-ui/vue-next';
+import { ref } from 'vue';
+
+const isLoading = ref(false);
+let loadingTimeout: any;
+const doTask = () => {
+  isLoading.value = true;
+  loadingTimeout = setTimeout(() => {
+    isLoading.value = false;
+    console.log({ isLoading: isLoading.value });
+  }, 60000);
+  clearTimeout(loadingTimeout);
+};
+</script>
+
 <template>
   <div>
     <CButton
@@ -24,28 +40,3 @@
     </CButton>
   </div>
 </template>
-
-<script lang="ts">
-import { CButton } from '@chakra-ui/vue-next';
-import { defineComponent, ref } from 'vue';
-
-export default defineComponent({
-  setup() {
-    const isLoading = ref(false);
-    let loadingTimeout: any;
-    const doTask = () => {
-      isLoading.value = true;
-      loadingTimeout = setTimeout(() => {
-        isLoading.value = false;
-        console.log({ isLoading: isLoading.value });
-      }, 60000);
-      clearTimeout(loadingTimeout);
-    };
-
-    return {
-      isLoading,
-      doTask
-    };
-  }
-});
-</script>

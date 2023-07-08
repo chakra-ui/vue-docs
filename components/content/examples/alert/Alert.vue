@@ -1,10 +1,3 @@
-<template>
-  <CAlert status="success">
-    <CAlertIcon />
-    <CAlertTitle>Updated Successfully</CAlertTitle>
-    <CAlertDescription>Click to view your profile</CAlertDescription>
-  </CAlert>
-</template>
 <script setup>
 import {
   CAlert,
@@ -13,3 +6,11 @@ import {
   CAlertDescription
 } from '@chakra-ui/vue-next';
 </script>
+
+<template>
+  <CAlert status="success">
+    <CAlertIcon />
+    <CAlertTitle>Updated Successfully</CAlertTitle>
+    <CAlertDescription>Click to view your profile</CAlertDescription>
+  </CAlert>
+</template>

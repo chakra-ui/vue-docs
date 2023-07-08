@@ -1,3 +1,7 @@
+<script setup>
+import { CButton } from '@chakra-ui/vue-next';
+</script>
+
 <template>
   <CButton
     mr="3"
@@ -18,7 +22,3 @@
     Base button
   </CButton>
 </template>
-
-<script setup>
-import { CButton } from '@chakra-ui/vue-next';
-</script>

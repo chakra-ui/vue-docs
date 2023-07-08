@@ -1,17 +1,3 @@
-<template>
-  <CBreadcrumb :separator="Sun">
-    <CBreadcrumbItem>
-      <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
-    </CBreadcrumbItem>
-    <CBreadcrumbItem>
-      <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
-    </CBreadcrumbItem>
-    <CBreadcrumbItem is-current-page>
-      <CBreadcrumbLink href="#">About</CBreadcrumbLink>
-    </CBreadcrumbItem>
-  </CBreadcrumb>
-</template>
-
 <script setup>
 import {
   CBreadcrumb,
@@ -26,3 +12,17 @@ const Sun = () => {
   });
 };
 </script>
+
+<template>
+  <CBreadcrumb :separator="Sun">
+    <CBreadcrumbItem>
+      <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem>
+      <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem is-current-page>
+      <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+    </CBreadcrumbItem>
+  </CBreadcrumb>
+</template>

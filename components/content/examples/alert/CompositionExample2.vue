@@ -1,3 +1,17 @@
+<script setup>
+import {
+  CButtonGroup,
+  CButton,
+  CAlert,
+  CAlertIcon,
+  CAlertTitle,
+  CAlertDescription
+} from '@chakra-ui/vue-next';
+import { ref } from 'vue';
+
+const showAlert = ref(true);
+</script>
+
 <template>
   <CButton
     v-if="!showAlert"
@@ -36,17 +50,3 @@
     </CButtonGroup>
   </CAlert>
 </template>
-
-<script setup>
-import {
-  CButtonGroup,
-  CButton,
-  CAlert,
-  CAlertIcon,
-  CAlertTitle,
-  CAlertDescription
-} from '@chakra-ui/vue-next';
-import { ref } from 'vue';
-
-const showAlert = ref(true);
-</script>
