@@ -1,5 +1,5 @@
 <template>
-  <c-button
+  <CButton
     size="md"
     height="48px"
     width="200px"
@@ -9,8 +9,9 @@
     variant="outline"
   >
     Button
-  </c-button>
+  </CButton>
 </template>
+
 <script setup>
 import { CButton } from '@chakra-ui/vue-next';
 </script>

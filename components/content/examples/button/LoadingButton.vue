@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button
+    <CButton
       mr="3"
       :is-loading="isLoading"
       color-scheme="teal"
@@ -11,19 +11,20 @@
       @click="doTask"
     >
       Click me
-    </c-button>
-    <c-button
+    </CButton>
+    <CButton
       mr="3"
       :is-loading="isLoading"
-      @click="doTask"
       color-scheme="purple"
       size="lg"
       font-size="sm"
+      @click="doTask"
     >
       Click me
-    </c-button>
+    </CButton>
   </div>
 </template>
+
 <script lang="ts">
 import { CButton } from '@chakra-ui/vue-next';
 import { defineComponent, ref } from 'vue';
