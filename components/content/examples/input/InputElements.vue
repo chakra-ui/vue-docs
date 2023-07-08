@@ -1,18 +1,18 @@
-<template>
-    <c-stack spacing="4" w="xl" align-items="center">
-        <c-input-group>
-            <c-input-left-element><c-icon name="phone" color="gray.300" /></c-input-left-element>
-            <c-input type="phone" placeholder="Phone number" />
-        </c-input-group>
-
-        <c-input-group>
-            <c-input-left-element color="gray.300" fontSize="1.2em">¥</c-input-left-element>
-            <c-input placeholder="Enter amount" />
-            <c-input-right-element><c-icon name="check" color="green.500" /></c-input-right-element>
-        </c-input-group>
-    </c-stack>
-</template>
-
 <script setup>
-import { CInput, CStack, CInputGroup, CInputLeftElement, CIcon, CInputRightElement } from '@chakra-ui/vue-next';
+import { CInput, CInputGroup, CInputLeftElement, CIcon, CInputRightElement, CStack } from '@chakra-ui/vue-next';
 </script>
+
+<template>
+    <CStack spacing="4" w="xl" align-items="center">
+        <CInputGroup>
+            <CInputLeftElement><CIcon name="phone" color="gray.300" /></CInputLeftElement>
+            <CInput type="phone" placeholder="Phone number" />
+        </CInputGroup>
+
+        <CInputGroup>
+            <CInputLeftElement color="gray.300" font-size="1.2em">¥</CInputLeftElement>
+            <CInput placeholder="Enter amount" />
+            <CInputRightElement><CIcon name="check" color="green.500" /></CInputRightElement>
+        </CInputGroup>
+    </CStack>
+</template>
