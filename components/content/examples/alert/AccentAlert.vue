@@ -1,24 +1,24 @@
 <template>
-  <c-alert variant="solid" status="success">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Submitted Successfully! </c-alert-description>
-  </c-alert>
+  <CAlert variant="solid" status="success">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Submitted Successfully! </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="subtle" status="success" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Submitted Successfully! </c-alert-description>
-  </c-alert>
+  <CAlert variant="subtle" status="success" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Submitted Successfully! </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="left-accent" status="success" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Submitted Successfully! </c-alert-description>
-  </c-alert>
+  <CAlert variant="left-accent" status="success" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Submitted Successfully! </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="top-accent" status="success" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Submitted Successfully! </c-alert-description>
-  </c-alert>
+  <CAlert variant="top-accent" status="success" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Submitted Successfully! </CAlertDescription>
+  </CAlert>
 </template>
 <script setup>
-import { CAlert, CAlertDescription } from '@chakra-ui/vue-next';
+import { CAlert, CAlertDescription, CAlertIcon } from '@chakra-ui/vue-next';
 </script>

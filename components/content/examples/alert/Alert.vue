@@ -1,9 +1,9 @@
 <template>
-  <c-alert status="success">
-    <c-alert-icon />
-    <c-alert-title>Updated Successfully</c-alert-title>
-    <c-alert-description>Click to view your profile</c-alert-description>
-  </c-alert>
+  <CAlert status="success">
+    <CAlertIcon />
+    <CAlertTitle>Updated Successfully</CAlertTitle>
+    <CAlertDescription>Click to view your profile</CAlertDescription>
+  </CAlert>
 </template>
 <script setup>
 import {

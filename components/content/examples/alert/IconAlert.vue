@@ -1,25 +1,25 @@
 <template>
-  <c-alert variant="left-accent" status="info" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Please, update your KYC. </c-alert-description>
-  </c-alert>
+  <CAlert variant="left-accent" status="info" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Please, update your KYC. </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="left-accent" status="warning" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Incorrect Password </c-alert-description>
-  </c-alert>
+  <CAlert variant="left-accent" status="warning" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Incorrect Password </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="left-accent" status="success" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description>
+  <CAlert variant="left-accent" status="success" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription>
       Congratulations!. You scored above 75%
-    </c-alert-description>
-  </c-alert>
+    </CAlertDescription>
+  </CAlert>
 
-  <c-alert variant="left-accent" status="error" mb="3">
-    <c-alert-icon mr="2" />
-    <c-alert-description> Access revoked!</c-alert-description>
-  </c-alert>
+  <CAlert variant="left-accent" status="error" mb="3">
+    <CAlertIcon mr="2" />
+    <CAlertDescription> Access revoked!</CAlertDescription>
+  </CAlert>
 </template>
 <script setup>
 import { CAlert, CAlertIcon } from '@chakra-ui/vue-next';
