@@ -1,7 +1,7 @@
 <template>
-  <c-avatar>
+  <CAvatar>
     <slot />
-  </c-avatar>
+  </CAvatar>
 </template>
 
 <script setup>

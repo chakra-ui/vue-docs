@@ -1,7 +1,7 @@
 <template>
-    <c-avatar-badge>
+    <CAvatarBadge>
       <slot />
-    </c-avatar-badge>
+    </CAvatarBadge>
 </template>
 
 <script setup lang="ts">
