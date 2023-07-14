@@ -1,12 +1,8 @@
 <template>
-  <c-stack :spacing="4">
-    <c-text>Chakra component 1</c-text>
+  <CStack :spacing="4">
+    <CText>Chakra component 1</CText>
     <p>HTML paragraph element</p>
     <h3>HTML heading element</h3>
-    <c-text>Chakra component 2</c-text>
-  </c-stack>
+    <CText>Chakra component 2</CText>
+  </CStack>
 </template>
-
-<script setup>
-import { CStack, CText } from '@chakra-ui/vue-next';
-</script>
