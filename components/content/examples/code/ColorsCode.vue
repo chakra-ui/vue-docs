@@ -1,12 +1,7 @@
 <template>
-    <c-stack is-inline>
-        <c-code>console.log(welcome)</c-code>
-        <c-code color-scheme="red">var chakra = 'awesome!'</c-code>
-        <c-code color-scheme="yellow">npm install chakra</c-code>
-    </c-stack>
+    <CStack is-inline>
+        <CCode>console.log(welcome)</CCode>
+        <CCode color-scheme="red">var chakra = 'awesome!'</CCode>
+        <CCode color-scheme="yellow">npm install chakra</CCode>
+    </CStack>
 </template>
-
-<script setup>
-import { CStack, CCode } from '@chakra-ui/vue-next';
-
-</script>
