@@ -1,34 +1,34 @@
 <template>
-  <c-box maxW="sm" border-width="1px" rounded="lg" overflow="hidden">
-    <c-image :src="property.imageUrl" :alt="property.imageAlt" />
-    <c-box p="6">
-      <c-box d="flex" align-items="baseline">
-        <c-badge rounded="full" px="2" variant-color="green">
+  <CBox maxW="sm" border-width="1px" rounded="lg" overflow="hidden">
+    <CImage :src="property.imageUrl" :alt="property.imageAlt" />
+    <CBox p="6">
+      <CBox d="flex" align-items="baseline">
+        <CBadge rounded="full" px="2" variant-color="green">
           New
-        </c-badge>
-        <c-box color="gray.500" font-weight="semibold" letter-spacing="wide" font-size="xs" text-transform="uppercase"
+        </CBadge>
+        <CBox color="gray.500" font-weight="semibold" letter-spacing="wide" font-size="xs" text-transform="uppercase"
           ml="2">
           {{ property.beds }} beds &bull; {{ property.baths }} baths
-        </c-box>
-      </c-box>
-      <c-box mt="1" font-weight="semibold" as="h4" line-height="tight" is-truncated>
+        </CBox>
+      </CBox>
+      <CBox mt="1" font-weight="semibold" as="h4" line-height="tight" is-truncated>
         {{ property.title }}
-      </c-box>
-      <c-box>
+      </CBox>
+      <CBox>
         {{ property.formattedPrice }}
-        <c-box as="span" color="gray.600" fontSize="sm">
+        <CBox as="span" color="gray.600" fontSize="sm">
           / wk
-        </c-box>
-      </c-box>
-      <c-box d="flex" mt="2" align-items="center">
-        <c-icon v-for="(_, i) in Array(5).fill('')" name="star" :key="i"
+        </CBox>
+      </CBox>
+      <CBox d="flex" mt="2" align-items="center">
+        <CIcon v-for="(_, i) in Array(5).fill('')" name="star" :key="i"
           :color="i < property.rating ? 'green.500' : 'gray.300'" />
-        <c-box as="span" ml="2" color="gray.600" font-size="sm">
+        <CBox as="span" ml="2" color="gray.600" font-size="sm">
           {{ property.reviewCount }} reviews
-        </c-box>
-      </c-box>
-    </c-box>
-  </c-box>
+        </CBox>
+      </CBox>
+    </CBox>
+  </CBox>
 </template>
 
 <script setup>

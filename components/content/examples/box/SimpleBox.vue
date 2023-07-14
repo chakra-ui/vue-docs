@@ -1,7 +1,7 @@
 <template>
-  <c-box bg="tomato" w="100%" p="4" color="white">
+  <CBox bg="tomato" w="100%" p="4" color="white">
     This is the Box
-  </c-box>
+  </CBox>
 </template>
 
 <script setup>
