@@ -1,7 +1,3 @@
 <template>
-    <c-badge>Default</c-badge>
+    <CBadge>Default</CBadge>
 </template>
-<script setup>
-import { CBadge } from '@chakra-ui/vue-next';
-</script>
-  
