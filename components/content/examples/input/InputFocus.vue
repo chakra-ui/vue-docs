@@ -1,12 +1,8 @@
 <template>
-    <c-stack spacing="4" w="xl" align-items="center">
-        <c-input focus-border-color="lime" placeholder="Here is a sample placeholder" />
-        <c-input focus-border-color="pink.400" placeholder="Here is a sample placeholder" />
-        <c-input is-invalid error-border-color="red.300" placeholder="Here is a sample placeholder" />
-        <c-input is-invalid error-border-color="crimson" placeholder="Here is a sample placeholder" />
-    </c-stack>
+    <CStack spacing="4" w="xl" align-items="center">
+        <CInput focus-border-color="lime" placeholder="Here is a sample placeholder" />
+        <CInput focus-border-color="pink.400" placeholder="Here is a sample placeholder" />
+        <CInput is-invalid error-border-color="red.300" placeholder="Here is a sample placeholder" />
+        <CInput is-invalid error-border-color="crimson" placeholder="Here is a sample placeholder" />
+    </CStack>
 </template>
-
-<script setup>
-import { CInput, CStack } from '@chakra-ui/vue-next';
-</script>
