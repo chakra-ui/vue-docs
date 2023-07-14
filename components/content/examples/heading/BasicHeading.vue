@@ -1,7 +1,3 @@
 <template>
-    <c-heading>I'm a Heading</c-heading>
+    <CHeading>I'm a Heading</CHeading>
 </template>
-
-<script setup>
-import { CHeading } from '@chakra-ui/vue-next';
-</script>

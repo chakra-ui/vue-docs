@@ -1,9 +1,5 @@
 <template>
-    <c-heading is-truncated>
+    <CHeading is-truncated>
         Basic text writing, including headings, body text, lists, and more.
-    </c-heading>
+    </CHeading>
 </template>
-
-<script setup>
-import { CHeading } from '@chakra-ui/vue-next';
-</script>
