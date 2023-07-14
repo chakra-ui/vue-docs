@@ -1,15 +1,11 @@
 <template>
-  <c-flex>
-    <c-box p='4' bg='red.400'>
+  <CFlex>
+    <CBox p='4' bg='red.400'>
       Box 1
-    </c-box>
-    <c-spacer />
-    <c-box p='4' bg='green.400'>
+    </CBox>
+    <CSpacer />
+    <CBox p='4' bg='green.400'>
       Box 2
-    </c-box>
-  </c-flex>
+    </CBox>
+  </CFlex>
 </template>
-
-<script setup>
-import { CFlex, CSpacer, CBox } from '@chakra-ui/vue-next';
-</script>
