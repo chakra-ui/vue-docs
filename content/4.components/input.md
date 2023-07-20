@@ -25,7 +25,7 @@ Here's a basic usage example of the `CInput` component:
 ::
 
 ```html
-    <c-input placeholder="Basic usage" />
+    <CInput placeholder="Basic usage" />
 ```
 
 
@@ -43,12 +43,12 @@ The `Input` component comes in four sizes. The default is `md`.
 ::
 
 ```html
-<c-stack spacing="3" w="2xl" align-items="center">
-    <c-input placeholder="extra small size" size="xs" />
-    <c-input placeholder="small size" size="sm" />
-    <c-input placeholder="medium size" size="md" />
-    <c-input placeholder="large size" size="lg" />
-</c-stack>
+<CStack spacing="3" w="2xl" align-items="center">
+    <CInput placeholder="extra small size" size="xs" />
+    <CInput placeholder="small size" size="sm" />
+    <CInput placeholder="medium size" size="md" />
+    <CInput placeholder="large size" size="lg" />
+</CStack>
 ```
 
 If you want to use the native DOM `size` attribute you can use the `htmlSize` prop. For it to work as expected you will also need to provide the `width` prop set to `auto`.
@@ -59,7 +59,7 @@ If you want to use the native DOM `size` attribute you can use the `htmlSize` pr
 ::
 
 ```html
-<c-input html-size="4" width="auto" />
+<CInput html-size="4" width="auto" />
 ```
 
 
@@ -73,12 +73,12 @@ The input component comes in 4 variants: `outline`, `unstyled`, `flushed`, and `
 ::
 
 ```html
-<c-stack spacing="3" w="2xl" align-items="center">
-    <c-input variant='outline' placeholder='Outline' />
-    <c-input variant='filled' placeholder='Filled' />
-    <c-input variant='flushed' placeholder='Flushed' />
-    <c-input variant='unstyled' placeholder='Unstyled' />
-</c-stack>
+<CStack spacing="3" w="2xl" align-items="center">
+    <CInput variant='outline' placeholder='Outline' />
+    <CInput variant='filled' placeholder='Filled' />
+    <CInput variant='flushed' placeholder='Flushed' />
+    <CInput variant='unstyled' placeholder='Unstyled' />
+</CStack>
 ```
 
 
@@ -93,18 +93,18 @@ Like bootstrap, you can add addons to the left and right of the `Input` componen
 
 
 ```html
-<c-stack spacing="4" w="xl" align-items="center">
-    <c-input-group>
-        <c-input-left-addon>+234</c-input-left-addon>
-        <c-input type="tel" rounded-left="0" placeholder="phone number" />
-    </c-input-group>
+<CStack spacing="4" w="xl" align-items="center">
+    <CInputGroup>
+        <CInputLeftAddon>+234</CInputLeftAddon>
+        <CInput type="tel" rounded-left="0" placeholder="phone number" />
+    </CInputGroup>
 
-    <c-input-group>
-        <c-input-left-addon>https://</c-input-left-addon>
-        <c-input rounded="0" placeholder="mysite" />
-        <c-input-right-addon>.com</c-input-right-addon>
-    </c-input-group>
-</c-stack>
+    <CInputGroup>
+        <CInputLeftAddon>https://</CInputLeftAddon>
+        <CInput rounded="0" placeholder="mysite" />
+        <CInputRightAddon>.com</CInputRightAddon>
+    </CInputGroup>
+</CStack>
 ```
 
 ## Add elements inside Input
@@ -119,18 +119,18 @@ If the left or right is an icon or text, you can pass `pointerEvents="none"` to 
 ::
 
 ```html
-<c-stack spacing="4" w="xl" align-items="center">
-    <c-input-group>
-        <c-input-left-element><c-icon name="phone" color="gray.300" /></c-input-left-element>
-        <c-input type="phone" placeholder="Phone number" />
-    </c-input-group>
+<CStack spacing="4" w="xl" align-items="center">
+    <CInputGroup>
+        <CInputLeftElement><CIcon name="phone" color="gray.300" /></CInputLeftElement>
+        <CInput type="phone" placeholder="Phone number" />
+    </CInputGroup>
 
-    <c-input-group>
-        <c-input-left-element color="gray.300" fontSize="1.2em">¥</c-input-left-element>
-        <c-input placeholder="Enter amount" />
-        <c-input-right-element><c-icon name="check" color="green.500" /></c-input-right-element>
-    </c-input-group>
-</c-stack>
+    <CInputGroup>
+        <CInputLeftElement color="gray.300" fontSize="1.2em">¥</CInputLeftElement>
+        <CInput placeholder="Enter amount" />
+        <CInputRightElement><CIcon name="check" color="green.500" /></CInputRightElement>
+    </CInputGroup>
+</CStack>
 ```
 
 
@@ -145,14 +145,14 @@ Let's use these components to create a password input with a show/hide password 
 
 ```html
 <template>
-    <c-input-group size="md">
-        <c-input pr="4.5rem" :type="show ? 'text' : 'password'" placeholder="Enter password" v-model="password" />
-        <c-input-right-element width="4.5rem">
-            <c-button h="1.75rem" size="sm" @click="show = !show">
+    <CInputGroup size="md">
+        <CInput pr="4.5rem" :type="show ? 'text' : 'password'" placeholder="Enter password" v-model="password" />
+        <CInputRightElement width="4.5rem">
+            <CButton h="1.75rem" size="sm" @click="show = !show">
                 {{ show ? 'Hide' : 'Show' }}
-            </c-button>
-        </c-input-right-element>
-    </c-input-group>
+            </CButton>
+        </CInputRightElement>
+    </CInputGroup>
 </template>
   
 <script setup>
@@ -173,12 +173,12 @@ You can change the border color that shows when the input receives focus (`focus
 ::
 
 ```html
-<c-stack spacing="4" w="xl" align-items="center">
-    <c-input focus-border-color="lime" placeholder="Here is a sample placeholder" />
-    <c-input focus-border-color="pink.400" placeholder="Here is a sample placeholder" />
-    <c-input is-invalid error-border-color="red.300" placeholder="Here is a sample placeholder" />
-    <c-input is-invalid error-border-color="crimson" placeholder="Here is a sample placeholder" />
-</c-stack>
+<CStack spacing="4" w="xl" align-items="center">
+    <CInput focus-border-color="lime" placeholder="Here is a sample placeholder" />
+    <CInput focus-border-color="pink.400" placeholder="Here is a sample placeholder" />
+    <CInput is-invalid error-border-color="red.300" placeholder="Here is a sample placeholder" />
+    <CInput is-invalid error-border-color="crimson" placeholder="Here is a sample placeholder" />
+</CStack>
 ```
 
 
@@ -192,12 +192,12 @@ The placeholder of an input can be styled by using the `_placeholder` prop. Per 
 ::
 
 ```html
-<c-stack spacing="4" w="xl" align-items="center">
-    <c-input placeholder='default placeholder' />
-    <c-input placeholder='custom placeholder' :_placeholder="{ opacity: 1, color: 'gray.500' }" />
-    <c-input color='teal' placeholder='custom placeholder' :_placeholder="{ color: 'inherit' }" />
-    <c-input color='tomato' placeholder='custom placeholder' :_placeholder="{ opacity: 0.4, color: 'inherit' }" />
-</c-stack>
+<CStack spacing="4" w="xl" align-items="center">
+    <CInput placeholder='default placeholder' />
+    <CInput placeholder='custom placeholder' :_placeholder="{ opacity: 1, color: 'gray.500' }" />
+    <CInput color='teal' placeholder='custom placeholder' :_placeholder="{ color: 'inherit' }" />
+    <CInput color='tomato' placeholder='custom placeholder' :_placeholder="{ opacity: 0.4, color: 'inherit' }" />
+</CStack>
 ```
 
 
@@ -213,7 +213,7 @@ Date and Time Picker
 ::
 
 ```html
-<c-input type="datetime-local" placeholder="Select Date and Time" size="md" />
+<CInput type="datetime-local" placeholder="Select Date and Time" size="md" />
 ```
 
 Check for different input types available : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#input_types
