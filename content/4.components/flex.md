@@ -6,7 +6,7 @@ version: 2.0+
 
 # Flex
 
-Flex is `Box` with `display: flex` and comes with helpful style shorthand. It renders a `div` element.
+Flex is `CBox` with `display: flex` and comes with helpful style shorthand. It renders a `div` element.
 
 ## Import
 
@@ -14,7 +14,7 @@ Flex is `Box` with `display: flex` and comes with helpful style shorthand. It re
 import { CFlex, CSpacer } from '@chakra-ui/vue-next';
 ```
 
-- Flex: A `Box` with `display: flex`.
+- Flex: A `CBox` with `display: flex`.
 - Spacer: Creates an adjustable, empty space that can be used to tune the spacing between child elements within Flex.
 
 ## Usage
