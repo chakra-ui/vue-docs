@@ -6,7 +6,7 @@ version: 2.0+
 
 # Stack
 
-Stack is a layout utility component that makes it easy to stack elements together and apply a space between them. It composes the `Flex` component.
+Stack is a layout utility component that makes it easy to stack elements together and apply a space between them. It composes the `CFlex` component.
 
 ## Import
 
@@ -34,12 +34,12 @@ import { CStack, CHStack, CVStack } from '@chakra-ui/vue-next';
 ```html
 <CStack :spacing="5">
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>See the Vue</c-heading>
-    <CText :mt="4">Vue makes front-end development a breeze.</c-text>
+    <CHeading>See the Vue</CHeading>
+    <CText :mt="4">Vue makes front-end development a breeze.</CText>
   </CBox>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>Go Nuxt!</c-heading>
-    <CText :mt="4">Nuxt makes writing Vue even easier.</c-text>
+    <CHeading>Go Nuxt!</CHeading>
+    <CText :mt="4">Nuxt makes writing Vue even easier.</CText>
   </CBox>
 </CStack>
 ```
@@ -58,12 +58,12 @@ You can stack the items horizontally either:
 ```html
 <CStack :spacing="5" is-inline>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>See the Vue</c-heading>
-    <CText :mt="4">Vue makes front-end development a breeze.</c-text>
+    <CHeading>See the Vue</CHeading>
+    <CText :mt="4">Vue makes front-end development a breeze.</CText>
   </CBox>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>Go Nuxt!</c-heading>
-    <CText :mt="4">Nuxt makes writing Vue even easier.</c-text>
+    <CHeading>Go Nuxt!</CHeading>
+    <CText :mt="4">Nuxt makes writing Vue even easier.</CText>
   </CBox>
 </CStack>
 ```
@@ -78,12 +78,12 @@ You can stack the items horizontally either:
 ```html
 <CHStack :spacing="5">
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>See the Vue</c-heading>
-    <CText :mt="4">Vue makes front-end development a breeze.</c-text>
+    <CHeading>See the Vue</CHeading>
+    <CText :mt="4">Vue makes front-end development a breeze.</CText>
   </CBox>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>Go Nuxt!</c-heading>
-    <CText :mt="4">Nuxt makes writing Vue even easier.</c-text>
+    <CHeading>Go Nuxt!</CHeading>
+    <CText :mt="4">Nuxt makes writing Vue even easier.</CText>
   </CBox>
 </CHStack>
 ```
@@ -102,12 +102,12 @@ Set `direction` to `row-reverse` or `column-reverse`.
 ```html
 <CStack :spacing="5" is-reversed>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>See the Vue</c-heading>
-    <CText :mt="4">Vue makes front-end development a breeze.</c-text>
+    <CHeading>See the Vue</CHeading>
+    <CText :mt="4">Vue makes front-end development a breeze.</CText>
   </CBox>
   <CBox :p="5" shadow="md" border-width="1px">
-    <CHeading>Go Nuxt!</c-heading>
-    <CText :mt="4">Nuxt makes writing Vue even easier.</c-text>
+    <CHeading>Go Nuxt!</CHeading>
+    <CText :mt="4">Nuxt makes writing Vue even easier.</CText>
   </CBox>
 </CStack>
 ```
@@ -124,7 +124,7 @@ Set `direction` to `row-reverse` or `column-reverse`.
   <CText>Chakra component 1</CText>
   <p>HTML paragraph element</p>
   <h3>HTML heading element</h3>
-  <CText>Chakra component 2</c-text>
+  <CText>Chakra component 2</CText>
 </CStack>
 ```
 
