@@ -236,5 +236,3 @@ The Input component composes PseudoBox so you can pass all `CPseudoBox` props, a
 | `variant`          | `outline`, `unstyled`, `flushed`, `filled` | `outline` | The variant of the input style to use.                                                                                        |
 | `focusBorderColor` | `string`                             |         | The border color when the input is focused.                                                                                   |
 | `errorBorderColor` | `string`                             |         | The border color when `isInvalid` is set to `true`.                                                                               |
-
-

@@ -13,5 +13,6 @@
             <CInputRightElement>
                 <CIcon name="check" color="green.500" />
             </CInputRightElement>
-    </CInputGroup>
-</CStack></template>
+        </CInputGroup>
+    </CStack>
+</template>
