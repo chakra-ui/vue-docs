@@ -25,7 +25,7 @@ import { CAvatar, CAvatarBadge, CAvatarGroup } from '@chakra-ui/vue-next';
 ### Default :
 
 ```html
-<c-avatar
+<CAvatar
   name="Evan You"
   alt="Evan You"
   src="https://www.github.com/yyx990803.png"
@@ -53,7 +53,7 @@ The avatar component comes in 7 different sizes (`2xs`|`xs` | `sm` | `md` | `lg`
 ::
 
 ```html
-<c-avatar
+<CAvatar
   name="Evan You"
   alt="Evan You"
   src="https://avatars.githubusercontent.com/u/499550?v=4"
@@ -78,12 +78,12 @@ You can customize the fallback Avatar either by using style props or by passing 
 
 ```html
 <!-- Styles props -->
-<c-avatar size="md" bg="red.500" />
+<CAvatar size="md" bg="red.500" />
 
 <!-- Custom default icon -->
-<c-avatar>
-  <c-icon color="white" name="star" />
-</c-avatar>
+<CAvatar>
+  <CIcon color="white" name="star" />
+</CAvatar>
 ```
 
 ### Avatar with badges
@@ -116,9 +116,9 @@ The badge is by default on the bottom right corner, but you can change its posit
 
 
 ```html
-<c-avatar name="Jonathan Bakebwa">
-  <c-avatar-badge bg="red.500" placement="top-start" />
-</c-avatar>
+<CAvatar name="Jonathan Bakebwa">
+  <CAvatarBadge bg="red.500" placement="top-start" />
+</CAvatar>
 ```
 
 You can also add icons inside the badge if needed :
@@ -131,15 +131,15 @@ You can also add icons inside the badge if needed :
 ::
 
 ```html
-<c-avatar
+<CAvatar
   name="Jonathan Bakebwa"
   alt="Jonathan Bakebwa"
   src="https://avatars.githubusercontent.com/u/21237954?v=4"
 >
-  <c-avatar-badge bg="red.500">
-    <c-icon color="white" name="minus" w="0.3em" />
-  </c-avatar-badge>
-</c-avatar>
+  <CAvatarBadge bg="red.500">
+    <CIcon color="white" name="minus" w="0.3em" />
+  </CAvatarBadge>
+</CAvatar>
 ```
 
 ### Avatar Group
@@ -156,28 +156,28 @@ In some cases, you might need to stack avatars as a group. Use the `CAvatarGroup
 ::
 
 ```html
-<c-avatar-group max="3" size="lg">
-  <c-avatar
+<CAvatar-group max="3" size="lg">
+  <CAvatar
     name="Segun Adebayo"
     src="https://avatars.githubusercontent.com/u/6916170?v=4"
     alt="Segun Adebayo"
   />
-  <c-avatar
+  <CAvatar
     name="Evan You"
     alt="Evan You"
     src="https://avatars.githubusercontent.com/u/499550?v=4"
   />
-  <c-avatar
+  <CAvatar
     name="Anthony Fu"
     src="https://avatars.githubusercontent.com/u/11247099?v=4"
     alt="Anthony Fu"
   />
-  <c-avatar
+  <CAvatar
     name="Maya Shavin"
     src="https://avatars.githubusercontent.com/u/6650139?v=4"
     alt="Maya Shavin"
   />
-</c-avatar-group>
+</CAvatar-group>
 ```
 
 ### Initials

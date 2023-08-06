@@ -1,15 +1,15 @@
 <script setup>
-import { CCheckboxGroup, CCheckbox } from '@chakra-ui/vue-next';
+import { CCheckboxGroup, CCheckbox, CStack } from '@chakra-ui/vue-next';
 
 const items = ref(["naruto", "sasuke"])
 </script>
 
 <template>
-  <c-checkbox-group v-model="items" color-scheme="blue" size="lg">
-    <c-stack>
-      <c-checkbox value="naruto"> Naruto </c-checkbox>
-      <c-checkbox value="sasuke"> Sasuke </c-checkbox>
-      <c-checkbox value="kakashi"> Kakashi </c-checkbox>
-    </c-stack>
-  </c-checkbox-group>
+  <CCheckboxGroup v-model="items" color-scheme="blue" size="lg">
+    <CStack>
+      <CCheckbox value="naruto"> Naruto </CCheckbox>
+      <CCheckbox value="sasuke"> Sasuke </CCheckbox>
+      <CCheckbox value="kakashi"> Kakashi </CCheckbox>
+    </CStack>
+  </CCheckboxGroup>
 </template>

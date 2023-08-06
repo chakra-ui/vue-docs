@@ -1,5 +1,9 @@
+<script setup>
+import { CButton } from '@chakra-ui/vue-next';
+</script>
+
 <template>
-  <c-button
+  <CButton
     mr="3"
     font-size="sm"
     left-icon="email"
@@ -7,8 +11,8 @@
     color-scheme="teal"
   >
     Base button
-  </c-button>
-  <c-button
+  </CButton>
+  <CButton
     mr="3"
     font-size="sm"
     right-icon="star"
@@ -16,5 +20,5 @@
     color-scheme="teal"
   >
     Base button
-  </c-button>
+  </CButton>
 </template>

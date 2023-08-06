@@ -1,22 +1,26 @@
-<template>
-  <c-accordion>
-    <c-accordion-item>
-      <c-accordion-button :_expanded="{ bg: 'purple', color: 'white' }">
-        <c-v-stack align="flex-start" w="full">
-          Watercraft
-        </c-v-stack>
-        <c-accordion-icon element="c-accordion-item" />
-      </c-accordion-button>
-      <c-accordion-panel> Sample accordion content </c-accordion-panel>
-    </c-accordion-item>
-  </c-accordion>
-</template>
 
 <script setup>
 import {
   CAccordion,
+  CAccordionIcon,
   CAccordionItem,
   CAccordionButton,
   CAccordionPanel,
+  CVStack
 } from "@chakra-ui/vue-next"
 </script>
+
+<template>
+  <CAccordion>
+    <CAccordionItem>
+      <CAccordionButton :_expanded="{ bg: 'purple', color: 'white' }">
+        <CVStack align="flex-start" w="full">
+          Watercraft
+        </CVStack>
+        <CAccordionIcon element="c-accordion-item" />
+      </CAccordionButton>
+      <CAccordionPanel> Sample accordion content </CAccordionPanel>
+    </CAccordionItem>
+  </CAccordion>
+</template>
+

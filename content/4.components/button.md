@@ -43,10 +43,10 @@ Use the size prop to change the size of the button. You can set the value to `xs
 ::
 
 ```html
-<c-button size="xs" mr="3" color-scheme="teal"> Button </c-button>
-<c-button size="sm" mr="3" color-scheme="teal"> Button </c-button>
-<c-button size="md" mr="3" color-scheme="teal"> Button </c-button>
-<c-button size="lg" mr="3" color-scheme="teal"> Button </c-button>
+<CButton size="xs" mr="3" color-scheme="teal"> Button </CButton>
+<CButton size="sm" mr="3" color-scheme="teal"> Button </CButton>
+<CButton size="md" mr="3" color-scheme="teal"> Button </CButton>
+<CButton size="lg" mr="3" color-scheme="teal"> Button </CButton>
 ```
 
 ### Button Variants
@@ -59,11 +59,11 @@ You can change the button style to either `solid` `ghost` `outline` or `link` by
 ::
 
 ```html
-<c-button mr="3" variant="luxury"> Button </c-button>
-<c-button mr="3" variant="solid" color-scheme="teal"> Button </c-button>
-<c-button mr="3" variant="outline" color-scheme="teal"> Button </c-button>
-<c-button mr="3" variant="ghost" color-scheme="teal"> Button </c-button>
-<c-button mr="3" variant="link" color-scheme="teal"> Button </c-button>
+<CButton mr="3" variant="luxury"> Button </CButton>
+<CButton mr="3" variant="solid" color-scheme="teal"> Button </CButton>
+<CButton mr="3" variant="outline" color-scheme="teal"> Button </CButton>
+<CButton mr="3" variant="ghost" color-scheme="teal"> Button </CButton>
+<CButton mr="3" variant="link" color-scheme="teal"> Button </CButton>
 ```
 
 ### Button with Icon
@@ -76,12 +76,12 @@ You can change the button style to either `solid` `ghost` `outline` or `link` by
 ::
 
 ```html
-<c-button mr="3" left-icon="email" variant="solid" color-scheme="teal">
+<CButton mr="3" left-icon="email" variant="solid" color-scheme="teal">
   Base button
-</c-button>
-<c-button mr="3" right-icon="star" variant="outline" color-scheme="teal">
+</CButton>
+<CButton mr="3" right-icon="star" variant="outline" color-scheme="teal">
   Base button
-</c-button>
+</CButton>
 ```
 
 ### Button Loading State
@@ -94,7 +94,7 @@ You can set the loading props on a button when it is loading,to indicate it is c
 ::
 
 ```html
-<c-button
+<CButton
   mr="3"
   :is-loading="isLoading"
   color-scheme="teal"
@@ -105,8 +105,8 @@ You can set the loading props on a button when it is loading,to indicate it is c
   @click="doTask"
 >
   Click me
-</c-button>
-<c-button
+</CButton>
+<CButton
   mr="3"
   :is-loading="isLoading"
   @click="doTask"
@@ -115,7 +115,7 @@ You can set the loading props on a button when it is loading,to indicate it is c
   font-size="sm"
 >
   Click me
-</c-button>
+</CButton>
 ```
 
 ### Button Group
@@ -132,10 +132,10 @@ You can use the `CButtonGroup` component to group buttons. When you use the Butt
 ::
 
 ```html
-<c-button-group variant="outline">
-  <c-button color-scheme="blue">Proceed</c-button>
-  <c-button>Cancel</c-button>
-</c-button-group>
+<CButtonGroup variant="outline">
+  <CButton color-scheme="blue">Proceed</CButton>
+  <CButton>Cancel</CButton>
+</CButtonGroup>
 ```
 
 ## Accessibility
@@ -153,7 +153,7 @@ All props you pass `variant`, `colorScheme`, `size` etc are converted to style p
 ::
 
 ```html
-<c-button
+<CButton
   size="md"
   height="48px"
   width="200px"
@@ -163,7 +163,7 @@ All props you pass `variant`, `colorScheme`, `size` etc are converted to style p
   variant="outline"
 >
   Button
-</c-button>
+</CButton>
 ```
 
 ## Customizable Button
@@ -176,7 +176,7 @@ You can pass-in other props to make fully customizable buttons, you can do this 
 ::
 
 ```html
-<c-button
+<CButton
   border="1px solid rgba(47, 43, 67, 0.1)"
   border-radius="12px"
   mr="3"
@@ -186,5 +186,5 @@ You can pass-in other props to make fully customizable buttons, you can do this 
   size="lg"
 >
   Button
-</c-button>
+</CButton>
 ```

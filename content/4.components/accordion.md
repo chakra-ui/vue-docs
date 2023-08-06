@@ -40,26 +40,26 @@ By default, only one item may be expanded and it can only be collapsed again by 
 ::
 
 ```html
-<c-accordion>
-  <c-accordion-item>
-    <c-accordion-button>
+<CAccordion>
+  <CAccordionItem>
+    <CAccordionButton>
       Watercraft
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Automobiles
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Aircrafts
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-</c-accordion>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+</CAccordion>
 ```
 
 ## Expand multiple items at once
@@ -74,26 +74,26 @@ If you set `allow-multiple` to `true` then the accordion will permit multiple it
 ::
 
 ```html
-<c-accordion allow-multiple>
-  <c-accordion-item>
-    <c-accordion-button>
+<CAccordion allow-multiple>
+  <CAccordionItem>
+    <CAccordionButton>
       Watercraft
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Automobiles
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Aircrafts
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-</c-accordion>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+</CAccordion>
 ```
 
 ## Toggle each accordion item
@@ -108,26 +108,26 @@ If you set `allow-toggle` to `true`, any expanded item may be collapsed again.
 ::
 
 ```html
-<c-accordion allow-toggle>
-  <c-accordion-item>
-    <c-accordion-button>
+<CAccordion allow-toggle>
+  <CAccordionItem>
+    <CAccordionButton>
       Watercraft
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Automobiles
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-  <c-accordion-item>
-    <c-accordion-button>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+  <CAccordionItem>
+    <CAccordionButton>
       Aircrafts
-    </c-accordion-button>
-    <c-accordion-panel> Sample accordion content </c-accordion-panel>
-  </c-accordion-item>
-</c-accordion>
+    </CAccordionButton>
+    <CAccordionPanel> Sample accordion content </CAccordionPanel>
+  </CAccordionItem>
+</CAccordion>
 ```
 
 ## Styling the expanded state

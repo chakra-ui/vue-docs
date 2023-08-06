@@ -1,5 +1,14 @@
+<script setup>
+import {
+  CAlert,
+  CAlertTitle,
+  CAlertDescription,
+  CAlertIcon
+} from '@chakra-ui/vue-next';
+</script>
+
 <template>
-  <c-alert
+  <CAlert
     variant="subtle"
     status="success"
     flex-direction="column"
@@ -9,22 +18,14 @@
     justify-content="center"
     w="full"
   >
-    <c-alert-icon box-size="40px" />
-    <c-alert-title mt="4" mb="1" font-size="lg"
-      >Application Submitted!</c-alert-title
-    >
-    <c-alert-description max-width="sm" mt="auto" font-weight="normal"
-      >Our team will review your application. If you are found a fit for this
+    <CAlertIcon box-size="40px" />
+    <CAlertTitle mt="4" mb="1" font-size="lg">
+      Application Submitted!
+    </CAlertTitle>
+    <CAlertDescription max-width="sm" mt="auto" font-weight="normal">
+      Our team will review your application. If you are found a fit for this
       role, someone will be in touch with you. Please do well to stay in touch
-      with our Jobs page</c-alert-description
-    >
-  </c-alert>
+      with our Jobs page
+    </CAlertDescription>
+  </CAlert>
 </template>
-<script setup>
-import {
-  CAlert,
-  CAlertTitle,
-  CAlertDescription,
-  CAlertIcon
-} from '@chakra-ui/vue-next';
-</script>

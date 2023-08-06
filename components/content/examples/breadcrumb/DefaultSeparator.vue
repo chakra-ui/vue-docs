@@ -1,16 +1,3 @@
-<template>
-  <c-breadcrumb>
-    <c-breadcrumb-item>
-      <c-breadcrumb-link href="#">Home</c-breadcrumb-link>
-    </c-breadcrumb-item>
-    <c-breadcrumb-item>
-      <c-breadcrumb-link href="#">Docs</c-breadcrumb-link>
-    </c-breadcrumb-item>
-    <c-breadcrumb-item is-current-page>
-      <c-breadcrumb-link href="#">About</c-breadcrumb-link>
-    </c-breadcrumb-item>
-  </c-breadcrumb>
-</template>
 <script setup>
 import {
   CBreadcrumb,
@@ -18,3 +5,17 @@ import {
   CBreadcrumbLink
 } from '@chakra-ui/vue-next';
 </script>
+
+<template>
+  <CBreadcrumb>
+    <CBreadcrumbItem>
+      <CBreadcrumbLink href="#">Home</CBreadcrumbLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem>
+      <CBreadcrumbLink href="#">Docs</CBreadcrumbLink>
+    </CBreadcrumbItem>
+    <CBreadcrumbItem is-current-page>
+      <CBreadcrumbLink href="#">About</CBreadcrumbLink>
+    </CBreadcrumbItem>
+  </CBreadcrumb>
+</template>

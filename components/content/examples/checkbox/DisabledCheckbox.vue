@@ -1,10 +1,10 @@
 <script setup>
-import { CCheckbox } from '@chakra-ui/vue-next';
+import { CCheckbox, CStack } from '@chakra-ui/vue-next';
 </script>
 
 <template>
-  <c-stack spacing="5" direction="row"> 
-    <c-checkbox is-disabled> Disabled checkbox </c-checkbox> 
-    <c-checkbox is-disabled default-checked> Disabled checked </c-checkbox>
-  </c-stack>
+  <CStack spacing="5" direction="row"> 
+    <CCheckbox is-disabled> Disabled checkbox </CCheckbox> 
+    <CCheckbox is-disabled default-checked> Disabled checked </CCheckbox>
+  </CStack>
 </template>
