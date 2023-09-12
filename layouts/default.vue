@@ -14,30 +14,13 @@ const color = useColorModeValue('gray.700', 'white');
     <TopNavigation />
     <chakra.div max-w="8xl" mx="auto" d="flex">
       <!-- Sidebar Navigation -->
-      <chakra.div
-        :display="{ base: 'none', lg: 'block' }"
-        position="fixed"
-        z-index="30"
-        bottom="0"
-        top="6rem"
-        left="max(0px, calc(50% - 45rem))"
-        right="auto"
-        width="19.5rem"
-        pb="10"
-        px="8"
-        overflow-y="auto"
-        overscroll-behavior="contain"
-      >
+      <chakra.div :display="{ base: 'none', lg: 'block' }" position="fixed" z-index="30" bottom="0" top="6rem"
+        left="max(0px, calc(50% - 45rem))" right="auto" width="19.5rem" pb="10" px="8" overflow-y="auto"
+        overscroll-behavior="contain">
         <sidebar />
       </chakra.div>
-      <chakra.main
-        :pl="{ base: 4, lg: '19.5rem' }"
-        pt="4"
-        pb="24"
-        :pr="{ base: 4, xl: 16 }"
-        class="chakra-prose"
-      >
-        <chakra.div :mr="{ xl: '15.5rem' }">
+      <chakra.main :pl="{ base: 4, lg: '19.5rem' }" pt="4" pb="24" :pr="{ base: 4, xl: 16 }" class="chakra-prose">
+        <chakra.div :mr="{ xl: '15.5rem' }" :pl="{ base: 2, lg: '1rem' }">
           <slot />
 
           <c-h-stack align-items="center" mt="6">
