@@ -1,6 +1,6 @@
 <template>
   <div>
-    <chakra.div
+    <CBox
       position="absolute"
       z-index="0"
       top="0"
