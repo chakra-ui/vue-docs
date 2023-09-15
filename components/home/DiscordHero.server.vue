@@ -52,6 +52,9 @@ import { chakra, CBox, CButton, CFlex, CIcon } from '@chakra-ui/vue-next';
         bg="white"
         shadow="lg"
         :w="{ base: '100%', lg: 'auto' }"
+        :_hover="{
+          backgroundColor: 'whiteAlpha.900'
+        }"
       >
         Join the #Chakra Discord!
       </CButton>
