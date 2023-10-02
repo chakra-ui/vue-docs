@@ -12,7 +12,7 @@ import { chakra, CBox, CButton, CFlex, CIcon } from '@chakra-ui/vue-next';
     color="white"
     bg="discord.accessible"
     :h="['auto', 'auto', 'auto', 40]"
-    :px="[4, 10, 12]"
+    :px="[8, 20, 24]"
     :mt="[4, 10, 10]"
   >
     <CFlex
