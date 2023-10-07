@@ -43,14 +43,14 @@ onMounted(() => {
       <!-- content -->
       <CFlex w="100%" h="100%" px="6" align="center" justify="space-between">
         <CFlex align="center">
-          <router-link to="/">
+          <nuxt-link prefetch to="/">
             <chakra.a
               display="block"
               aria-label="Chakra UI Vue, Back to homepage"
             >
               <ChakraLogo />
             </chakra.a>
-          </router-link>
+          </nuxt-link>
         </CFlex>
 
         <!-- nav -->
