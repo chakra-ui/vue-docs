@@ -1,0 +1,1 @@
+import{c as e}from"./entry.d1b4d9a8.js";import{A as r,_ as t,a1 as o,a5 as s,H as n,y as c}from"./components-chunk.c8041ec8.js";const p=r({__name:"ProseEm",setup(l){return(a,_)=>(t(),o(c(e).strong,null,{default:s(()=>[n(a.$slots,"default")]),_:3}))}});export{p as default};

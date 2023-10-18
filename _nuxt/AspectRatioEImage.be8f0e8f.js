@@ -1,0 +1,1 @@
+import{A as e,B as o}from"./entry.d1b4d9a8.js";import{aE as c,_ as s,a1 as r,a5 as n,B as _}from"./components-chunk.c8041ec8.js";const m={};function p(i,f){const t=e,a=o;return s(),r(a,{"max-w":"400px",ratio:4/3},{default:n(()=>[_(t,{src:"https://bit.ly/naruto-sage",alt:"sage mode naruto","object-fit":"cover"})]),_:1})}const u=c(m,[["render",p]]);export{u as default};

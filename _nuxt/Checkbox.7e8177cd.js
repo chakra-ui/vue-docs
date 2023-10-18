@@ -1,0 +1,1 @@
+import{N as a}from"./entry.d1b4d9a8.js";import{A as o,_ as t,a1 as r,a5 as s,H as n,y as c}from"./components-chunk.c8041ec8.js";const u=o({__name:"Checkbox",setup(l){return(e,_)=>(t(),r(c(a),null,{default:s(()=>[n(e.$slots,"default")]),_:3}))}});export{u as default};

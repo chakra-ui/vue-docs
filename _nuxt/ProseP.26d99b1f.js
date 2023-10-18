@@ -1,0 +1,1 @@
+import{h as o}from"./entry.d1b4d9a8.js";import{aE as a,_ as r,a1 as s,a5 as n,H as c}from"./components-chunk.c8041ec8.js";const _={};function f(e,l){const t=o;return r(),s(t,null,{default:n(()=>[c(e.$slots,"default")]),_:3})}const p=a(_,[["render",f]]);export{p as default};

@@ -1,0 +1,1 @@
+import{D as t}from"./entry.d1b4d9a8.js";import{_ as r,a1 as e,a5 as s,H as o,y as l}from"./components-chunk.c8041ec8.js";const f={__name:"Avatar",setup(n){return(a,_)=>(r(),e(l(t),null,{default:s(()=>[o(a.$slots,"default")]),_:3}))}};export{f as default};

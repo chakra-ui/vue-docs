@@ -1,0 +1,1 @@
+import{b as e,q as a}from"./entry.d1b4d9a8.js";import{_ as r}from"./CodeEditorLayout.vue.7cfbf9ce.js";import{A as t,_ as n,a1 as c,y as s}from"./components-chunk.c8041ec8.js";import"./CodeEditorParts.89e053ec.js";const l=t({__name:"CodeEditor",props:{code:null},setup(o){return(m,p)=>(n(),c(s(a),{code:o.code,components:e,layout:r},null,8,["code"]))}});export{l as default};

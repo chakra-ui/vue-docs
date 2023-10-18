@@ -1,0 +1,1 @@
+import{k as t}from"./entry.d1b4d9a8.js";import{aE as o,_ as r,a1 as a,a5 as c,J as n}from"./components-chunk.c8041ec8.js";const s={};function _(i,f){const e=t;return r(),a(e,{bg:"tomato",h:"100px",color:"white"},{default:c(()=>[n(" This is the Center ")]),_:1})}const C=o(s,[["render",_]]);export{C as default};

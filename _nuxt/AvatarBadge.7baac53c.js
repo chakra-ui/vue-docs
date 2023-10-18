@@ -1,0 +1,1 @@
+import{E as e}from"./entry.d1b4d9a8.js";import{A as t,_ as r,a1 as o,a5 as s,H as n,y as l}from"./components-chunk.c8041ec8.js";const c=t({__name:"AvatarBadge",setup(_){return(a,f)=>(r(),o(l(e),null,{default:s(()=>[n(a.$slots,"default")]),_:3}))}});export{c as default};

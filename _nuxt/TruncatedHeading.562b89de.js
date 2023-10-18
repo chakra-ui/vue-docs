@@ -1,0 +1,1 @@
+import{i as t}from"./entry.d1b4d9a8.js";import{aE as a,_ as n,a1 as c,a5 as o,J as r}from"./components-chunk.c8041ec8.js";const s={};function i(d,_){const e=t;return n(),c(e,{"is-truncated":""},{default:o(()=>[r(" Basic text writing, including headings, body text, lists, and more. ")]),_:1})}const u=a(s,[["render",i]]);export{u as default};

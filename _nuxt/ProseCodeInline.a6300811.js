@@ -1,0 +1,1 @@
+import{u as a,j as s}from"./entry.d1b4d9a8.js";import{A as t,_ as l,a1 as n,a5 as p,H as u,y as e}from"./components-chunk.c8041ec8.js";const m=t({__name:"ProseCodeInline",setup(c){const o=a("purple.500","purple.200");return(r,_)=>(l(),n(e(s),{color:e(o)},{default:p(()=>[u(r.$slots,"default")]),_:3},8,["color"]))}});export{m as default};

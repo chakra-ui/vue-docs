@@ -1,0 +1,1 @@
+import{Q as e}from"./entry.d1b4d9a8.js";import{_ as n,a1 as t,y as a}from"./components-chunk.c8041ec8.js";const u={__name:"CloseButton",setup(r){return(o,s)=>(n(),t(a(e),{onClick:o.handleClose},null,8,["onClick"]))}};export{u as default};

@@ -1,0 +1,1 @@
+import{k as e}from"./entry.d1b4d9a8.js";import{_ as a,a1 as o,a5 as s,H as t,y as p}from"./components-chunk.c8041ec8.js";const _={__name:"Showcase",setup(c){return(r,d)=>(a(),o(p(e),{py:"3",border:"1px solid","border-color":"gray.200","border-radius":"5",px:"4",my:"5"},{default:s(()=>[t(r.$slots,"default")]),_:3}))}};export{_ as default};

@@ -1,0 +1,1 @@
+import{e as t}from"./entry.d1b4d9a8.js";import{_ as e,a1 as o,a5 as r,J as a,y as s}from"./components-chunk.c8041ec8.js";const m={__name:"ButtonComposition",setup(n){return(i,u)=>(e(),o(s(t),{size:"md",height:"48px",width:"200px",border:"2px","border-radius":"sm","color-scheme":"blue",variant:"outline"},{default:r(()=>[a(" Button ")]),_:1}))}};export{m as default};

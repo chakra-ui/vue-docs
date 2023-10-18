@@ -1,0 +1,1 @@
+import{c as e}from"./entry.d1b4d9a8.js";import{A as t,_ as s,a1 as r,a5 as o,H as n,y as l}from"./components-chunk.c8041ec8.js";const m=t({__name:"ProseH1",props:{id:null},setup(p){return(a,c)=>(s(),r(l(e).h1,{id:"skip-nav","text-style":"display.lg",mb:"5","max-w":"85ch","tab-index":"-1"},{default:o(()=>[n(a.$slots,"default")]),_:3}))}});export{m as default};

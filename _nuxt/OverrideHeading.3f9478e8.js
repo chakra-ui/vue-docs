@@ -1,0 +1,1 @@
+import{i as a}from"./entry.d1b4d9a8.js";import{aE as t,_ as n,a1 as o,a5 as r,J as i}from"./components-chunk.c8041ec8.js";const c={};function s(_,d){const e=a;return n(),o(e,{size:"lg",fontSize:"50px"},{default:r(()=>[i(" I'm overriding this heading ")]),_:1})}const p=t(c,[["render",s]]);export{p as default};

@@ -1,0 +1,1 @@
+import{c as r}from"./entry.d1b4d9a8.js";import{A as o,_ as t,a1 as a,a5 as s,H as n,y as p}from"./components-chunk.c8041ec8.js";const l=o({__name:"ProseTd",setup(c){return(e,d)=>(t(),a(p(r).td,{p:"2","border-top-width":"1px","border-color":"inherit","font-size":"sm","white-space":"normal"},{default:s(()=>[n(e.$slots,"default")]),_:3}))}});export{l as default};

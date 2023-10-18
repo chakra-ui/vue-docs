@@ -1,0 +1,1 @@
+import{m as r}from"./entry.d1b4d9a8.js";import{_ as e,a1 as t,a5 as s,H as o,y as l}from"./components-chunk.c8041ec8.js";const c={__name:"Wrap",setup(n){return(a,p)=>(e(),t(l(r),null,{default:s(()=>[o(a.$slots,"default")]),_:3}))}};export{c as default};

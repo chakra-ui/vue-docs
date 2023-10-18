@@ -1,0 +1,1 @@
+import{A as e,C as o}from"./entry.d1b4d9a8.js";import{aE as c,_ as n,a1 as s,a5 as r,B as _}from"./components-chunk.c8041ec8.js";const m={};function p(f,i){const a=e,t=o;return n(),s(t,{w:"sm"},{default:r(()=>[_(a,{src:"https://bit.ly/chakra-jonathan-bakebwa",alt:"Jonathan Bakebwa"})]),_:1})}const x=c(m,[["render",p]]);export{x as default};

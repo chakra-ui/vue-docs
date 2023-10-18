@@ -1,0 +1,1 @@
+import{U as e}from"./entry.d1b4d9a8.js";import{aE as o,_ as t,a1 as a}from"./components-chunk.c8041ec8.js";const n={};function r(s,_){const c=e;return t(),a(c,{placeholder:"Basic usage"})}const u=o(n,[["render",r]]);export{u as default};

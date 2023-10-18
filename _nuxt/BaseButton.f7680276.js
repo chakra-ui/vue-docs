@@ -1,0 +1,1 @@
+import{e as t}from"./entry.d1b4d9a8.js";import{_ as e,a1 as a,a5 as o,J as r,y as s}from"./components-chunk.c8041ec8.js";const f={__name:"BaseButton",setup(n){return(u,_)=>(e(),a(s(t),null,{default:o(()=>[r("Button")]),_:1}))}};export{f as default};

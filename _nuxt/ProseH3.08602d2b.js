@@ -1,0 +1,1 @@
+import{c as a}from"./entry.d1b4d9a8.js";import{A as t,_ as s,a1 as r,a5 as o,H as n,y as m}from"./components-chunk.c8041ec8.js";const f=t({__name:"ProseH3",setup(c){return(e,l)=>(s(),r(m(a).h3,{"text-style":"display.sm",mt:"6",mb:"4"},{default:o(()=>[n(e.$slots,"default")]),_:3}))}});export{f as default};

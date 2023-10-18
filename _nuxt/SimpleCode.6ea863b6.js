@@ -1,0 +1,1 @@
+import{j as o}from"./entry.d1b4d9a8.js";import{aE as t,_ as a,a1 as c,a5 as r,J as n}from"./components-chunk.c8041ec8.js";const s={};function _(l,d){const e=o;return a(),c(e,null,{default:r(()=>[n(" Hello world ")]),_:1})}const p=t(s,[["render",_]]);export{p as default};

@@ -1,0 +1,1 @@
+import{G as a}from"./entry.d1b4d9a8.js";import{aE as t,_ as o,a1 as c,a5 as r,J as s}from"./components-chunk.c8041ec8.js";const n={};function _(f,d){const e=a;return o(),c(e,null,{default:r(()=>[s("Default")]),_:1})}const p=t(n,[["render",_]]);export{p as default};

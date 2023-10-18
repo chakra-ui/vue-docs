@@ -1,0 +1,1 @@
+import{u as t,c as s}from"./entry.d1b4d9a8.js";import{A as r,_ as n,a1 as l,a5 as c,H as f,y as e}from"./components-chunk.c8041ec8.js";const _=r({__name:"ProseTh",setup(p){const a=t("gray.50","whiteAlpha.100");return(o,u)=>(n(),l(e(s).th,{bg:e(a),"font-weight":"semibold",p:"2","font-size":"sm"},{default:c(()=>[f(o.$slots,"default")]),_:3},8,["bg"]))}});export{_ as default};
