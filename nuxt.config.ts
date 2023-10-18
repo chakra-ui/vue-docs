@@ -54,7 +54,8 @@ export default defineNuxtConfig({
     '@chakra-ui/nuxt-next',
     '@nuxtjs/fontaine',
     '@nuxtjs/html-validator',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxthq/studio'
   ],
   fontMetrics: {
     fonts: [
